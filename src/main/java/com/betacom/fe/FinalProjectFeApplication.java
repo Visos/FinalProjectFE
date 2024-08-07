@@ -1,4 +1,4 @@
-package com.example.fe.FinalProjectFE;
+package com.betacom.fe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
