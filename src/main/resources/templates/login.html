@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="https://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+<title>Login</title>
+</head>
+<body>
+	<nav th:insert="~{fragments/header}"></nav>
+	<div class="login-container">
+		<div class="login-box">
+			<form>
+				<div class="mb-3">
+					<label for="exampleInputEmail1" class="form-label">Email
+						address</label> <input type="text" class="form-control"
+						id="exampleInputEmail1" aria-describedby="emailHelp">
+					<div id="emailHelp" class="form-text">Inserisci l'email
+						dell'account</div>
+				</div>
+				<div class="mb-3">
+					<label for="exampleInputPassword1" class="form-label">Password</label>
+					<input type="password" class="form-control"
+						id="inputPassword">
+				</div>
+				<div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="showPassword()">
+					<label class="form-check-label" for="exampleCheck1">Mostra
+						password</label>
+				</div>
+				<div class="buttonLogin" align="center">
+					<button type="submit" class="login-button">Submit </button>
+				</div>
+				<div class="register-link">
+                <a th:href="@{/createUser}">Non hai un account? Registrati!</a>
+            </div>
+
+			</form>
+		</div>
+	</div>
+</body>
+</html>

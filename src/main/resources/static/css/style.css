@@ -1,0 +1,251 @@
+@charset "ISO-8859-1";
+
+/* navbar */
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	background-color: #72d0f3;
+	padding: 1px 10px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.navbar-links {
+	display: flex; /* Disporre gli elementi orizzontalmente */
+	gap: 20px; /* Spazio tra gli elementi */
+}
+
+/* login */
+.login-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f8f9fa;
+}
+
+.login-box {
+	width: 300px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+}
+
+/* font */
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 600;
+}
+
+h5 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 450;
+}
+
+.form-label, .form-check-label {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.form-text, .form-control {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 450;
+}
+
+/* registrazione */
+
+
+.create-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f8f9fa;
+	flex-direction: column;
+}
+
+
+
+.create-box {
+	width: 600px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+	background-color: #ffffff;
+	margin-top: 50px;
+}
+
+
+.title {
+	color: #4d5eee;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+
+
+
+.inner-box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+
+
+.error-message {
+	color: red;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.logout-message {
+	color: green;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.form-group {
+	margin-bottom: 15px;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	color: #333333;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="email"]
+	{
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-family: 'Montserrat', sans-serif; font-weight : 450;
+	box-sizing: border-box;
+	font-weight: 450;
+}
+
+.login-button {
+	width: 100%;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background-color: #19A7CE;
+	color: white;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.login-button:hover {
+	background-color: #146C94;
+}
+
+.register-link {
+	text-align: center;
+	margin-top: 15px;
+}
+
+.register-link a {
+	text-decoration: none;
+	color: #007bff;
+}
+
+.register-link a:hover {
+	text-decoration: underline;
+}
+
+/* INDEX */
+.container {
+	display: flex;
+	margin: 20px auto;
+	/* Aggiunge margine verticale e centra il contenitore */
+	max-width: 1200px;
+	/* Puoi aggiustare questa larghezza come preferisci */
+}
+
+/* Stili per la barra laterale */
+.sidebar {
+	width: 250px;
+	background-color: #f4f4f4;
+	padding: 20px;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	margin-right: 20px;
+	/* Spazio tra la sidebar e il contenuto principale */
+}
+
+.sidebar h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.sidebar ul {
+	list-style: none;
+	padding: 0;
+}
+
+.sidebar ul li {
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.sidebar ul li i {
+	margin-right: 10px; /* Spazio tra l'icona e il testo */
+}
+
+/* Stili per il contenuto principale */
+.content {
+	flex: 1;
+	padding: 20px;
+	background-color: #ffffff;
+}
+
+/* Stili per i prodotti in evidenza */
+.highlighted-products {
+	width: 300px;
+	/* Larghezza fissa o personalizzata per la sezione dei prodotti in evidenza */
+	background-color: #f9f9f9;
+	padding: 20px;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	margin-left: 20px;
+	/* Spazio tra il contenuto principale e i prodotti in evidenza */
+}
+
+.highlighted-products h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.highlighted-products ul {
+	list-style: none;
+	padding: 0;
+}
+
+.highlighted-products ul li {
+	margin-bottom: 10px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+}
+
+.highlighted-products ul li i {
+	margin-right: 10px; /* Spazio tra l'icona e il testo */
+}
