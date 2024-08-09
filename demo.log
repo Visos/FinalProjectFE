@@ -1019,3 +1019,964 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 2024-08-09T12:47:18.015+02:00 DEBUG 6140 --- [FinalProjectFE] [http-nio-9090-exec-10] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
 2024-08-09T12:49:33.294+02:00  WARN 6140 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
 2024-08-09T12:49:50.848+02:00 DEBUG 6140 --- [FinalProjectFE] [http-nio-9090-exec-4] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-09T15:04:22.068+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.11 with PID 5796 (C:\Users\marta\Desktop\marta\programmazione\betacom\finalFrontEnd\target\classes started by marta in C:\Users\marta\Desktop\marta\programmazione\betacom\finalFrontEnd)
+2024-08-09T15:04:22.070+02:00 DEBUG 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-09T15:04:22.071+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-09T15:04:22.126+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-09T15:04:22.126+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-09T15:04:23.245+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-09T15:04:23.260+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-09T15:04:23.260+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-09T15:04:23.317+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-09T15:04:23.318+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1190 ms
+2024-08-09T15:04:23.767+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-09T15:04:23.926+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@70d7b6bf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@404b1074, org.springframework.security.web.context.SecurityContextHolderFilter@3cf78330, org.springframework.security.web.header.HeaderWriterFilter@29c6ecd4, org.springframework.web.filter.CorsFilter@76a83db8, org.springframework.security.web.csrf.CsrfFilter@6087ca22, org.springframework.security.web.authentication.logout.LogoutFilter@58282edf, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@606ff214, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11887b19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44cbe5fc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2178da1c, org.springframework.security.web.access.ExceptionTranslationFilter@34c7b466, org.springframework.security.web.access.intercept.AuthorizationFilter@355940b8]
+2024-08-09T15:04:24.095+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-09T15:04:24.129+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-09T15:04:24.140+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 2.491 seconds (process running for 2.917)
+2024-08-09T15:04:35.845+02:00  INFO 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-09T15:04:35.845+02:00  INFO 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-09T15:04:35.847+02:00  INFO 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-09T15:05:41.951+02:00  INFO 5796 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-09T15:05:42.204+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.11 with PID 5796 (C:\Users\marta\Desktop\marta\programmazione\betacom\finalFrontEnd\target\classes started by marta in C:\Users\marta\Desktop\marta\programmazione\betacom\finalFrontEnd)
+2024-08-09T15:05:42.204+02:00 DEBUG 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-09T15:05:42.204+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-09T15:05:42.628+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-09T15:05:42.629+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-09T15:05:42.629+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-09T15:05:42.651+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-09T15:05:42.652+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 444 ms
+2024-08-09T15:05:42.908+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-09T15:05:42.949+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61b61a7e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50fd7761, org.springframework.security.web.context.SecurityContextHolderFilter@7f1c4433, org.springframework.security.web.header.HeaderWriterFilter@671f311a, org.springframework.web.filter.CorsFilter@461d6ef1, org.springframework.security.web.csrf.CsrfFilter@3c8793be, org.springframework.security.web.authentication.logout.LogoutFilter@43ff5f9a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@588c8d7a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f86220d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4056cb5f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a46dc15, org.springframework.security.web.access.ExceptionTranslationFilter@9e6d12b, org.springframework.security.web.access.intercept.AuthorizationFilter@7b5db56a]
+2024-08-09T15:05:43.026+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-09T15:05:43.038+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-09T15:05:43.046+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.879 seconds (process running for 81.822)
+2024-08-09T15:05:43.049+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-09T15:05:43.423+02:00  INFO 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-09T15:05:43.423+02:00  INFO 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-09T15:05:43.424+02:00  INFO 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-09T15:06:15.045+02:00  INFO 5796 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-09T15:06:15.258+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.11 with PID 5796 (C:\Users\marta\Desktop\marta\programmazione\betacom\finalFrontEnd\target\classes started by marta in C:\Users\marta\Desktop\marta\programmazione\betacom\finalFrontEnd)
+2024-08-09T15:06:15.258+02:00 DEBUG 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-09T15:06:15.258+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-09T15:06:15.596+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-09T15:06:15.597+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-09T15:06:15.598+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-09T15:06:15.614+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-09T15:06:15.614+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 354 ms
+2024-08-09T15:06:15.646+02:00  WARN 5796 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 9512c853-bca2-4350-94ef-eae03f711b98
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-09T15:06:15.656+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-09T15:06:15.691+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f0ceb5a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e22a51b, org.springframework.security.web.context.SecurityContextHolderFilter@5e2ab145, org.springframework.security.web.header.HeaderWriterFilter@556a44df, org.springframework.web.filter.CorsFilter@29f2f3dc, org.springframework.security.web.csrf.CsrfFilter@57aaca9f, org.springframework.security.web.authentication.logout.LogoutFilter@39b70ac9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@343e6243, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@14699e82, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@954f2f5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3552ba85, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f55662d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@13a26c95, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@717a8ebe, org.springframework.security.web.access.ExceptionTranslationFilter@2b6cfae8, org.springframework.security.web.access.intercept.AuthorizationFilter@9b87d0c]
+2024-08-09T15:06:15.740+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-09T15:06:15.748+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-09T15:06:15.754+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.529 seconds (process running for 114.532)
+2024-08-09T15:06:15.762+02:00  INFO 5796 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation delta:
+
+
+==========================
+CONDITION EVALUATION DELTA
+==========================
+
+
+Positive matches:
+-----------------
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   UserDetailsServiceAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+      - AnyNestedCondition 1 matched 2 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass did not find unwanted classes 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository', 'org.springframework.security.oauth2.server.resource.introspection.OpaqueTokenIntrospector', 'org.springframework.security.saml2.provider.service.registration.RelyingPartyRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+      - @ConditionalOnBean (types: org.springframework.security.config.annotation.ObjectPostProcessor; SearchStrategy: all) found bean 'objectPostProcessor'; @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationManager,org.springframework.security.authentication.AuthenticationProvider,org.springframework.security.core.userdetails.UserDetailsService,org.springframework.security.authentication.AuthenticationManagerResolver,org.springframework.security.oauth2.jwt.JwtDecoder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+    None
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-08-09T15:06:15.847+02:00  INFO 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-09T15:06:15.847+02:00  INFO 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-09T15:06:15.847+02:00  INFO 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-09T15:06:46.447+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:07:20.767+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:28:05.285+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:28:45.981+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:29:35.164+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-8] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:39:34.482+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:41:10.459+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-2] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:41:22.274+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:41:29.286+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:41:36.883+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:41:47.193+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-8] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:42:01.011+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:42:58.404+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:43:37.748+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:44:17.847+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-8] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:45:39.371+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:47:09.008+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:48:43.432+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:50:33.384+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:50:57.573+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:51:22.736+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-2] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:51:40.060+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:51:59.240+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:52:06.259+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:52:49.518+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:53:44.994+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:53:59.740+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:54:28.297+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:54:49.508+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:55:44.714+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:56:06.030+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T15:56:29.103+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:00:27.482+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:00:38.185+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-2] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:03:07.335+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:03:20.722+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:03:49.325+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:04:03.012+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:04:40.582+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:05:01.340+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:06:04.564+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-8] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:07:19.417+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:07:50.617+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:08:07.478+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:08:17.425+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:08:51.107+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:09:01.969+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:09:21.584+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:15:38.486+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:15:57.676+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:16:20.389+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:16:35.822+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:16:52.713+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:17:05.978+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:17:25.942+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:17:59.200+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:18:24.472+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:18:53.056+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:19:03.629+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:19:23.408+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:19:41.837+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:20:18.663+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:20:41.342+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:20:59.883+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:21:33.842+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:21:52.838+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:22:14.508+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:22:25.571+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:23:02.650+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:23:23.790+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:23:42.433+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:23:52.899+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:24:07.149+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:24:23.981+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:25:04.358+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:25:41.336+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:26:21.016+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:27:07.573+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:27:37.841+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:32:32.690+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:32:47.701+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:32:56.014+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:33:06.441+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:33:12.029+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:33:22.932+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:33:30.421+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:33:36.090+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:33:42.043+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-2] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:33:48.421+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:33:54.094+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:34:02.354+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:34:13.225+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:34:31.036+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-2] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:34:45.379+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:34:51.496+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:35:48.445+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:36:16.688+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:37:58.628+02:00  WARN 5796 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T16:59:44.835+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.11 with PID 23360 (C:\Users\marta\Desktop\marta\programmazione\betacom\finalFrontEnd\target\classes started by marta in C:\Users\marta\Desktop\marta\programmazione\betacom\finalFrontEnd)
+2024-08-09T16:59:44.838+02:00 DEBUG 23360 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-09T16:59:44.839+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-09T16:59:44.905+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-09T16:59:44.905+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-09T16:59:46.085+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-09T16:59:46.098+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-09T16:59:46.099+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-09T16:59:46.151+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-09T16:59:46.152+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1246 ms
+2024-08-09T16:59:46.317+02:00  WARN 23360 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 55ef53e5-a3a5-4676-b0bb-0222c11ced6f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-09T16:59:46.398+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-09T16:59:46.554+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@14a83a46, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@322586f8, org.springframework.security.web.context.SecurityContextHolderFilter@10db5947, org.springframework.security.web.header.HeaderWriterFilter@4d3d9fa1, org.springframework.web.filter.CorsFilter@5de17e7, org.springframework.security.web.csrf.CsrfFilter@1455b4b7, org.springframework.security.web.authentication.logout.LogoutFilter@4db2ce5f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@32744e56, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7cfad8fa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@60ee9e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@3182e53e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c0c6bb9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@327247a8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@554f8ede, org.springframework.security.web.access.ExceptionTranslationFilter@3c89e7a2, org.springframework.security.web.access.intercept.AuthorizationFilter@7cf1329d]
+2024-08-09T16:59:46.731+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-09T16:59:46.764+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-09T16:59:46.777+02:00  INFO 23360 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 2.404 seconds (process running for 2.84)
+2024-08-09T17:00:35.738+02:00  INFO 23360 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-09T17:00:35.738+02:00  INFO 23360 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-09T17:00:35.739+02:00  INFO 23360 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-09T17:00:47.845+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:02:12.786+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:02:55.809+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-9] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:07:54.033+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-6] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:08:46.651+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-8] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:08:55.075+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:09:02.023+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:09:22.312+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:10:17.604+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:10:29.259+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-8] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:11:07.340+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:11:32.718+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:12:30.656+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:12:37.569+02:00  WARN 23360 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:13:37.371+02:00 ERROR 23360 --- [FinalProjectFE] [http-nio-9090-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9090-exec-2] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]" - line 79, col 3)
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]" - line 79, col 3)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: org.attoparser.ParseException: (Line = 79, Column = 3) Incomplete structure: "<div class="content" style="padding: 0px"">
+			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  				<div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="https://www.gkmoda.com/wp-content/uploads/2018/10/stock-abbigliamento.jpg" class="d-block w-100" alt="abiti appesi agli attaccappani">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://www.italian-stock.it/photos/big-thumbs/25984-1620987924.jpeg" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://media.istockphoto.com/id/1197952617/it/foto/ragazzo-latinoamericano-che-prova-un-maglione-in-cima-in-un-negozio-di-abbigliamento-maschile.jpg?s=612x612&w=0&k=20&c=hs4fjN7NCbcYJ3BV-zUvPWkaZh2EvTYPSN2Dc19yBcM=" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://stockitaly24.com/cdn/shop/files/woman-g0cdd9ec02_1920.jpg?v=1654605957&width=1500" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://media.istockphoto.com/id/1180178546/it/foto/donna-bruna-in-vacanza-a-maiorca.jpg?s=612x612&w=0&k=20&c=3caU-mx1ljGE-11D0gvRtjo2xyTZSPI2a7mzonsNGoU=" class="d-block w-100">
+				    </div>
+  				</div>
+	  			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+	  			</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+		<div class="highlighted-products">
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the
+						card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the
+						card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 107 common frames omitted
+
+2024-08-09T17:13:37.384+02:00 ERROR 23360 --- [FinalProjectFE] [http-nio-9090-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]" - line 79, col 3)] with root cause
+
+org.attoparser.ParseException: (Line = 79, Column = 3) Incomplete structure: "<div class="content" style="padding: 0px"">
+			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  				<div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="https://www.gkmoda.com/wp-content/uploads/2018/10/stock-abbigliamento.jpg" class="d-block w-100" alt="abiti appesi agli attaccappani">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://www.italian-stock.it/photos/big-thumbs/25984-1620987924.jpeg" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://media.istockphoto.com/id/1197952617/it/foto/ragazzo-latinoamericano-che-prova-un-maglione-in-cima-in-un-negozio-di-abbigliamento-maschile.jpg?s=612x612&w=0&k=20&c=hs4fjN7NCbcYJ3BV-zUvPWkaZh2EvTYPSN2Dc19yBcM=" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://stockitaly24.com/cdn/shop/files/woman-g0cdd9ec02_1920.jpg?v=1654605957&width=1500" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://media.istockphoto.com/id/1180178546/it/foto/donna-bruna-in-vacanza-a-maiorca.jpg?s=612x612&w=0&k=20&c=3caU-mx1ljGE-11D0gvRtjo2xyTZSPI2a7mzonsNGoU=" class="d-block w-100">
+				    </div>
+  				</div>
+	  			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+	  			</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+		<div class="highlighted-products">
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the
+						card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the
+						card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-08-09T17:13:45.125+02:00 ERROR 23360 --- [FinalProjectFE] [http-nio-9090-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9090-exec-4] Exception processing template "index": An error happened during template parsing (template: "class path resource [templates/index.html]" - line 79, col 3)
+
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]" - line 79, col 3)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: org.attoparser.ParseException: (Line = 79, Column = 3) Incomplete structure: "<div class="content" style="padding: 0px"">
+			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  				<div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="https://www.gkmoda.com/wp-content/uploads/2018/10/stock-abbigliamento.jpg" class="d-block w-100" alt="abiti appesi agli attaccappani">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://www.italian-stock.it/photos/big-thumbs/25984-1620987924.jpeg" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://media.istockphoto.com/id/1197952617/it/foto/ragazzo-latinoamericano-che-prova-un-maglione-in-cima-in-un-negozio-di-abbigliamento-maschile.jpg?s=612x612&w=0&k=20&c=hs4fjN7NCbcYJ3BV-zUvPWkaZh2EvTYPSN2Dc19yBcM=" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://stockitaly24.com/cdn/shop/files/woman-g0cdd9ec02_1920.jpg?v=1654605957&width=1500" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://media.istockphoto.com/id/1180178546/it/foto/donna-bruna-in-vacanza-a-maiorca.jpg?s=612x612&w=0&k=20&c=3caU-mx1ljGE-11D0gvRtjo2xyTZSPI2a7mzonsNGoU=" class="d-block w-100">
+				    </div>
+  				</div>
+	  			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+	  			</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+		<div class="highlighted-products">
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the
+						card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the
+						card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	... 107 common frames omitted
+
+2024-08-09T17:13:45.131+02:00 ERROR 23360 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates/index.html]" - line 79, col 3)] with root cause
+
+org.attoparser.ParseException: (Line = 79, Column = 3) Incomplete structure: "<div class="content" style="padding: 0px"">
+			<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  				<div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <img src="https://www.gkmoda.com/wp-content/uploads/2018/10/stock-abbigliamento.jpg" class="d-block w-100" alt="abiti appesi agli attaccappani">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://www.italian-stock.it/photos/big-thumbs/25984-1620987924.jpeg" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://media.istockphoto.com/id/1197952617/it/foto/ragazzo-latinoamericano-che-prova-un-maglione-in-cima-in-un-negozio-di-abbigliamento-maschile.jpg?s=612x612&w=0&k=20&c=hs4fjN7NCbcYJ3BV-zUvPWkaZh2EvTYPSN2Dc19yBcM=" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://stockitaly24.com/cdn/shop/files/woman-g0cdd9ec02_1920.jpg?v=1654605957&width=1500" class="d-block w-100">
+				    </div>
+				    <div class="carousel-item">
+				      <img src="https://media.istockphoto.com/id/1180178546/it/foto/donna-bruna-in-vacanza-a-maiorca.jpg?s=612x612&w=0&k=20&c=3caU-mx1ljGE-11D0gvRtjo2xyTZSPI2a7mzonsNGoU=" class="d-block w-100">
+				    </div>
+  				</div>
+	  			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Previous</span>
+	  			</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+		<div class="highlighted-products">
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the
+						card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+			<div class="card" style="width: 18rem;">
+				<img src="..." class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">Card title</h5>
+					<p class="card-text">Some quick example text to build on the
+						card title and make up the bulk of the card's content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+"
+	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:366) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-08-09T17:14:08.205+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.11 with PID 9988 (C:\Users\marta\Desktop\marta\programmazione\betacom\finalFrontEnd\target\classes started by marta in C:\Users\marta\Desktop\marta\programmazione\betacom\finalFrontEnd)
+2024-08-09T17:14:08.207+02:00 DEBUG 9988 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-09T17:14:08.208+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-09T17:14:08.291+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-09T17:14:08.293+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-09T17:14:09.460+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-09T17:14:09.472+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-09T17:14:09.472+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-09T17:14:09.524+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-09T17:14:09.524+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1230 ms
+2024-08-09T17:14:09.696+02:00  WARN 9988 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: f97bec64-3625-46e9-a931-9b99f058a71c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-09T17:14:09.776+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-09T17:14:09.924+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57a33a58, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4930cf8c, org.springframework.security.web.context.SecurityContextHolderFilter@3c89e7a2, org.springframework.security.web.header.HeaderWriterFilter@5b39297d, org.springframework.web.filter.CorsFilter@3182e53e, org.springframework.security.web.csrf.CsrfFilter@6096aaad, org.springframework.security.web.authentication.logout.LogoutFilter@6bbea040, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@29235ab6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@327247a8, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@15145b00, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@619fe252, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d3d9fa1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74ca097a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b2bc200, org.springframework.security.web.access.ExceptionTranslationFilter@6ea2b279, org.springframework.security.web.access.intercept.AuthorizationFilter@6b28309]
+2024-08-09T17:14:10.091+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-09T17:14:10.124+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-09T17:14:10.136+02:00  INFO 9988 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 2.329 seconds (process running for 2.755)
+2024-08-09T17:14:18.190+02:00  INFO 9988 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-09T17:14:18.191+02:00  INFO 9988 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-09T17:14:18.191+02:00  INFO 9988 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2024-08-09T17:14:23.100+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:15:12.834+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-2] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:15:25.356+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-8] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:15:53.187+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:16:57.935+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:17:19.692+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:18:07.795+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:18:56.132+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:19:26.762+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:20:26.596+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:21:05.288+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:22:48.441+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:23:59.923+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:24:30.194+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-10] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:25:01.412+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:32:36.084+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:32:56.711+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:33:24.919+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:33:48.292+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:34:01.257+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:34:19.736+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:34:30.525+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:35:00.241+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:35:25.206+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:35:52.886+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:36:23.730+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:37:05.810+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:41:28.651+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:41:59.100+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:43:37.572+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:45:19.353+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-8] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:45:50.369+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-3] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
+2024-08-09T17:46:18.964+02:00  WARN 9988 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.w.AbstractFileResourceSet          : Resource for web application [] at path [/...] was not loaded as the canonical path [/] did not match. Use of symlinks is one possible cause.
