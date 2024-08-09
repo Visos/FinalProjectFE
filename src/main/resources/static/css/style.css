@@ -4,6 +4,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #F6F1F1;
 }
 
 .navbar {
@@ -23,6 +24,18 @@ body {
 .navbar-links {
 	display: flex; /* Disporre gli elementi orizzontalmente */
 	gap: 20px; /* Spazio tra gli elementi */
+}
+
+.navbar-brand {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 700;
+}
+
+.nav-item{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	font-weight: 700;
 }
 
 /* login */
@@ -65,8 +78,6 @@ h5 {
 }
 
 /* registrazione */
-
-
 .create-container {
 	display: flex;
 	justify-content: center;
@@ -75,8 +86,6 @@ h5 {
 	background-color: #f8f9fa;
 	flex-direction: column;
 }
-
-
 
 .create-box {
 	width: 600px;
@@ -88,15 +97,11 @@ h5 {
 	margin-top: 50px;
 }
 
-
 .title {
 	color: #4d5eee;
 	font-size: x-large;
 	font-weight: bold;
 }
-
-
-
 
 .inner-box {
 	display: flex;
@@ -104,8 +109,6 @@ h5 {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-
-
 
 .error-message {
 	color: red;
@@ -136,12 +139,13 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	padding: 8px;
 	border: 1px solid #ccc;
 	border-radius: 5px;
-	font-family: 'Montserrat', sans-serif; font-weight : 450;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 450;
 	box-sizing: border-box;
 	font-weight: 450;
 }
 
-.login-button {
+.login-button, .see-button {
 	width: 100%;
 	padding: 10px;
 	border: none;
@@ -172,6 +176,7 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 }
 
 /* INDEX */
+
 .container {
 	display: flex;
 	margin: 20px auto;
@@ -218,16 +223,28 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	background-color: #ffffff;
 }
 
-/* Stili per i prodotti in evidenza */
-.highlighted-products {
-	width: 300px;
-	/* Larghezza fissa o personalizzata per la sezione dei prodotti in evidenza */
-	background-color: #f9f9f9;
-	padding: 20px;
-	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-	margin-left: 20px;
-	/* Spazio tra il contenuto principale e i prodotti in evidenza */
-}
+/* Stili per i nuovi prodotti */
+
+
+        .highlighted-products {
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            margin-left:20px;
+        }
+
+        .highlighted-products .card {
+            width: 100%; /* La card occuperà tutta la larghezza del contenitore */
+            margin-bottom: 15px; /* Spazio tra le card */
+            box-sizing: border-box; /* Include padding e bordi nella larghezza */
+            	font-family: 'Montserrat', sans-serif;
+	font-size: 18px;
+        }
+
+        .highlighted-products .card img {
+            height: auto;
+            width: 100%; /* L'immagine occupa tutta la larghezza della card */
+        }
 
 .highlighted-products h2 {
 	font-family: 'Montserrat', sans-serif;

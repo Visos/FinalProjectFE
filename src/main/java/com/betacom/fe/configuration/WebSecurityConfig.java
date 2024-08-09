@@ -25,53 +25,53 @@ import org.springframework.web.util.UriComponentsBuilder;
 @EnableWebSecurity
 public class WebSecurityConfig {
 	
-	@Autowired
-	RestTemplate rest;
-	
-	
-	@Value("${jpa.backend}")
-	String backend;
-	
-	
-	@Bean
-	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-		http.authorizeHttpRequests((requests) -> requests
-				.requestMatchers("/admin", "/admin/**").hasRole("ADMIN")
-				.requestMatchers("/").permitAll()
-				.anyRequest().authenticated())
-		.formLogin((form) -> form 
-				.loginPage("/login")
-				.permitAll()
-				)
-		.logout((logout) -> logout.permitAll());
-		return http.build();
-		
-	}
-	
-	@Bean
-	public UserDetailsService userDetailService() {
-		
-		UserDetails user = User.withUsername("user")
-				.password(passwordEncoder().encode("pwd"))
-				.roles("USER")
-				.build();
-		
-		UserDetails user2 = User.withUsername("user2")
-				.password(passwordEncoder().encode("provapwd"))
-				.roles("USER")
-				.build();
-		
-		UserDetails admin = User.withUsername("admin")
-				.password(passwordEncoder().encode("admin"))
-				.roles("ADMIN")
-				.build();
-		
-		return new InMemoryUserDetailsManager(user, user2, admin);
-	}
-	
-	@Bean
-	public PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
+//	@Autowired
+//	RestTemplate rest;
+//	
+//	
+//	@Value("${jpa.backend}")
+//	String backend;
+//	
+//	
+//	@Bean
+//	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+//		http.authorizeHttpRequests((requests) -> requests
+//				.requestMatchers("/admin", "/admin/**").hasRole("ADMIN")
+//				.requestMatchers("/").permitAll()
+//				.anyRequest().authenticated())
+//		.formLogin((form) -> form 
+//				.loginPage("/login")
+//				.permitAll()
+//				)
+//		.logout((logout) -> logout.permitAll());
+//		return http.build();
+//		
+//	}
+//	
+//	@Bean
+//	public UserDetailsService userDetailService() {
+//		
+//		UserDetails user = User.withUsername("user")
+//				.password(passwordEncoder().encode("pwd"))
+//				.roles("USER")
+//				.build();
+//		
+//		UserDetails user2 = User.withUsername("user2")
+//				.password(passwordEncoder().encode("provapwd"))
+//				.roles("USER")
+//				.build();
+//		
+//		UserDetails admin = User.withUsername("admin")
+//				.password(passwordEncoder().encode("admin"))
+//				.roles("ADMIN")
+//				.build();
+//		
+//		return new InMemoryUserDetailsManager(user, user2, admin);
+//	}
+//	
+//	@Bean
+//	public PasswordEncoder passwordEncoder() {
+//		return new BCryptPasswordEncoder();
+//	}
 
 }

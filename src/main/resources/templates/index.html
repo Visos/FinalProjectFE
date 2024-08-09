@@ -5,48 +5,163 @@
 <link rel="stylesheet" href="../css/style.css">
 <title>Project Academy</title>
 </head>
-<body>
+<body style="background-color: #F6F1F1;">
 	<nav th:insert="~{fragments/header}"></nav>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		th:insert="~{fragments/header-utente}"></nav>
 
 	<div class="container">
-		<div class="sidebar">
-			<h2>Prodotti</h2>
+		<div class="sidebar"
+			style="background-color: white; width: 300px; padding-left: 30px">
+			<h2 align="center"
+				style="line-height: 30px; color: #146C94; font-weight: bold">I
+				nostri capi</h2>
 			<ul>
-				<li><i class="fa-solid fa-shirt"></i></i> Magliette</li>
-				<li>Camicie</li>
-				<li>Vestiti</li>
-				<li>Pantaloni</li>
-				<li><i class="fa-solid fa-shoe-prints"></i> Scarpe</li>
+				<li style="height: 60px"><a
+					style="cursor: pointer; text-decoration: none; color: black"
+					th:href="@{/listMagliette}"> <svg width="40px" height="40px"
+							viewBox="0 0 1024 1024" class="icon" version="1.1"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M768 464c0 80 0 264 16 480H240c16-216 16-400 16-480l-136-56s28.88-128 40-184c18.08-91.04 151.52-140.88 224-144h256c72.48 2.96 205.92 52.8 224 144 11.12 56 40 184 40 184z"
+								fill="#19A7CE" />
+							<path d="M640 80c0 88-57.36 160-128 160s-128-71.52-128-160z"
+								fill="#146C94" />
+							<path
+								d="M202.72 145.36A132.24 132.24 0 0 0 160 216c-11.12 56-40 192-40 192l144 56c0-107.36 8.8-228.32-61.28-318.64zM864 216a132.24 132.24 0 0 0-42.72-70.64C751.2 235.68 760 356.64 760 464l144-56s-28.88-136-40-192z"
+								fill="#AFD3E2" />
+							<path d="M784 944H240q2.16-28.4 3.84-56h536q2 27.6 4.16 56z"
+								fill="#AFD3E2" />
+						</svg> <span>Magliette</span>
+				</a></li>
+				<li style="height: 60px"><a
+					style="cursor: pointer; text-decoration: none; color: black"
+					th:href="@{/listCamicie}"> <svg width="40px" height="40px"
+							viewBox="0 0 1024 1024" class="icon" version="1.1"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M904 440s-28.88-128-40-184c-16-78.48-116.8-126.32-190.88-139.92a32.72 32.72 0 0 1-15.52-7.28L624 80H400l-33.68 28.88a32.72 32.72 0 0 1-15.52 7.28C276.8 129.68 176 177.52 160 256c-11.12 56-40 184-40 184l136 56c0 80 0 264-16 480h544c-16-216-16-400-16-480z"
+								fill="#19A7CE" />
+							<path
+								d="M400 80l-64 40 120 192 56-72-112-160zM624 80l64 40-120 192-56-72 112-160z"
+								fill="#AFD3E2" />
+							<path
+								d="M202.72 177.36A132.24 132.24 0 0 0 160 248c-11.12 56-40 192-40 192l144 56c0-107.36 8.8-228.32-61.28-318.64zM864 248a132.24 132.24 0 0 0-42.72-70.64C751.2 267.68 760 388.64 760 496l144-56s-28.88-136-40-192z"
+								fill="#19A7CE" />
+						</svg> <span>Camicie</span>
+				</a></li>
+				<li style="height: 60px"><a
+					style="cursor: pointer; text-decoration: none; color: black"
+					th:href="@{/listVestiti}"> <svg width="40px" height="40px"
+							viewBox="0 0 1024 1024" class="icon" version="1.1"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M629.52 438.88c-1.84-2.24-3.6-4.56-5.52-6.88 0-104 32-208 80-240 0 0-32-8-32-56s32-56 32-56H616s-8 119.44-104 119.44S408 80 408 80H320s32 8 32 56-32 56-32 56c48 32 80 136 80 240-1.84 2.24-3.68 4.56-5.52 6.88A772.08 772.08 0 0 0 512 448a772.08 772.08 0 0 0 117.52-9.12z"
+								fill="#19A7CE" />
+							<path
+								d="M629.52 438.88A772.08 772.08 0 0 1 512 448a772.08 772.08 0 0 1-117.52-9.12C239.12 630.56 200 904 200 904c38 48.48 91.04 56 160 0 40.48 53.52 112 51.04 152 0 40 51.04 111.52 53.52 152 0 69.04 56 122 48.48 160 0 0 0-39.12-273.44-194.48-465.12z"
+								fill="#146C94" />
+						</svg> <span>Vestiti</span>
+				</a></li>
+				<li style="height: 60px"><a
+					style="cursor: pointer; text-decoration: none; color: black"
+					th:href="@{/listPantaloni}"> <svg width="40px" height="40px"
+							viewBox="0 0 1024 1024" class="icon" version="1.1"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M752 336V80H272v256c0 120-16 608-16 608h200s40-264 56-608c16 344 56 608 56 608h200s-16-488-16-608z"
+								fill="#19A7CE" />
+							<path d="M272 80h480v48H272z" fill="#AFD3E2" />
+							<path
+								d="M272 295.6C360.96 238.64 365.36 128 365.36 128H272zM752 295.6C663.04 238.64 658.64 128 658.64 128H752z"
+								fill="#146C94" />
+						</svg> <span>Pantaloni</span>
+				</a></li>
+				<li style="height: 60px"><a
+					style="cursor: pointer; text-decoration: none; color: black"
+					th:href="@{/listScarpe}"> <svg width="40px" height="40px"
+							viewBox="0 0 1024 1024" class="icon" version="1.1"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M552 488m-16 0a16 16 0 1 0 32 0 16 16 0 1 0-32 0Z"
+								fill="#AFD3E2" />
+							<path d="M496 456m-16 0a16 16 0 1 0 32 0 16 16 0 1 0-32 0Z"
+								fill="#AFD3E2" />
+							<path d="M440 424m-16 0a16 16 0 1 0 32 0 16 16 0 1 0-32 0Z"
+								fill="#AFD3E2" />
+							<path
+								d="M312 648v48H112c-14.56 0-29.12-6.64-31.6-56H312zM939.2 640a34 34 0 0 1 6.8 22.96c0 25.04-13.76 33.04-26 33.04H528c-88 0-216-48-216-48v-8z"
+								fill="#146C94" />
+							<path
+								d="M187.04 393.44l-0.48 2.4C166.48 451.28 140.72 544 149.12 640h-68.72c0-4.88-0.4-10.24-0.4-16 0-64 0-136 48-248a282.4 282.4 0 0 0 59.04 17.44z"
+								fill="#146C94" />
+							<path
+								d="M939.2 640H149.12c-8.4-96 17.36-188.72 37.44-244.16l0.48-2.4A273.28 273.28 0 0 0 408 336c128 56 160 120 296 120 152 0 216 72 216 176a24.48 24.48 0 0 1 19.2 8zM568 488a16 16 0 1 0-16 16 16 16 0 0 0 16-16z m-56-32a16 16 0 1 0-16 16 16 16 0 0 0 16-16z m-56-32a16 16 0 1 0-16 16 16 16 0 0 0 16-16z"
+								fill="#19A7CE" />
+						</svg> <span>Scarpe</span>
+				</a></li>
+				<li style="height: 60px"><a
+					style="cursor: pointer; text-decoration: none; color: black"
+					th:href="@{/listAll}"> <svg xmlns="http://www.w3.org/2000/svg"
+							width="30px" height="30px" class="bi bi-tags-fill"
+							viewBox="0 0 16 16">
+	  						<path
+								d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
+								fill="#19A7CE" />
+	  						<path
+								d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z"
+								fill="#146C94" />
+						</svg> <span>Tutto l'abbigliamento</span>
+				</a></li>
 			</ul>
 		</div>
-		<div class="content">
-			<!-- Contenuto principale della pagina -->
-			<h1 align="center">Benvenuto nel sito</h1>
-		</div>
-		<div class="highlighted-products">
-			<div class="card" style="width: 18rem;">
-				<img src="..." class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the
-						card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+<div>
+			<div align="center">Scopri il tuo stile</div>
+			<div class="content" style="background-color: #F6F1F1;">
+				<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+	  				<div class="carousel-inner">
+					    <div class="carousel-item active">
+					      <img src="https://st.depositphotos.com/2209782/2833/i/450/depositphotos_28336025-stock-photo-clothes-on-a-rack.jpg" alt="abiti appesi agli attaccappani">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="https://media.istockphoto.com/id/1257563298/it/foto/vestiti-di-moda-su-un-rack-in-uno-sfondo-leggero-allinterno-posto-per-il-testo.jpg?s=612x612&w=0&k=20&c=zzZVFXf_ttiHpFsHGF8UdDO1Mp3Fw2WptKfRBmb_hpg=" class="d-block w-100">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="https://media.istockphoto.com/id/854321536/it/foto/guarda-questo-splendido-vestito.jpg?s=612x612&w=0&k=20&c=bJn31pxzTwWk3vR_4bXc38Crcwie-NQb95_T0VnA_tM=" class="d-block w-100">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="https://st.depositphotos.com/1000137/2375/i/450/depositphotos_23753813-stock-photo-variety-of-clothes-hanging-on.jpg" class="d-block w-100">
+					    </div>
+					    <div class="carousel-item">
+					      <img src="https://media.istockphoto.com/id/955641488/it/foto/negozio-di-abbigliamento-costume-abito-fashion-store-stile-concetto.jpg?s=612x612&w=0&k=20&c=jtQOpt6TtiiPKebEfjwQxyCvVXBA_vbtPifcaIFlWqA=" class="d-block w-100">
+					    </div>
+	  				</div>
+		  			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Previous</span>
+		  			</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					    <span class="visually-hidden">Next</span>
+					</button>
 				</div>
 			</div>
-			<div class="card" style="width: 18rem;">
-				<img src="..." class="card-img-top" alt="...">
-				<div class="card-body">
-					<h5 class="card-title">Card title</h5>
-					<p class="card-text">Some quick example text to build on the
-						card title and make up the bulk of the card's content.</p>
-					<a href="#" class="btn btn-primary">Go somewhere</a>
+		</div>
+		<div class="highlighted-products">
+			<h2 align="center"
+				style="line-height: 30px; color: #146C94; font-weight: bold">Novità</h2>
+			<div class="cards-container">
+				<div class="card">
+					<img src="../img/camicia1.jpg" class="card-img-top" alt="Scarpe">
+					<div class="card-body">
+						<h5 class="card-title">Nome prodotto</h5>
+						<p class="card-text">Prezzo</p>
+						<button href="#" class="see-button" style="font-size: 18px;">visualizza </button>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
-	<!-- Link al Font Awesome per le icone -->
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+s
 </body>
 </html>
