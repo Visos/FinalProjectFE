@@ -177,12 +177,10 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 
 /* INDEX */
 
-.container {
+.container, .card-container {
 	display: flex;
 	margin: 20px auto;
-	/* Aggiunge margine verticale e centra il contenitore */
 	max-width: 1200px;
-	/* Puoi aggiustare questa larghezza come preferisci */
 }
 
 /* Stili per la barra laterale */
@@ -223,17 +221,17 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	background-color: #ffffff;
 }
 
-/* Stili per i nuovi prodotti */
 
 
-        .highlighted-products {
+
+        .new-product {
             background-color: white;
             width: 300px;
             padding: 20px;
             margin-left:20px;
         }
 
-        .highlighted-products .card {
+        .new-product .card {
             width: 100%; /* La card occuperà tutta la larghezza del contenitore */
             margin-bottom: 15px; /* Spazio tra le card */
             box-sizing: border-box; /* Include padding e bordi nella larghezza */
@@ -241,28 +239,93 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	font-size: 18px;
         }
 
-        .highlighted-products .card img {
+        .new-product .card img {
             height: auto;
             width: 100%; /* L'immagine occupa tutta la larghezza della card */
         }
 
-.highlighted-products h2 {
+.new-product h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	margin-bottom: 15px;
 }
 
-.highlighted-products ul {
+.new-product ul {
 	list-style: none;
 	padding: 0;
 }
 
-.highlighted-products ul li {
+.new-product ul li {
 	margin-bottom: 10px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 }
 
-.highlighted-products ul li i {
-	margin-right: 10px; /* Spazio tra l'icona e il testo */
+.new-product ul li i {
+	margin-right: 10px; 
+}
+
+.highlight{
+
+	margin-top:100px;
+}
+
+
+.images-index {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin: 0 auto; 
+    max-width: 1200px; 
+}
+
+.image-item {
+    position: relative;
+    flex: 0 1 calc(33.33% - 20px);
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s; 
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.image-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+.image-item:hover img {
+    transform: scale(1.05); 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    opacity: 0; 
+    transition: opacity 0.3s; 
+}
+
+.image-item:hover .overlay {
+    opacity: 1; 
+}
+
+.text {
+    font-size: 20px; 
+    text-align: center;
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
+    cursor: pointer; 
 }
