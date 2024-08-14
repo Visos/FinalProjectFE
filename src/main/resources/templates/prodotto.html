@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="../css/style.css">
+		<title>Project Academy</title>
+	</head>
+	<body>
+		<nav th:insert="~{fragments/header}"></nav>
+		<nav class="navbar navbar-expand-lg bg-body-tertiary" th:insert="~{fragments/header-utente}"></nav>
+		
+		<div style="display: flex; justify-content: center; margin-top: 40px; border:1px solid black; gap: 40px">
+			<img src="../img/camicia1.jpg" style="width: 500px; border: 1px solid black"	>
+			<div style="border: 1px solid black;">
+				<h3>Marca</h3>
+				<div style="display: flex; flex-direction: column; gap: 5px">
+					<div class="filtri">Prezzo</div>
+					<div class="filtri">Materiale</div>
+					<div class="filtri">Fantasia</div>
+					<div class="filtri">Colore</div>
+					<div class="filtri">Sesso</div>
+					<div class="filtri">Taglia</div>
+					<div class="filtri">Vestibilità</div>
+					<div class="filtri">lunghezza della manica</div>
+					<div class="filtri">Tipo di colletto</div>
+					<div class="filtri">lunghezza</div>
+					<div class="filtri">Numero di scarpa</div>
+					<div class="filtri">Chiusura</div>
+					<div class="filtri">tipo di scarpa</div>
+					<button class="login-button">Acquista</button>
+					<button class="login-button">Aggiungi al carrello
+					<svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_15_35)">
+							<rect width="24" height="24" fill="#19A7CE" />
+							<path d="M5.33331 6H19.8672C20.4687 6 20.9341 6.52718 20.8595 7.12403L20.1095 13.124C20.0469 13.6245 19.6215 14 19.1172 14H16.5555H9.44442H7.99998" stroke="#000000" stroke-linejoin="round"/>
+							<path d="M2 4H4.23362C4.68578 4 5.08169 4.30341 5.19924 4.74003L8.30076 16.26C8.41831 16.6966 8.81422 17 9.26638 17H19" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+							<circle cx="10" cy="20" r="1" stroke="#000000" stroke-linejoin="round"/>
+							<circle cx="17.5" cy="20" r="1" stroke="#000000" stroke-linejoin="round"/>
+						</g>
+						<defs>
+							<clipPath id="clip0_15_35">
+								<rect width="24" height="24"/>
+							</clipPath>
+						</defs>
+					</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
