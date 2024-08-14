@@ -11,11 +11,12 @@
 		th:insert="~{fragments/header-utente}"></nav>
 
 	<div class="container" style="flex-direction: column;">
-		<div>
+		<div style="display: flex; align-items: flex-start;">
 			<div class="sidebar"
-			style="background-color: white; width: 300px; padding-left: 30px">
+				style="background-color: white; width: 300px; padding-left: 30px">
 				<h2 align="center"
-				style="line-height: 30px; color: #146C94; font-weight: bold">I nostri capi</h2>
+					style="line-height: 30px; color: #146C94; font-weight: bold">I
+					nostri capi</h2>
 				<ul>
 					<li style="height: 60px"><a
 						style="cursor: pointer; text-decoration: none; color: black"
@@ -99,38 +100,134 @@
 									fill="#19A7CE" />
 							</svg> <span>Scarpe</span>
 					</a></li>
-					<li style="height: 60px">
-						<a style="cursor: pointer; text-decoration: none; color: black" th:href="@{/listAll}">
-							<svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" class="bi bi-tags-fill" viewBox="0 0 16 16">
-		  						<path d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" fill="#19A7CE" />
-		  						<path d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z" fill="#146C94" />
-							</svg>
-							<span>Tutto l'abbigliamento</span>
-						</a>
-					</li>
+					<li style="height: 60px"><a
+						style="cursor: pointer; text-decoration: none; color: black"
+						th:href="@{/listAll}"> <svg xmlns="http://www.w3.org/2000/svg"
+								width="30px" height="30px" class="bi bi-tags-fill"
+								viewBox="0 0 16 16">
+		  						<path
+									d="M2 2a1 1 0 0 1 1-1h4.586a1 1 0 0 1 .707.293l7 7a1 1 0 0 1 0 1.414l-4.586 4.586a1 1 0 0 1-1.414 0l-7-7A1 1 0 0 1 2 6.586zm3.5 4a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"
+									fill="#19A7CE" />
+		  						<path
+									d="M1.293 7.793A1 1 0 0 1 1 7.086V2a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l.043-.043z"
+									fill="#146C94" />
+							</svg> <span>Tutto l'abbigliamento</span>
+					</a></li>
 				</ul>
 			</div>
+			<div class="filters"
+				style="width: 100%; display: flex; flex-wrap: wrap; gap: 20px;">
+				<h2 align="center"
+					style="color: #146C94; font-weight: bold; width: 100%; margin-bottom: 20px;">Filtri</h2>
+				<form
+					style="display: flex; flex-wrap: wrap; gap: 20px; width: 100%;">
+					<div style="flex: 1 1 22%; min-width: 200px;">
+						<label class="form-label">Colore</label> <select
+							class="form-select" multiple aria-label="Multiple select example">
+							<option selected>Qualsiasi</option>
+							<option value="id_blu">Blu</option>
+							<option value="id_nero">Nero</option>
+							<option value="id_bianco">Bianco</option>
+							<option value="...">......</option>
+						</select>
+					</div>
+					<div style="flex: 1 1 22%; min-width: 200px;">
+						<label class="form-label">Fantasia</label> <select
+							class="form-select" multiple aria-label="Multiple select example">
+							<option selected>Qualsiasi</option>
+							<option value="id_blu">Blu</option>
+							<option value="id_nero">Nero</option>
+							<option value="id_bianco">Bianco</option>
+							<option value="...">......</option>
+						</select>
+					</div>
+					<div style="flex: 1 1 22%; min-width: 200px;">
+						<label class="form-label">Marca</label> <select
+							class="form-select" multiple aria-label="Multiple select example">
+							<option selected>Qualsiasi</option>
+							<option value="id_blu">Blu</option>
+							<option value="id_nero">Nero</option>
+							<option value="id_bianco">Bianco</option>
+							<option value="...">......</option>
+						</select>
+					</div>
+					<div style="flex: 1 1 22%; min-width: 200px;">
+						<label class="form-label">Materiale</label> <select
+							class="form-select" multiple aria-label="Multiple select example">
+							<option selected>Qualsiasi</option>
+							<option value="id_blu">Blu</option>
+							<option value="id_nero">Nero</option>
+							<option value="id_bianco">Bianco</option>
+							<option value="...">......</option>
+						</select>
+					</div>
+					<div style="flex: 1 1 22%; min-width: 200px;">
+						<label class="form-label">Colletto</label> <select
+							class="form-select" multiple aria-label="Multiple select example">
+							<option selected>Qualsiasi</option>
+							<option value="id_blu">Blu</option>
+							<option value="id_nero">Nero</option>
+							<option value="id_bianco">Bianco</option>
+							<option value="...">......</option>
+						</select>
+					</div>
+					<div style="flex: 1 1 22%; min-width: 200px;">
+						<label class="form-label">Taglia</label> <select
+							class="form-select" multiple aria-label="Multiple select example">
+							<option selected>Qualsiasi</option>
+							<option value="id_blu">Blu</option>
+							<option value="id_nero">Nero</option>
+							<option value="id_bianco">Bianco</option>
+							<option value="...">......</option>
+						</select>
+					</div>
+					<div style="flex: 1 1 22%; min-width: 200px;">
+						<label class="form-label">Manica</label> <select
+							class="form-select" multiple aria-label="Multiple select example">
+							<option selected>Qualsiasi</option>
+							<option value="id_blu">Blu</option>
+							<option value="id_nero">Nero</option>
+							<option value="id_bianco">Bianco</option>
+							<option value="...">......</option>
+						</select>
+					</div>
+					<div style="flex: 1 1 22%; min-width: 200px;">
+						<label class="form-label">Vestibilità</label> <select
+							class="form-select" multiple aria-label="Multiple select example">
+							<option selected>Qualsiasi</option>
+							<option value="id_blu">Blu</option>
+							<option value="id_nero">Nero</option>
+							<option value="id_bianco">Bianco</option>
+							<option value="...">......</option>
+						</select>
+					</div>
+					<button type="submit" class="login-button">Conferma</button>
+				</form>
+			</div>
+
 		</div>
 		<div class="highlight"
 			style="justify-content: space-around; margin-top: 50px;">
 			<div>
 				<h2 align="center"
-					style="color: #146C94; font-weight: bold; margin-bottom: 20px;">Tutte le magliette</h2>
+					style="color: #146C94; font-weight: bold; margin-bottom: 20px;">Tutte
+					le magliette</h2>
 			</div>
-	
-	
+
+
 			<div class="card-container"
 				style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 				<div class="card" style="width: 18rem; margin-bottom: 20px;">
 					<img src="../img/camicia1.jpg" class="card-img-top" alt="Scarpe">
 					<div class="card-body">
 						<h5 class="card-title">Nome prodotto</h5>
+						<p class="card-text">Altri parametri......</p>
 						<p class="card-text">Prezzo</p>
 						<button href="#" class="see-button" style="font-size: 18px;">visualizza
 						</button>
 					</div>
 				</div>
-	
+
 				<div class="card" style="width: 18rem; margin-bottom: 20px;">
 					<img src="../img/camicia1.jpg" class="card-img-top" alt="Scarpe">
 					<div class="card-body">
@@ -140,7 +237,7 @@
 						</button>
 					</div>
 				</div>
-	
+
 				<div class="card" style="width: 18rem; margin-bottom: 20px;">
 					<img src="../img/camicia1.jpg" class="card-img-top" alt="Scarpe">
 					<div class="card-body">
