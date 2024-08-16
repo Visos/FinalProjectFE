@@ -183,6 +183,11 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	max-width: 1200px;
 }
 
+.carrello{
+	margin: 20px auto;
+	max-width: 1200px;
+}
+
 /* Stili per la barra laterale */
 .sidebar {
 	width: 250px;
