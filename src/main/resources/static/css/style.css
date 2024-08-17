@@ -400,3 +400,58 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	font-weight: 700;
 }	
 
+.ordine {
+	width: 50%;
+	background-color: white;
+	border-radius: 10px;
+	margin-left: 25%;
+	margin-top: 30px;
+}
+
+.ordine-btn {
+	width: 200px;
+}
+
+.ordine-top {
+	border-bottom: 1px solid #146C94;
+	background-color: #146C94;
+	color: white;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	font-size: 20px;
+	display: flex;
+	padding: 20px;
+	gap: 60px;
+}
+
+.ordine-bottom {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.ordine-bottom-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	justify-content: center;
+}
+
+.order-img {
+	width: 200px;
+}
+
+.ordine-bottom-top {
+	display: flex;
+}
+
+.order-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.order-bottom-top-inner {
+	display: flex;
+	flex-direction: column;
+	margin-left: 20px;
+}
