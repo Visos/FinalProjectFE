@@ -1,0 +1,304 @@
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+.hidden {
+	display: none;
+}
+</style>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+	crossorigin="anonymous">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/style.css">
+<meta charset="UTF-8">
+<title>Progetto finale</title>
+</head>
+<body style="background-color: #F6F1F1;">
+	<nav th:insert="~{fragments/header}"></nav>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		th:insert="~{fragments/header-admin}"></nav>
+	<div class="create-container">
+		<div>
+			<h3>NUOVO PRODOTTO</h3>
+		</div>
+		<form action="#" class="create-box form-group">
+			<div>
+				<div class="mb-3">
+					<label class="form-label">Marca</label> <select id="marca"
+						name="marca">
+
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="...">...</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Colore</label> <select id="colore"
+						name="colore">
+
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="...">...</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Fantasia</label> <select id="fantasia"
+						name="fantasia">
+
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="...">...</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Materiale</label> <select id="materiale"
+						name="materiale">
+
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="...">...</option>
+					</select>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label">Prezzo</label> <input type="text">
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label">Quantità</label> <input type="number"
+						min=0>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Sesso</label> <select id="sesso"
+						name="sesso">
+						<option value=""></option>
+						<option value="M">M</option>
+						<option value="F">F</option>
+						<option value="Unisex">Unisex</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Tipo di prodotto</label> <select
+						id="selezione" name="selezione" onchange="mostraInput()">
+						<option value=""></option>
+						<option value="maglietta">Maglietta</option>
+						<option value="camicia">Camicia</option>
+						<option value="vestito">Vestito</option>
+						<option value="pantaloni">Pantaloni</option>
+						<option value="scarpe">Scarpe</option>
+					</select>
+					<div id="input-maglietta" class="hidden">
+						<div class="mb-3">
+							<label class="form-label">Lunghezza manica</label> <select
+								id="lunghezza_manica" name="lunghezza_manica">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Taglia</label> <select id="taglia"
+								name="taglia">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Tipo colletto</label> <select
+								id="tipo_colletto" name="tipo_colletto">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Vestibilità</label> <select
+								id="vestibilità" name="vestibilità">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+					</div>
+
+					<div id="input-camicia" class="hidden">
+						<div class="mb-3">
+							<label class="form-label">Lunghezza manica</label> <select
+								id="lunghezza_manica" name="lunghezza_manica">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Taglia</label> <select id="taglia"
+								name="taglia">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Tipo colletto</label> <select
+								id="tipo_colletto" name="tipo_colletto">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Vestibilità</label> <select
+								id="vestibilità" name="vestibilità">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+					</div>
+
+					<div id="input-vestito" class="hidden">
+						<div class="mb-3">
+							<label class="form-label">Lunghezza manica</label> <select
+								id="lunghezza_manica" name="lunghezza_manica">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Taglia</label> <select id="taglia"
+								name="taglia">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Lunghezza</label> <select
+								id="lunghezza" name="lunghezza">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Vestibilità</label> <select
+								id="vestibilità" name="vestibilità">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+					</div>
+
+					<div id="input-pantaloni" class="hidden">
+						<div class="mb-3">
+							<label class="form-label">Lunghezza</label> <select
+								id="lunghezza" name="lunghezza">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Taglia</label> <select id="taglia"
+								name="taglia">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Vestibilità</label> <select
+								id="vestibilità" name="vestibilità">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+					</div>
+
+					<div id="input-scarpe" class="hidden">
+						<div class="mb-3">
+							<label class="form-label">Chiusura</label> <select id="chiusura"
+								name="chiusura">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Tipo scarpe</label> <select
+								id="tipo_scarpe" name="tipo_scarpe">
+
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="...">...</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Taglia</label> <input type="text">
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+
+
+
+
+			<div class="buttonLogin" align="center">
+				<button type="submit" class="login-button">conferma</button>
+			</div>
+		</form>
+
+		<script>
+			function mostraInput() {
+				document.getElementById('input-maglietta').style.display = 'none';
+				document.getElementById('input-camicia').style.display = 'none';
+				document.getElementById('input-vestito').style.display = 'none';
+				document.getElementById('input-pantaloni').style.display = 'none';
+				document.getElementById('input-scarpe').style.display = 'none';
+
+				var selezione = document.getElementById('selezione').value;
+
+				if (selezione === 'maglietta') {
+					document.getElementById('input-maglietta').style.display = 'block';
+				} else if (selezione === 'camicia') {
+					document.getElementById('input-camicia').style.display = 'block';
+				} else if (selezione === 'vestito') {
+					document.getElementById('input-vestito').style.display = 'block';
+				} else if (selezione === 'pantaloni') {
+					document.getElementById('input-pantaloni').style.display = 'block';
+				} else if (selezione === 'scarpe') {
+					document.getElementById('input-scarpe').style.display = 'block';
+				}
+			}
+		</script>
+	</div>
+</body>
+</html>

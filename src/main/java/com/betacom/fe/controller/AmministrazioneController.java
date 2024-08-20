@@ -47,5 +47,11 @@ public class AmministrazioneController {
 
 		return null;
 	}
+	
+	@GetMapping("/nuovoProdotto")
+	public ModelAndView nuovoProdotto() {
+		ModelAndView mav = new ModelAndView("nuovo-prodotto");
+		return mav;
+	}
 
 }

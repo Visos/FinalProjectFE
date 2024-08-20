@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/style.css">
+<title>Project Academy</title>
+</head>
+<body style="background-color: #F6F1F1">
+	<nav th:insert="~{fragments/header}"></nav>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		th:insert="~{fragments/header-admin}"></nav>
+
+	<h3 align="center" style="margin-top: 30px; margin-bottom: 20px">Ordini
+		da spedire</h3>
+	<div align="center">
+		<button class="see-button ordine-btn" style="font-size: 18px;">
+			<a th:href="@{/listOrdini}" class="a">Tutti gli ordini</a>
+		</button>
+	</div>
+	<div class="ordine">
+		<div class="ordine-top">
+			<div>
+				Ordine effettuato il: <span>DATA</span>
+			</div>
+			<div>
+				Totale: <span>Totale</span>
+			</div>
+		</div>
+		<div align="center" style="padding:20px;">
+						<button class="see-button ordine-btn" style="font-size: 18px;">
+					<a th:href="@{/ordiniAdmin}" class="a">Segna come spedito</a>
+				</button>
+		</div>
+		<div class="ordine-bottom">
+
+			<div class="ordine-bottom-top">
+				<img alt="" src="../img/camicia1.jpg" class="order-img">
+				<div class="order-bottom-top-inner">
+					<h5 class="order-name">Nome prodotto</h5>
+					<span class="">Altri parametri......</span> <span class="">Altri
+						parametri......</span> <span class="">Altri parametri......</span>
+				</div>
+			</div>
+			<div class="ordine-bottom-inner">
+				<button class="see-button ordine-btn" style="font-size: 18px;">
+					<a th:href="@{/prodotto}" class="a">Visualizza</a>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div class="ordine">
+		<div class="ordine-top">
+			<div>
+				Ordine effettuato il: <span>DATA</span>
+			</div>
+			<div>
+				Totale: <span>Totale</span>
+			</div>
+		</div>
+		<div align="center" style="padding:20px;">
+						<button class="see-button ordine-btn" style="font-size: 18px;">
+					<a th:href="@{/ordiniAdmin}" class="a">Segna come spedito</a>
+				</button>
+		</div>
+		<div class="ordine-bottom">
+			<div class="ordine-bottom-top">
+				<img alt="" src="../img/camicia1.jpg" class="order-img">
+				<div class="order-bottom-top-inner">
+					<h5 class="order-name">Nome prodotto</h5>
+					<span class="">Altri parametri......</span> <span class="">Altri
+						parametri......</span> <span class="">Altri parametri......</span>
+				</div>
+			</div>
+			<div class="ordine-bottom-inner">
+				<button class="see-button ordine-btn" style="font-size: 18px;">
+					<a th:href="@{/prodotto}" class="a">Visualizza</a>
+				</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
