@@ -8,12 +8,12 @@
 <body style="background-color: #F6F1F1">
 	<nav th:insert="~{fragments/header}"></nav>
 	<nav class="navbar navbar-expand-lg bg-body-tertiary"
-		th:insert="~{fragments/header-utente}"></nav>
+		th:insert="~{fragments/header-admin}"></nav>
 
 	<div class="container" style="flex-direction: column;">
 		<div style="display: flex; align-items: flex-start;">
-			<nav th:insert="~{fragments/sidebar}"></nav>
-			
+
+
 
 		</div>
 		<div class="highlight"
@@ -33,7 +33,7 @@
 						<h5 class="card-title">Nome prodotto</h5>
 						<p class="card-text">Altri parametri......</p>
 						<p class="card-text">Prezzo</p>
-			<a th:href="@{prodotto}" class="see-button"
+						<a th:href="@{prodottoAdmin}" class="see-button"
 							style="font-size: 18px;">Visualizza</a>
 					</div>
 				</div>
@@ -44,7 +44,7 @@
 						<h5 class="card-title">Nome prodotto</h5>
 						<p class="card-text">Altri parametri......</p>
 						<p class="card-text">Prezzo</p>
-			<a th:href="@{prodotto}" class="see-button"
+						<a th:href="@{prodottoAdmin}" class="see-button"
 							style="font-size: 18px;">Visualizza</a>
 					</div>
 				</div>
@@ -55,7 +55,7 @@
 						<h5 class="card-title">Nome prodotto</h5>
 						<p class="card-text">Altri parametri......</p>
 						<p class="card-text">Prezzo</p>
-					<a th:href="@{prodotto}" class="see-button"
+						<a th:href="@{prodottoAdmin}" class="see-button"
 							style="font-size: 18px;">Visualizza</a>
 					</div>
 				</div>

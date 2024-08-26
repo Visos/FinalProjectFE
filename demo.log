@@ -1,390 +1,398 @@
-2024-08-19T21:17:04.025+02:00  INFO 7588 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-19T21:17:05.662+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 7588 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
-2024-08-19T21:17:05.663+02:00 DEBUG 7588 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
-2024-08-19T21:17:05.665+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-08-19T21:17:07.569+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2024-08-19T21:17:07.573+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-19T21:17:07.574+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-19T21:17:07.609+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-19T21:17:07.610+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1934 ms
-2024-08-19T21:17:07.719+02:00  WARN 7588 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2024-08-26T09:37:04.551+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 13632 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T09:37:04.607+02:00 DEBUG 13632 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T09:37:04.610+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T09:37:05.088+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-26T09:37:05.094+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-26T09:37:11.877+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T09:37:11.972+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T09:37:11.973+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T09:37:12.397+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T09:37:12.400+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7299 ms
+2024-08-26T09:37:13.303+02:00  WARN 13632 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: 9d6e4f86-dab5-439b-8164-9d23adaf656a
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2024-08-19T21:17:07.749+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2024-08-19T21:17:07.842+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@584a9f5e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6129ea67, org.springframework.security.web.context.SecurityContextHolderFilter@25706791, org.springframework.security.web.header.HeaderWriterFilter@608831ff, org.springframework.web.filter.CorsFilter@17bd011a, org.springframework.security.web.csrf.CsrfFilter@4f88457e, org.springframework.security.web.authentication.logout.LogoutFilter@44e05d6a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@118cfdcd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6fb5cdff, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6880b785, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f76069e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@28de65f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e130a0b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@643c65a4, org.springframework.security.web.access.ExceptionTranslationFilter@51e6f9b5, org.springframework.security.web.access.intercept.AuthorizationFilter@49fe0494]
-2024-08-19T21:17:07.932+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-19T21:17:07.957+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
-2024-08-19T21:17:07.968+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 3.473 seconds (process running for 176868.811)
-2024-08-19T21:17:07.971+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-19T21:17:09.377+02:00  INFO 7588 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-19T21:17:09.664+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 7588 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
-2024-08-19T21:17:09.666+02:00 DEBUG 7588 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
-2024-08-19T21:17:09.667+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-08-19T21:17:10.082+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2024-08-19T21:17:10.084+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-19T21:17:10.085+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-19T21:17:10.109+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-19T21:17:10.112+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 440 ms
-2024-08-19T21:17:10.184+02:00  WARN 7588 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 616bd6cc-9acd-4229-bcb6-755e93ea7d9d
+Using generated security password: 03fd416f-5081-4ae9-a827-80f1bb24e5a5
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2024-08-19T21:17:10.200+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2024-08-19T21:17:10.257+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@778489cd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41373020, org.springframework.security.web.context.SecurityContextHolderFilter@2a9625e0, org.springframework.security.web.header.HeaderWriterFilter@16ee4a38, org.springframework.web.filter.CorsFilter@2ab88d03, org.springframework.security.web.csrf.CsrfFilter@708e84b1, org.springframework.security.web.authentication.logout.LogoutFilter@2daf9cd3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c6ae1c4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@546eed82, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@526eed81, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6df2bb9e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e39870f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3035de36, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@177dce0, org.springframework.security.web.access.ExceptionTranslationFilter@2067ceb0, org.springframework.security.web.access.intercept.AuthorizationFilter@1054da3f]
-2024-08-19T21:17:10.328+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-19T21:17:10.339+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
-2024-08-19T21:17:10.349+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.727 seconds (process running for 176871.193)
-2024-08-19T21:17:10.352+02:00  INFO 7588 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-19T21:18:09.846+02:00  INFO 7588 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-19T21:18:09.847+02:00  INFO 7588 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-19T21:18:09.854+02:00  INFO 7588 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2024-08-19T21:39:22.249+02:00 ERROR 7588 --- [FinalProjectFE] [http-nio-9090-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-9090-exec-4] Exception processing template "/ordini-admin": An error happened during template parsing (template: "class path resource [templates//ordini-admin.html]" - line 31, col 54)
+2024-08-26T09:37:13.715+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T09:37:15.069+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2d1b579a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@39818b4d, org.springframework.security.web.context.SecurityContextHolderFilter@51109fb, org.springframework.security.web.header.HeaderWriterFilter@3a735b86, org.springframework.web.filter.CorsFilter@303daf77, org.springframework.security.web.csrf.CsrfFilter@5aabf094, org.springframework.security.web.authentication.logout.LogoutFilter@389515e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d0871f2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4d472f16, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1ba053a6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2a77df33, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@a6cdd18, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c68188, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6c7070cf, org.springframework.security.web.access.ExceptionTranslationFilter@447b0c30, org.springframework.security.web.access.intercept.AuthorizationFilter@d4a6ff9]
+2024-08-26T09:37:16.555+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T09:37:16.812+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T09:37:16.882+02:00  INFO 13632 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 14.494 seconds (process running for 17.015)
+2024-08-26T09:38:11.845+02:00  INFO 13632 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T09:38:11.846+02:00  INFO 13632 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T09:38:11.848+02:00  INFO 13632 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-26T09:38:12.417+02:00  WARN 13632 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [125] milliseconds.
+2024-08-26T09:53:27.687+02:00 DEBUG 13632 --- [FinalProjectFE] [http-nio-9090-exec-10] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-26T14:49:18.521+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T14:49:18.527+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T14:49:18.533+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T14:49:18.773+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-26T14:49:18.776+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-26T14:49:22.748+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T14:49:22.777+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T14:49:22.778+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T14:49:22.932+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T14:49:22.933+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4149 ms
+2024-08-26T14:49:24.052+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//ordini-admin.html]" - line 31, col 54)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:239) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
-Caused by: org.attoparser.ParseException: (Line = 31, Column = 54) Malformed markup: Attribute "style" appears more than once in element
-	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	... 107 common frames omitted
-
-2024-08-19T21:39:22.358+02:00 ERROR 7588 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "class path resource [templates//ordini-admin.html]" - line 31, col 54)] with root cause
-
-org.attoparser.ParseException: (Line = 31, Column = 54) Malformed markup: Attribute "style" appears more than once in element
-	at org.attoparser.MarkupEventProcessorHandler.handleAttribute(MarkupEventProcessorHandler.java:549) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.attoparser.ParsingAttributeSequenceUtil.parseAttributeSequence(ParsingAttributeSequenceUtil.java:275) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.attoparser.ParsingElementMarkupUtil.parseOpenElement(ParsingElementMarkupUtil.java:153) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.attoparser.MarkupParser.parseBuffer(MarkupParser.java:710) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.attoparser.MarkupParser.parseDocument(MarkupParser.java:301) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.attoparser.MarkupParser.parse(MarkupParser.java:257) ~[attoparser-2.0.7.RELEASE.jar:2.0.7.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:230) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:666) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1103) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1077) ~[thymeleaf-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.spring6.view.ThymeleafView.renderFragment(ThymeleafView.java:372) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.thymeleaf.spring6.view.ThymeleafView.render(ThymeleafView.java:192) ~[thymeleaf-spring6-3.1.2.RELEASE.jar:3.1.2.RELEASE]
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1431) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1167) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1106) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:181) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:189) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:175) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195) ~[spring-webmvc-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230) ~[spring-security-config-6.2.5.jar:6.2.5]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.11.jar:6.1.11]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:389) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:904) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.26.jar:10.1.26]
-	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
-
-2024-08-20T17:30:38.269+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 1836 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
-2024-08-20T17:30:38.291+02:00 DEBUG 1836 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
-2024-08-20T17:30:38.300+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-08-20T17:30:38.507+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-20T17:30:38.512+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-20T17:30:41.071+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2024-08-20T17:30:41.096+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-20T17:30:41.097+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-20T17:30:41.206+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-20T17:30:41.211+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2696 ms
-2024-08-20T17:30:41.546+02:00  WARN 1836 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 35d2eb04-58b7-414f-9c61-152ed9abd349
+Using generated security password: 12df080d-0c4a-4fbc-a768-c36d54d5aa11
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2024-08-20T17:30:41.761+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2024-08-20T17:30:42.107+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@757632f8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@624f9b36, org.springframework.security.web.context.SecurityContextHolderFilter@6634592, org.springframework.security.web.header.HeaderWriterFilter@1a4669de, org.springframework.web.filter.CorsFilter@55a4a709, org.springframework.security.web.csrf.CsrfFilter@3e62327, org.springframework.security.web.authentication.logout.LogoutFilter@7fa84235, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a77df33, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@581d9323, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@193a2974, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1da151f9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4219feb7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2a01dae0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d9f3959, org.springframework.security.web.access.ExceptionTranslationFilter@53e61f49, org.springframework.security.web.access.intercept.AuthorizationFilter@1520ef6d]
-2024-08-20T17:30:42.491+02:00  WARN 1836 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
-2024-08-20T17:30:42.525+02:00  WARN 1836 --- [FinalProjectFE] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2024-08-20T17:30:42.563+02:00  INFO 1836 --- [FinalProjectFE] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+2024-08-26T14:49:24.509+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T14:49:24.948+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@52b4b085, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@502c1dac, org.springframework.security.web.context.SecurityContextHolderFilter@3db96d6f, org.springframework.security.web.header.HeaderWriterFilter@5b606b53, org.springframework.web.filter.CorsFilter@657c0424, org.springframework.security.web.csrf.CsrfFilter@5b7a943c, org.springframework.security.web.authentication.logout.LogoutFilter@5f9de47e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a481d4e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@624b7e24, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5c75e774, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2774adc2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@575c423e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5af85eff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bb254e7, org.springframework.security.web.access.ExceptionTranslationFilter@4fe4b750, org.springframework.security.web.access.intercept.AuthorizationFilter@5aab3736]
+2024-08-26T14:49:25.649+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T14:49:25.812+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T14:49:25.841+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 8.205 seconds (process running for 9.176)
+2024-08-26T14:53:00.555+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T14:53:00.556+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T14:53:00.561+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-26T15:24:52.085+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:24:53.673+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:24:53.675+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:24:53.682+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:24:55.155+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:24:55.159+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:24:55.165+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:24:55.241+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:24:55.250+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1550 ms
+2024-08-26T15:24:55.498+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2024-08-20T17:30:42.615+02:00 ERROR 1836 --- [FinalProjectFE] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 9090 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
-
-2024-08-20T17:32:55.139+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 10524 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
-2024-08-20T17:32:55.151+02:00 DEBUG 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
-2024-08-20T17:32:55.154+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-08-20T17:32:55.349+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-08-20T17:32:55.352+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-08-20T17:32:57.250+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2024-08-20T17:32:57.283+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-20T17:32:57.289+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-20T17:32:57.388+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-20T17:32:57.392+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2038 ms
-2024-08-20T17:32:57.703+02:00  WARN 10524 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 12608591-2827-4c0a-81bd-e52db4a4c88a
+Using generated security password: e78362e5-3bcb-4f9e-bf3b-1453448d0b5e
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2024-08-20T17:32:57.872+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2024-08-20T17:32:58.163+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7c456920, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cf3a5f1, org.springframework.security.web.context.SecurityContextHolderFilter@4fe4b750, org.springframework.security.web.header.HeaderWriterFilter@5fd3af1a, org.springframework.web.filter.CorsFilter@2774adc2, org.springframework.security.web.csrf.CsrfFilter@3828196c, org.springframework.security.web.authentication.logout.LogoutFilter@2a98dd0f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3e7fc384, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5af85eff, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@24923eeb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2eddc57c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5b606b53, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b840fe4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@73494f30, org.springframework.security.web.access.ExceptionTranslationFilter@5f10f894, org.springframework.security.web.access.intercept.AuthorizationFilter@48e4ce31]
-2024-08-20T17:32:58.452+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-20T17:32:58.512+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
-2024-08-20T17:32:58.536+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 4.083 seconds (process running for 4.913)
-2024-08-20T17:33:11.721+02:00  INFO 10524 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-20T17:33:11.723+02:00  INFO 10524 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-20T17:33:11.729+02:00  INFO 10524 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2024-08-20T17:38:21.475+02:00  INFO 10524 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-20T17:38:22.041+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 10524 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
-2024-08-20T17:38:22.042+02:00 DEBUG 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
-2024-08-20T17:38:22.044+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-08-20T17:38:22.638+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2024-08-20T17:38:22.639+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-20T17:38:22.641+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-20T17:38:22.678+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-20T17:38:22.681+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 629 ms
-2024-08-20T17:38:22.776+02:00  WARN 10524 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+2024-08-26T15:24:55.540+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:24:55.688+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@361a2704, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f0e4f1f, org.springframework.security.web.context.SecurityContextHolderFilter@28685255, org.springframework.security.web.header.HeaderWriterFilter@17eb9806, org.springframework.web.filter.CorsFilter@4eca9fc9, org.springframework.security.web.csrf.CsrfFilter@b42db2a, org.springframework.security.web.authentication.logout.LogoutFilter@3f39245a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17e0d6a9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@16cbb368, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3804492b, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@460607dc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@356e57f9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dab3b73, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f417b28, org.springframework.security.web.access.ExceptionTranslationFilter@7e92c7e0, org.springframework.security.web.access.intercept.AuthorizationFilter@77a3dbdb]
+2024-08-26T15:24:55.849+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:24:55.905+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:24:55.915+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 2.343 seconds (process running for 2139.25)
+2024-08-26T15:24:55.922+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T15:24:55.975+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T15:24:55.976+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T15:24:55.983+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-08-26T15:25:16.847+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:25:17.259+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:25:17.261+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:25:17.263+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:25:17.797+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:25:17.802+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:25:17.803+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:25:17.836+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:25:17.840+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 561 ms
+2024-08-26T15:25:17.946+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
 
-Using generated security password: b37c9413-bac3-4d77-a070-cd01ac6cae3d
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2024-08-20T17:38:22.788+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2024-08-20T17:38:22.859+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6cddc593, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@fd49c4f, org.springframework.security.web.context.SecurityContextHolderFilter@226d936e, org.springframework.security.web.header.HeaderWriterFilter@5c269566, org.springframework.web.filter.CorsFilter@193e0541, org.springframework.security.web.csrf.CsrfFilter@2c57a9ed, org.springframework.security.web.authentication.logout.LogoutFilter@69e58eac, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@55587480, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@36d8b0cf, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@61c84057, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@108d1069, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33e45e0f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ebd93db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@633be0a0, org.springframework.security.web.access.ExceptionTranslationFilter@1f0e4757, org.springframework.security.web.access.intercept.AuthorizationFilter@28596669]
-2024-08-20T17:38:22.934+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-20T17:38:22.955+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
-2024-08-20T17:38:22.963+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 1.027 seconds (process running for 329.34)
-2024-08-20T17:38:22.967+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-20T17:38:29.627+02:00  INFO 10524 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2024-08-20T17:38:29.932+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 10524 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
-2024-08-20T17:38:29.948+02:00 DEBUG 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
-2024-08-20T17:38:29.951+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-08-20T17:38:30.342+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
-2024-08-20T17:38:30.344+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-08-20T17:38:30.345+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
-2024-08-20T17:38:30.369+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-08-20T17:38:30.371+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 412 ms
-2024-08-20T17:38:30.430+02:00  WARN 10524 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 69c52df5-9a04-4a4c-a3fe-c73fb8e9bf07
+Using generated security password: 249c8ec4-a7c9-4bfd-8c08-4ee5f389c04c
 
 This generated password is for development use only. Your security configuration must be updated before running your application in production.
 
-2024-08-20T17:38:30.449+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2024-08-20T17:38:30.497+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2e64895c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a278e42, org.springframework.security.web.context.SecurityContextHolderFilter@3cff7825, org.springframework.security.web.header.HeaderWriterFilter@6152ff7d, org.springframework.web.filter.CorsFilter@59d31cf5, org.springframework.security.web.csrf.CsrfFilter@7aecfe6, org.springframework.security.web.authentication.logout.LogoutFilter@60fe6c85, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63401ae1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@106281e5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6766840f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7049c848, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4d5f51a3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@663d2348, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6d42cfd6, org.springframework.security.web.access.ExceptionTranslationFilter@5ade22f2, org.springframework.security.web.access.intercept.AuthorizationFilter@6bbfed07]
-2024-08-20T17:38:30.551+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-08-20T17:38:30.570+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
-2024-08-20T17:38:30.577+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.692 seconds (process running for 336.955)
-2024-08-20T17:38:30.582+02:00  INFO 10524 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
-2024-08-20T17:42:50.630+02:00  INFO 10524 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-08-20T17:42:50.631+02:00  INFO 10524 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-08-20T17:42:50.639+02:00  INFO 10524 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2024-08-26T15:25:17.964+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:25:18.084+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4be5e414, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6d518868, org.springframework.security.web.context.SecurityContextHolderFilter@6b9809f, org.springframework.security.web.header.HeaderWriterFilter@15a2e475, org.springframework.web.filter.CorsFilter@6a1145b8, org.springframework.security.web.csrf.CsrfFilter@3fa4e866, org.springframework.security.web.authentication.logout.LogoutFilter@54ac457d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@40b8ffed, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@35c92f2d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@52c9a54d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7609cd2a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1ec6aff6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@374ae4fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@36e82e44, org.springframework.security.web.access.ExceptionTranslationFilter@494c1d3e, org.springframework.security.web.access.intercept.AuthorizationFilter@486ddfe7]
+2024-08-26T15:25:18.215+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:25:18.236+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:25:18.246+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 1.036 seconds (process running for 2161.581)
+2024-08-26T15:25:18.250+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T15:25:54.582+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T15:25:54.582+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T15:25:54.584+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-26T15:33:53.108+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:33:53.447+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:33:53.449+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:33:53.451+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:33:54.038+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:33:54.041+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:33:54.041+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:33:54.126+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:33:54.127+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 665 ms
+2024-08-26T15:33:54.194+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ae5fa921-9ce9-408c-b810-3990befe6c93
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T15:33:54.216+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:33:54.270+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@734394eb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2387f14b, org.springframework.security.web.context.SecurityContextHolderFilter@276a6f9d, org.springframework.security.web.header.HeaderWriterFilter@5fe10513, org.springframework.web.filter.CorsFilter@253bb1cc, org.springframework.security.web.csrf.CsrfFilter@2aa82445, org.springframework.security.web.authentication.logout.LogoutFilter@3fb962d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@778e3689, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@582aba5c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@ceceea2, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@355557c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c0bed39, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f34ff34, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@63e7d718, org.springframework.security.web.access.ExceptionTranslationFilter@5e03affb, org.springframework.security.web.access.intercept.AuthorizationFilter@1aa957a7]
+2024-08-26T15:33:54.322+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:33:54.337+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:33:54.348+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.956 seconds (process running for 2677.684)
+2024-08-26T15:33:54.351+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T15:34:44.573+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T15:34:44.574+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T15:34:44.575+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-26T15:55:10.389+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:55:10.874+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:55:10.875+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:55:10.876+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:55:11.447+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:55:11.449+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:55:11.449+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:55:11.509+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:55:11.510+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 625 ms
+2024-08-26T15:55:11.880+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 63de6c3e-b56b-44d3-b5d6-1d1a1d36f08f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T15:55:11.899+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:55:12.036+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@23e25263, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@49e3492a, org.springframework.security.web.context.SecurityContextHolderFilter@12924f75, org.springframework.security.web.header.HeaderWriterFilter@30e091cf, org.springframework.web.filter.CorsFilter@692b52b3, org.springframework.security.web.csrf.CsrfFilter@797fbb1f, org.springframework.security.web.authentication.logout.LogoutFilter@65c4e4a9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50fe12cf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7ecc713c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1120d1be, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@12dd55d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1631b97b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a16ff58, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2060e8b3, org.springframework.security.web.access.ExceptionTranslationFilter@5301ff4a, org.springframework.security.web.access.intercept.AuthorizationFilter@50dfcc1]
+2024-08-26T15:55:12.168+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:55:12.186+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:55:12.198+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 1.449 seconds (process running for 3955.534)
+2024-08-26T15:55:12.329+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T15:55:15.695+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:55:16.088+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:55:16.091+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:55:16.096+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:55:16.588+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:55:16.590+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:55:16.593+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:55:16.634+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:55:16.635+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 531 ms
+2024-08-26T15:55:16.739+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ab77cb91-8af8-45ad-a7ab-3969ad2e39f1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T15:55:16.761+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:55:16.844+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@37a1aa7d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1db707ff, org.springframework.security.web.context.SecurityContextHolderFilter@489acb16, org.springframework.security.web.header.HeaderWriterFilter@23dda1d3, org.springframework.web.filter.CorsFilter@4aa5b3b6, org.springframework.security.web.csrf.CsrfFilter@3e0ed9af, org.springframework.security.web.authentication.logout.LogoutFilter@33428614, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b918a9d, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@20024541, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1095ed02, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7cc4d5dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11b00b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6e9fa278, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a5d5f2f, org.springframework.security.web.access.ExceptionTranslationFilter@69b0fa13, org.springframework.security.web.access.intercept.AuthorizationFilter@12471f61]
+2024-08-26T15:55:16.916+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:55:16.949+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:55:16.958+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.977 seconds (process running for 3960.294)
+2024-08-26T15:55:16.961+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T15:55:25.608+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:55:26.065+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:55:26.066+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:55:26.068+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:55:26.756+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:55:26.760+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:55:26.763+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:55:26.819+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:55:26.819+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 738 ms
+2024-08-26T15:55:26.940+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 517a2ef1-7d74-4479-a9a1-f0a98f245144
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T15:55:26.974+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:55:27.046+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4ecf071a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42f6a876, org.springframework.security.web.context.SecurityContextHolderFilter@118970e0, org.springframework.security.web.header.HeaderWriterFilter@4e24736b, org.springframework.web.filter.CorsFilter@74dfc090, org.springframework.security.web.csrf.CsrfFilter@76e859c3, org.springframework.security.web.authentication.logout.LogoutFilter@34dfbc09, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1c255757, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1347750d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3dbc9bda, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@55d38f2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@259b1553, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e95fe9f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b7daca0, org.springframework.security.web.access.ExceptionTranslationFilter@63471245, org.springframework.security.web.access.intercept.AuthorizationFilter@4da823a6]
+2024-08-26T15:55:27.108+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:55:27.128+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:55:27.134+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 1.149 seconds (process running for 3970.469)
+2024-08-26T15:55:27.137+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T15:55:30.629+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:55:30.949+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:55:30.950+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:55:30.950+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:55:31.458+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:55:31.461+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:55:31.464+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:55:31.490+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:55:31.491+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 531 ms
+2024-08-26T15:55:31.581+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: d0352d4f-1a8a-4b17-b6ff-04b9a1c87bfe
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T15:55:31.599+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:55:31.681+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7f9af24, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@be6445d, org.springframework.security.web.context.SecurityContextHolderFilter@1ede3c86, org.springframework.security.web.header.HeaderWriterFilter@1a8f0f8a, org.springframework.web.filter.CorsFilter@4619b680, org.springframework.security.web.csrf.CsrfFilter@92f1eda, org.springframework.security.web.authentication.logout.LogoutFilter@43dc9905, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@339c160, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7263665c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@31417d0c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@240a64b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f763849, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10f2d897, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7b8b648f, org.springframework.security.web.access.ExceptionTranslationFilter@2a4ab636, org.springframework.security.web.access.intercept.AuthorizationFilter@2c5418ee]
+2024-08-26T15:55:31.742+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:55:31.765+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:55:31.774+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.857 seconds (process running for 3975.11)
+2024-08-26T15:55:31.780+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T15:55:46.620+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:55:46.981+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:55:46.982+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:55:46.983+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:55:47.369+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:55:47.371+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:55:47.371+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:55:47.398+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:55:47.399+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 413 ms
+2024-08-26T15:55:47.452+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 5af1452a-d2c4-4a44-bb8c-43a3da89cd15
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T15:55:47.466+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:55:47.506+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@40897f77, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7259785, org.springframework.security.web.context.SecurityContextHolderFilter@b082978, org.springframework.security.web.header.HeaderWriterFilter@2ba458f0, org.springframework.web.filter.CorsFilter@5e378fa0, org.springframework.security.web.csrf.CsrfFilter@19193d2, org.springframework.security.web.authentication.logout.LogoutFilter@1dd64ce0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@63d75382, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@a4a79c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5f6d5d20, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4c49b254, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60a24c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@94e1d9d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5414e37d, org.springframework.security.web.access.ExceptionTranslationFilter@6d5c42e6, org.springframework.security.web.access.intercept.AuthorizationFilter@4130cb68]
+2024-08-26T15:55:47.568+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:55:47.589+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:55:47.598+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.646 seconds (process running for 3990.934)
+2024-08-26T15:55:47.600+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T15:56:02.479+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:56:02.955+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:56:02.958+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:56:02.958+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:56:03.350+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:56:03.353+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:56:03.354+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:56:03.375+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:56:03.376+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 412 ms
+2024-08-26T15:56:03.448+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a6664978-df3e-4dc6-852d-f365d35ce144
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T15:56:03.460+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:56:03.514+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@8204f27, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1d098dd2, org.springframework.security.web.context.SecurityContextHolderFilter@2fa58dbf, org.springframework.security.web.header.HeaderWriterFilter@42889ec5, org.springframework.web.filter.CorsFilter@2151acfb, org.springframework.security.web.csrf.CsrfFilter@148833c2, org.springframework.security.web.authentication.logout.LogoutFilter@552438c6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@dd6265e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@192be332, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5e071c66, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7940cd2a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7ae6adaa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f5328ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@545439f6, org.springframework.security.web.access.ExceptionTranslationFilter@46c47297, org.springframework.security.web.access.intercept.AuthorizationFilter@15c00f8e]
+2024-08-26T15:56:03.609+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:56:03.621+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:56:03.626+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.723 seconds (process running for 4006.962)
+2024-08-26T15:56:03.630+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T15:56:13.462+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:56:14.154+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:56:14.154+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:56:14.155+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:56:14.826+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:56:14.828+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:56:14.829+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:56:14.863+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:56:14.864+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 706 ms
+2024-08-26T15:56:14.923+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 6ba29bd7-15ab-4888-bf4c-b1097f8c009f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T15:56:14.932+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:56:14.966+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@330338f9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@721f0ef0, org.springframework.security.web.context.SecurityContextHolderFilter@19cf4bfe, org.springframework.security.web.header.HeaderWriterFilter@13911002, org.springframework.web.filter.CorsFilter@11d20efc, org.springframework.security.web.csrf.CsrfFilter@bd959c5, org.springframework.security.web.authentication.logout.LogoutFilter@20b5a063, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d69d8ef, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@523ddb9d, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@272ad944, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2052d399, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@58992e73, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49b7c3a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@dc4e9a8, org.springframework.security.web.access.ExceptionTranslationFilter@2bf75910, org.springframework.security.web.access.intercept.AuthorizationFilter@6b354d04]
+2024-08-26T15:56:15.014+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:56:15.029+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:56:15.038+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.947 seconds (process running for 4018.374)
+2024-08-26T15:56:15.041+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T15:56:25.753+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T15:56:26.079+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T15:56:26.080+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T15:56:26.082+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T15:56:26.493+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T15:56:26.496+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T15:56:26.497+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T15:56:26.527+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T15:56:26.528+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 439 ms
+2024-08-26T15:56:26.610+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ed9bd533-9f16-4357-a523-79e192242bf7
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T15:56:26.621+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T15:56:26.693+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@600b4c8b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b66ca3f, org.springframework.security.web.context.SecurityContextHolderFilter@4274e4b7, org.springframework.security.web.header.HeaderWriterFilter@6a02b501, org.springframework.web.filter.CorsFilter@7883731b, org.springframework.security.web.csrf.CsrfFilter@1db155c3, org.springframework.security.web.authentication.logout.LogoutFilter@40a087d1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1f67943c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@15ab1ffd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4bbd0773, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5b3d060e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55fcae77, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6afe151e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71e8759b, org.springframework.security.web.access.ExceptionTranslationFilter@615bdcda, org.springframework.security.web.access.intercept.AuthorizationFilter@17f59469]
+2024-08-26T15:56:26.797+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T15:56:26.811+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T15:56:26.829+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.786 seconds (process running for 4030.165)
+2024-08-26T15:56:26.832+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T16:00:04.497+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T16:00:04.498+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T16:00:04.499+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-08-26T16:03:50.374+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T16:03:50.807+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T16:03:50.808+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T16:03:50.809+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T16:03:51.148+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T16:03:51.176+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T16:03:51.177+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T16:03:51.197+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T16:03:51.198+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 384 ms
+2024-08-26T16:03:51.266+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 95388435-1bae-4ba5-9558-c515ec64bde5
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T16:03:51.274+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T16:03:51.333+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2dd266cf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@66f77cea, org.springframework.security.web.context.SecurityContextHolderFilter@65d8b79f, org.springframework.security.web.header.HeaderWriterFilter@6fe903e, org.springframework.web.filter.CorsFilter@b8018f5, org.springframework.security.web.csrf.CsrfFilter@55cd0192, org.springframework.security.web.authentication.logout.LogoutFilter@7d584a92, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@324bfa23, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@229edbae, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@47659a8d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@d783a22, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5824eb27, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5093cee2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@793f68b0, org.springframework.security.web.access.ExceptionTranslationFilter@20351150, org.springframework.security.web.access.intercept.AuthorizationFilter@67e5816e]
+2024-08-26T16:03:51.487+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T16:03:51.507+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T16:03:51.515+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.739 seconds (process running for 4474.851)
+2024-08-26T16:03:51.528+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T16:04:17.805+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T16:04:17.806+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T16:04:17.808+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-08-26T16:30:11.849+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T16:30:12.294+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T16:30:12.294+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T16:30:12.295+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T16:30:12.676+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T16:30:12.684+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T16:30:12.685+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T16:30:12.756+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T16:30:12.757+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 458 ms
+2024-08-26T16:30:12.829+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 0f2fbcd7-c09c-492a-881e-b18fd2577226
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T16:30:12.850+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T16:30:12.908+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5160a624, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45f06f11, org.springframework.security.web.context.SecurityContextHolderFilter@3fcab62e, org.springframework.security.web.header.HeaderWriterFilter@c8c8d42, org.springframework.web.filter.CorsFilter@33df22b1, org.springframework.security.web.csrf.CsrfFilter@1797be35, org.springframework.security.web.authentication.logout.LogoutFilter@5e8e3835, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1e3d1c92, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1735600a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c5a3e7a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@315dc0f0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1586c1f4, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7fbb1422, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@385ff453, org.springframework.security.web.access.ExceptionTranslationFilter@6fd0b0e6, org.springframework.security.web.access.intercept.AuthorizationFilter@45ba37de]
+2024-08-26T16:30:12.961+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T16:30:12.990+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T16:30:12.994+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.766 seconds (process running for 6056.33)
+2024-08-26T16:30:12.996+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T16:30:43.841+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T16:30:43.841+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T16:30:43.845+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-26T16:30:50.585+02:00 DEBUG 17108 --- [FinalProjectFE] [http-nio-9090-exec-5] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-26T16:30:59.294+02:00 DEBUG 17108 --- [FinalProjectFE] [http-nio-9090-exec-4] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-26T16:33:18.029+02:00 DEBUG 17108 --- [FinalProjectFE] [http-nio-9090-exec-8] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-26T16:33:19.128+02:00 DEBUG 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-26T16:33:44.838+02:00 DEBUG 17108 --- [FinalProjectFE] [http-nio-9090-exec-6] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-26T16:33:52.885+02:00 DEBUG 17108 --- [FinalProjectFE] [http-nio-9090-exec-9] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-26T16:56:23.001+02:00 DEBUG 17108 --- [FinalProjectFE] [http-nio-9090-exec-7] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-26T16:56:29.033+02:00 DEBUG 17108 --- [FinalProjectFE] [http-nio-9090-exec-9] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-26T17:00:31.891+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T17:00:32.281+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T17:00:32.282+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T17:00:32.285+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T17:00:32.609+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T17:00:32.611+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T17:00:32.613+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T17:00:32.649+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T17:00:32.649+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 358 ms
+2024-08-26T17:00:32.723+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 34125bec-8093-4b65-a112-4313919d9b52
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T17:00:32.733+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T17:00:32.763+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5d528629, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@334c4edb, org.springframework.security.web.context.SecurityContextHolderFilter@2c70e67a, org.springframework.security.web.header.HeaderWriterFilter@2a3f28dc, org.springframework.web.filter.CorsFilter@133768f0, org.springframework.security.web.csrf.CsrfFilter@697999a6, org.springframework.security.web.authentication.logout.LogoutFilter@33c21583, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@15c6a3a9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1e3ac56f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7bc05f23, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@368bd29f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@961fefb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d906dc9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@326aedbc, org.springframework.security.web.access.ExceptionTranslationFilter@274c7f29, org.springframework.security.web.access.intercept.AuthorizationFilter@35ab6b6b]
+2024-08-26T17:00:32.791+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T17:00:32.801+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T17:00:32.806+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.558 seconds (process running for 7876.141)
+2024-08-26T17:00:32.807+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T17:05:09.536+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T17:05:09.536+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T17:05:09.542+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2024-08-26T17:05:09.552+02:00 DEBUG 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] c.b.f.c.AmministrazioneController        : URI: http://localhost:8080/rest/createUser
+2024-08-26T17:19:05.976+02:00  INFO 17108 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-26T17:19:06.300+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.10 with PID 17108 (C:\Users\Betacom\Documents\finalProjectFE\target\classes started by Betacom in C:\Users\Betacom\Documents\finalProjectFE)
+2024-08-26T17:19:06.301+02:00 DEBUG 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-26T17:19:06.301+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-26T17:19:06.556+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-26T17:19:06.559+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-26T17:19:06.564+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-26T17:19:06.594+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-26T17:19:06.595+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 291 ms
+2024-08-26T17:19:06.655+02:00  WARN 17108 --- [FinalProjectFE] [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: a113cd2d-3b71-467f-a07d-829eebfe33ec
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-08-26T17:19:06.667+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-26T17:19:06.703+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ce8ce08, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@390a9fd4, org.springframework.security.web.context.SecurityContextHolderFilter@7d7e0a97, org.springframework.security.web.header.HeaderWriterFilter@11271d27, org.springframework.web.filter.CorsFilter@636d7a02, org.springframework.security.web.csrf.CsrfFilter@7ca04322, org.springframework.security.web.authentication.logout.LogoutFilter@66cb6de5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ec49f28, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2763009a, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4b12d0ce, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@43dd7150, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@339ef49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e84ea48, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2160cf2a, org.springframework.security.web.access.ExceptionTranslationFilter@5cda3d43, org.springframework.security.web.access.intercept.AuthorizationFilter@706ca372]
+2024-08-26T17:19:06.744+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-08-26T17:19:06.759+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-26T17:19:06.767+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 0.49 seconds (process running for 8990.103)
+2024-08-26T17:19:06.777+02:00  INFO 17108 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-26T17:20:11.998+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-26T17:20:11.999+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-26T17:20:12.001+02:00  INFO 17108 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

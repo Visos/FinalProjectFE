@@ -53,5 +53,24 @@ public class AmministrazioneController {
 		ModelAndView mav = new ModelAndView("nuovo-prodotto");
 		return mav;
 	}
+	
+	@GetMapping("/profilo")
+	public ModelAndView profilo() {
+		ModelAndView mav = new ModelAndView("profilo");
+		return mav;
+	}
+	
+	
+	@GetMapping("/profiloAdmin")
+	public ModelAndView profiloAdmin() {
+		ModelAndView mav = new ModelAndView("profilo-admin");
+		return mav;
+	}
+	
+	@GetMapping("/createAdmin")
+	public ModelAndView createAdmin() {
+		ModelAndView mav = new ModelAndView("create-admin");
+		return mav;
+	}
 
 }

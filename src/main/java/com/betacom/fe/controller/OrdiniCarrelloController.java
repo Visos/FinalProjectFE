@@ -40,5 +40,11 @@ public class OrdiniCarrelloController {
 		
 		return mav;
 	}
+	@GetMapping("/ordiniAdminAll")
+	public ModelAndView ordiniAdminAll() {
+		ModelAndView mav = new ModelAndView("/ordini-admin-all");
+		
+		return mav;
+	}
 
 }

@@ -25,4 +25,11 @@ public class ProdottoController {
 		
 		return mav;
 	}
+	
+	@GetMapping("/prodottoAdmin")
+	public ModelAndView showProdottoAdmin() {
+		ModelAndView mav = new ModelAndView("prodotto-admin");		
+		
+		return mav;
+	}
 }

@@ -25,4 +25,11 @@ public class MaglietteController {
 		
 		return mav;
 	}
+	
+	@GetMapping(value = {"/listMaglietteAdmin"})
+	public ModelAndView listMaglietteAdmin() {
+		ModelAndView mav = new ModelAndView("list-magliette-admin");		
+		
+		return mav;
+	}
 }

@@ -26,5 +26,12 @@ public class VestitiController {
 		
 		return mav;
 	}
+	
+	@GetMapping("/listVestitiAdmin")
+	public ModelAndView listVestitiAdmin() {
+		ModelAndView mav = new ModelAndView("list-vestiti-admin");		
+		
+		return mav;
+	}
 
 }

@@ -26,5 +26,14 @@ public class ScarpeController {
 		
 		return mav;
 	}
+	
+	
+	@GetMapping("/listScarpeAdmin")
+	public ModelAndView listScarpeAdmin() {
+		ModelAndView mav = new ModelAndView("list-scarpe-admin");		
+		
+		return mav;
+	}
+
 
 }

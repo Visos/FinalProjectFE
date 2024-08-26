@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="../css/style.css">
+<title>Project Academy</title>
+</head>
+<body>
+	<nav th:insert="~{fragments/header}"></nav>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		th:insert="~{fragments/header-admin}"></nav>
+
+	<div
+		style="display: flex; justify-content: center; margin-top: 40px; gap: 40px; margin-bottom: 50px">
+		<img src="../img/camicia1.jpg" style="width: 600px">
+		<div style="width: 300px">
+			<h3>Marca</h3>
+			<div style="display: flex; flex-direction: column; gap: 5px">
+				<div style="font-weight: 700; font-size: 30px;">9.99$</div>
+				<div style="font-weight: 700; margin-top: 20px">DETTAGLI DEL
+					PRODOTTO:</div>
+				<div class="filtri"
+					style="display: flex; flex-direction: column; margin-left: 20px; margin-bottom: 20px;">
+					<div class="filtri">
+						Materiale: <span class="descrizione">100% COTONE</span>
+					</div>
+					<div class="filtri">
+						Fantasia: <span class="descrizione">FLOREALE</span>
+					</div>
+					<div class="filtri">
+						Colore: <span class="descrizione">ROSSO</span>
+					</div>
+					<div class="filtri">
+						Sesso: <span class="descrizione">UNISEX</span>
+					</div>
+					<div class="filtri">
+						Taglia: <span class="descrizione">M</span>
+					</div>
+					<div class="filtri">
+						Vestibilità: <span class="descrizione">REGOLARE</span>
+					</div>
+					<div class="filtri">
+						lunghezza della manica: <span class="descrizione">MANICA
+							CORTA</span>
+					</div>
+					<div class="filtri">
+						Tipo di colletto: <span class="descrizione">COREANA</span>
+					</div>
+					<div class="filtri">
+						Lunghezza: <span class="descrizione">ALLA CAVIGLIA</span>
+					</div>
+					<div class="filtri">
+						Numero di scarpa: <span class="descrizione">37</span>
+					</div>
+					<div class="filtri">
+						Chiusura: <span class="descrizione">LACCI</span>
+					</div>
+					<div class="filtri">
+						Tipo di scarpa: <span class="descrizione">MOCASSINO</span>
+					</div>
+				</div>
+				<a th:href="@{nuovoProdotto}" class="see-button" style="font-size: 18px;">Modifica
+					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+						width="30px" height="30px" viewBox="0 0 24 24">
+    <path
+							d="M 18 2 L 15.585938 4.4140625 L 19.585938 8.4140625 L 22 6 L 18 2 z M 14.076172 5.9238281 L 3 17 L 3 21 L 7 21 L 18.076172 9.9238281 L 14.076172 5.9238281 z"></path>
+</svg>
+				</a> <a href="#" class="see-button"
+					style="font-size: 18px;">Elimina <svg
+						xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30px"
+						height="30px" viewBox="0 0 30 30">
+    <path
+							d="M 14.984375 2.4863281 A 1.0001 1.0001 0 0 0 14 3.5 L 14 4 L 8.5 4 A 1.0001 1.0001 0 0 0 7.4863281 5 L 6 5 A 1.0001 1.0001 0 1 0 6 7 L 24 7 A 1.0001 1.0001 0 1 0 24 5 L 22.513672 5 A 1.0001 1.0001 0 0 0 21.5 4 L 16 4 L 16 3.5 A 1.0001 1.0001 0 0 0 14.984375 2.4863281 z M 6 9 L 7.7929688 24.234375 C 7.9109687 25.241375 8.7633438 26 9.7773438 26 L 20.222656 26 C 21.236656 26 22.088031 25.241375 22.207031 24.234375 L 24 9 L 6 9 z"></path>
+</svg></a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

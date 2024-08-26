@@ -26,5 +26,12 @@ public class PantaloniController {
 		
 		return mav;
 	}
+	
+	@GetMapping(value = {"/listPantaloniAdmin"})
+	public ModelAndView listPantaloniAdmin() {
+		ModelAndView mav = new ModelAndView("list-pantaloni-admin");		
+		
+		return mav;
+	}
 
 }

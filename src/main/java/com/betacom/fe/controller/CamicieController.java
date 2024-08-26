@@ -26,5 +26,12 @@ public class CamicieController {
 		
 		return mav;
 	}
+	
+	@GetMapping(value = {"/listCamicieAdmin"})
+	public ModelAndView listCamicieAdmin() {
+		ModelAndView mav = new ModelAndView("list-camicie-admin");		
+		
+		return mav;
+	}
 
 }

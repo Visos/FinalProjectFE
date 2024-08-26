@@ -26,5 +26,12 @@ public class ProdottiController {
 		
 		return mav;
 	}
+	
+	@GetMapping("/listAllAdmin")
+	public ModelAndView listProdottiAdmin() {
+		ModelAndView mav = new ModelAndView("list-prodotti-admin");		
+		
+		return mav;
+	}
 
 }

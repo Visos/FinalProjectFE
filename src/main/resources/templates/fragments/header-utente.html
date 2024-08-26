@@ -21,18 +21,18 @@
 					role="button" data-bs-toggle="dropdown" aria-expanded="false">
 						Prodotti </a>
 					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-						<li><a class="dropdown-item" href="#">Magliette</a></li>
-						<li><a class="dropdown-item" href="#">Camicie</a></li>
-						<li><a class="dropdown-item" href="#">Vestiti</a></li>
-						<li><a class="dropdown-item" href="#">Pantaloni</a></li>
-						<li><a class="dropdown-item" href="#">Scarpe</a></li>
+						<li><a class="dropdown-item" th:href="@{listMagliette}">Magliette</a></li>
+						<li><a class="dropdown-item" th:href="@{listCamicie}">Camicie</a></li>
+						<li><a class="dropdown-item" th:href="@{listVestiti}">Vestiti</a></li>
+						<li><a class="dropdown-item" th:href="@{listPantaloni}">Pantaloni</a></li>
+						<li><a class="dropdown-item" th:href="@{listScarpe}">Scarpe</a></li>
 						<li><hr class="dropdown-divider"></li>
-						<li><a class="dropdown-item" href="#">Tutti i capi</a></li>
+						<li><a class="dropdown-item" th:href="@{listAll}">Tutti i capi</a></li>
 					</ul></li>
 
 				<li class="nav-item ms-5"><a class="nav-link" th:href="@{/ordini}">Ordini</a>
 				<li class="nav-item ms-5"><a class="nav-link" th:href="@{/carrello}">Carrello</a>
-				<li class="nav-item ms-5"><a class="nav-link" href="#">Profilo</a></li>
+				<li class="nav-item ms-5"><a class="nav-link" th:href="@{/profilo}">Profilo</a></li>
 			</ul>
 			<ul class="navbar-nav ms-auto">
 				<li class="nav-item"><a class="nav-link" href="#">Logout</a></li>

@@ -32,7 +32,7 @@ body {
 	font-weight: 700;
 }
 
-.nav-item{
+.nav-item {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 25px;
 	font-weight: 700;
@@ -155,6 +155,9 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	cursor: pointer;
 	font-size: 16px;
 	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	text-decoration: none;
 }
 
 .login-button:hover {
@@ -176,14 +179,13 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 }
 
 /* INDEX */
-
 .container, .card-container {
 	display: flex;
 	margin: 20px auto;
 	max-width: 1200px;
 }
 
-.carrello{
+.carrello {
 	margin: 20px auto;
 	max-width: 1200px;
 }
@@ -226,24 +228,20 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	background-color: #ffffff;
 }
 
+.new-product {
+	background-color: white;
+	width: 300px;
+	padding: 20px;
+	margin-left: 20px;
+}
 
-
-
-        .new-product {
-            background-color: white;
-            width: 300px;
-            padding: 20px;
-            margin-left:20px;
-        }
-
-        .new-product .card {
-            width: 100%; 
-            margin-bottom: 15px;
-            box-sizing: border-box; 
-            	font-family: 'Montserrat', sans-serif;
+.new-product .card {
+	width: 100%;
+	margin-bottom: 15px;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-        }
-
+}
 
 .new-product h2 {
 	font-family: 'Montserrat', sans-serif;
@@ -263,127 +261,118 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 }
 
 .new-product ul li i {
-	margin-right: 10px; 
+	margin-right: 10px;
 }
 
-.highlight, .exp{
-
-	margin-top:100px;
+.highlight, .exp {
+	margin-top: 100px;
 }
 
-.highlight  img{
+.highlight  img {
 	width: 286px;
 	height: 286px;
 }
 
-.new-product  img{
-   	width: 250px;
+.new-product  img {
+	width: 250px;
 	height: 250px;
 	align-self: center;
 }
 
-
-
-
-
 .images-index {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    margin: 0 auto; 
-    max-width: 1200px; 
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	max-width: 1200px;
 }
 
 .image-item {
-    position: relative;
-    flex: 0 1 calc(33.33% - 20px);
-    margin-bottom: 20px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: box-shadow 0.3s; 
+	position: relative;
+	flex: 0 1 calc(33.33% - 20px);
+	margin-bottom: 20px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s;
 }
 
 .image-item img {
 	width: 379.95px;
 	height: 379.95px;
-    border-radius: 8px;
-    transition: transform 0.3s;
+	border-radius: 8px;
+	transition: transform 0.3s;
 }
 
 .image-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .image-item:hover img {
-    transform: scale(1.05); 
+	transform: scale(1.05);
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); 
-    color: white; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    opacity: 0; 
-    transition: opacity 0.3s; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0;
+	transition: opacity 0.3s;
 }
 
 .image-item:hover .overlay {
-    opacity: 1; 
+	opacity: 1;
 }
 
 .text {
-    font-size: 20px; 
-    text-align: center;
-    padding: 10px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); 
-    cursor: pointer; 
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+	cursor: pointer;
 }
 
-
-
 /*list magliette*/
-
 .dropbtn {
-  background-color: #3498DB;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
 }
 
 .dropbtn:hover, .dropbtn:focus {
-  background-color: #2980B9;
+	background-color: #2980B9;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+	position: relative;
+	display: inline-block;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	overflow: auto;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
 }
 
 .dropdown-content div {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
 }
-
 
 /*per tutti i link*/
 .a {
@@ -396,9 +385,9 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	font-weight: 600;
 }
 
-.descrizione{
+.descrizione {
 	font-weight: 700;
-}	
+}
 
 .ordine {
 	width: 50%;
@@ -455,7 +444,8 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	flex-direction: column;
 	margin-left: 20px;
 }
-.order-bottom-admin{
-	display:flex;
+
+.order-bottom-admin {
+	display: flex;
 	flex-direction: column;
 }
