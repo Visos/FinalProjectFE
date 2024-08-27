@@ -21,33 +21,65 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 
+
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig {
 	
-//	@Autowired
-//	RestTemplate rest;
-//	
-//	
-//	@Value("${jpa.backend}")
-//	String backend;
-//	
-//	
-//	@Bean
-//	public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-//		http.authorizeHttpRequests((requests) -> requests
-//				.requestMatchers("/admin", "/admin/**").hasRole("ADMIN")
-//				.requestMatchers("/").permitAll()
-//				.anyRequest().authenticated())
-//		.formLogin((form) -> form 
-//				.loginPage("/login")
-//				.permitAll()
-//				)
-//		.logout((logout) -> logout.permitAll());
-//		return http.build();
-//		
-//	}
-//	
+	@Autowired
+	RestTemplate rest;
+	
+	
+	@Value("${jpa.backend}")
+	String backend;
+	
+	
+	   @Bean
+	    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+	        http.authorizeHttpRequests((requests) -> requests
+	                .requestMatchers("/amministratore", "/amministratore/**").hasRole("AMMINISTRATORE")
+	                .requestMatchers("/").permitAll()
+	                .anyRequest().authenticated()
+	                )
+	            .formLogin((form) -> form
+	                .loginPage("/login")
+	                .permitAll()
+	                )
+	            .logout((logout) -> logout.permitAll());
+	            
+	        return http.build();
+	    }
+	   
+	    @Bean
+	    public UserDetailsService userDetailsService() {
+
+	        List<UserDetails> userDetails = new ArrayList<UserDetails>();
+
+	        URI uri = UriComponentsBuilder
+	                .fromHttpUrl(backend + "utente/listAll")  
+	                .buildAndExpand().toUri();      
+
+	        List<HashMap<String, Object>> r = rest.getForObject(uri, ArrayList.class);
+
+	        for (HashMap<String,Object> hashMap : r) {
+	            
+	            userDetails.add(
+	                User.withUsername(hashMap.get("mail").toString())
+	                   .password(passwordEncoder().encode(hashMap.get("password").toString()))
+	                   .roles(hashMap.get("ruolo").toString())
+	                   .build()
+	            );
+	        }
+	        
+	        return new InMemoryUserDetailsManager(userDetails);
+	   }
+	   
+	   @Bean
+		public PasswordEncoder passwordEncoder() {
+			return new BCryptPasswordEncoder();
+		}
+	   
+
 //	@Bean
 //	public UserDetailsService userDetailService() {
 //		
@@ -68,10 +100,7 @@ public class WebSecurityConfig {
 //		
 //		return new InMemoryUserDetailsManager(user, user2, admin);
 //	}
-//	
-//	@Bean
-//	public PasswordEncoder passwordEncoder() {
-//		return new BCryptPasswordEncoder();
-//	}
+	
+	
 
 }
