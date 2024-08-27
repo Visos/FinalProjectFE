@@ -1463,3 +1463,209 @@ Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot d
 	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395) ~[spring-web-6.1.11.jar:6.1.11]
 	... 77 common frames omitted
 
+2024-08-27T15:48:52.732+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.11 with PID 16804 (C:\Users\raimo\OneDrive\Betacom\Git-hub\FinalProjectFE\target\classes started by raimo in C:\Users\raimo\OneDrive\Betacom\Git-hub\FinalProjectFE)
+2024-08-27T15:48:52.740+02:00 DEBUG 16804 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-27T15:48:52.744+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-27T15:48:52.986+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-27T15:48:52.993+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-27T15:48:58.337+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-27T15:48:58.369+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-27T15:48:58.377+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-27T15:48:58.590+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-27T15:48:58.594+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5595 ms
+2024-08-27T15:49:00.362+02:00  WARN 16804 --- [FinalProjectFE] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'userDetailsService' defined in class path resource [com/betacom/fe/configuration/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'userDetailsService' threw exception with message: Error while extracting response for type [class java.util.ArrayList] and content type [application/json]
+2024-08-27T15:49:00.369+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-08-27T15:49:00.410+02:00  INFO 16804 --- [FinalProjectFE] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-08-27T15:49:00.477+02:00 ERROR 16804 --- [FinalProjectFE] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration': Unsatisfied dependency expressed through field 'httpSecurity': Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'userDetailsService' defined in class path resource [com/betacom/fe/configuration/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'userDetailsService' threw exception with message: Error while extracting response for type [class java.util.ArrayList] and content type [application/json]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:787) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:767) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:508) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1439) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:599) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.2.8.jar:3.2.8]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.2.8.jar:3.2.8]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.2.8.jar:3.2.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.2.8.jar:3.2.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.2.8.jar:3.2.8]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.2.8.jar:3.2.8]
+	at com.betacom.fe.FinalProjectFeApplication.main(FinalProjectFeApplication.java:13) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.2.8.jar:3.2.8]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity' defined in class path resource [org/springframework/security/config/annotation/web/configuration/HttpSecurityConfiguration.class]: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'userDetailsService' defined in class path resource [com/betacom/fe/configuration/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'userDetailsService' threw exception with message: Error while extracting response for type [class java.util.ArrayList] and content type [application/json]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:355) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1443) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1353) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:784) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 25 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.config.annotation.web.builders.HttpSecurity]: Factory method 'httpSecurity' threw exception with message: Error creating bean with name 'userDetailsService' defined in class path resource [com/betacom/fe/configuration/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'userDetailsService' threw exception with message: Error while extracting response for type [class java.util.ArrayList] and content type [application/json]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 36 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userDetailsService' defined in class path resource [com/betacom/fe/configuration/WebSecurityConfig.class]: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'userDetailsService' threw exception with message: Error while extracting response for type [class java.util.ArrayList] and content type [application/json]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:485) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1355) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1185) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:562) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1249) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.getBeanOrNull(InitializeUserDetailsBeanManagerConfigurer.java:89) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:62) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure(InitializeUserDetailsBeanManagerConfigurer.java:55) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.configure(AbstractConfiguredSecurityBuilder.java:376) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.security.config.annotation.AbstractConfiguredSecurityBuilder.doBuild(AbstractConfiguredSecurityBuilder.java:330) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.security.config.annotation.AbstractSecurityBuilder.build(AbstractSecurityBuilder.java:38) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration.getAuthenticationManager(AuthenticationConfiguration.java:121) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.authenticationManager(HttpSecurityConfiguration.java:141) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity(HttpSecurityConfiguration.java:109) ~[spring-security-config-6.2.5.jar:6.2.5]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 37 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.security.core.userdetails.UserDetailsService]: Factory method 'userDetailsService' threw exception with message: Error while extracting response for type [class java.util.ArrayList] and content type [application/json]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:178) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:644) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 61 common frames omitted
+Caused by: org.springframework.web.client.RestClientException: Error while extracting response for type [class java.util.ArrayList] and content type [application/json]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:119) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:892) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:830) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.client.RestTemplate.getForObject(RestTemplate.java:422) ~[spring-web-6.1.11.jar:6.1.11]
+	at com.betacom.fe.configuration.WebSecurityConfig.userDetailsService(WebSecurityConfig.java:62) ~[classes/:na]
+	at com.betacom.fe.configuration.WebSecurityConfig$$SpringCGLIB$$0.CGLIB$userDetailsService$2(<generated>) ~[classes/:na]
+	at com.betacom.fe.configuration.WebSecurityConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.1.11.jar:6.1.11]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348) ~[spring-context-6.1.11.jar:6.1.11]
+	at com.betacom.fe.configuration.WebSecurityConfig$$SpringCGLIB$$0.userDetailsService(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:146) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 62 common frames omitted
+Caused by: org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.util.ArrayList<java.lang.Object>` from Object value (token `JsonToken.START_OBJECT`)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:406) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:354) ~[spring-web-6.1.11.jar:6.1.11]
+	at org.springframework.web.client.HttpMessageConverterExtractor.extractData(HttpMessageConverterExtractor.java:104) ~[spring-web-6.1.11.jar:6.1.11]
+	... 76 common frames omitted
+Caused by: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.util.ArrayList<java.lang.Object>` from Object value (token `JsonToken.START_OBJECT`)
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 1, column: 1]
+	at com.fasterxml.jackson.databind.exc.MismatchedInputException.from(MismatchedInputException.java:59) ~[jackson-databind-2.15.4.jar:2.15.4]
+	at com.fasterxml.jackson.databind.DeserializationContext.reportInputMismatch(DeserializationContext.java:1752) ~[jackson-databind-2.15.4.jar:2.15.4]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1526) ~[jackson-databind-2.15.4.jar:2.15.4]
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1473) ~[jackson-databind-2.15.4.jar:2.15.4]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:396) ~[jackson-databind-2.15.4.jar:2.15.4]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:252) ~[jackson-databind-2.15.4.jar:2.15.4]
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:28) ~[jackson-databind-2.15.4.jar:2.15.4]
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323) ~[jackson-databind-2.15.4.jar:2.15.4]
+	at com.fasterxml.jackson.databind.ObjectReader._bindAndClose(ObjectReader.java:2105) ~[jackson-databind-2.15.4.jar:2.15.4]
+	at com.fasterxml.jackson.databind.ObjectReader.readValue(ObjectReader.java:1481) ~[jackson-databind-2.15.4.jar:2.15.4]
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:395) ~[spring-web-6.1.11.jar:6.1.11]
+	... 78 common frames omitted
+
+2024-08-27T15:57:19.617+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.11 with PID 4180 (C:\Users\raimo\OneDrive\Betacom\Git-hub\FinalProjectFE\target\classes started by raimo in C:\Users\raimo\OneDrive\Betacom\Git-hub\FinalProjectFE)
+2024-08-27T15:57:19.630+02:00 DEBUG 4180 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-27T15:57:19.633+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-27T15:57:19.914+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-27T15:57:19.917+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-27T15:57:26.865+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-27T15:57:26.926+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-27T15:57:26.930+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-27T15:57:27.197+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-27T15:57:27.199+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7278 ms
+2024-08-27T15:57:29.817+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-27T15:57:30.400+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@58afb6ef, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5677a7c6, org.springframework.security.web.context.SecurityContextHolderFilter@352ad7f9, org.springframework.security.web.header.HeaderWriterFilter@7564a99c, org.springframework.web.filter.CorsFilter@138f9423, org.springframework.security.web.csrf.CsrfFilter@7e5f3775, org.springframework.security.web.authentication.logout.LogoutFilter@2ff24af7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3c033052, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1d6f3c9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ffebaab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3260a086, org.springframework.security.web.access.ExceptionTranslationFilter@6b1eb0d8, org.springframework.security.web.access.intercept.AuthorizationFilter@11e95cb4]
+2024-08-27T15:57:31.309+02:00  WARN 4180 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-27T15:57:31.479+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-27T15:57:31.540+02:00  INFO 4180 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 14.006 seconds (process running for 15.411)
+2024-08-27T15:58:14.774+02:00  INFO 4180 --- [FinalProjectFE] [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-27T15:58:14.785+02:00  INFO 4180 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-27T15:58:14.794+02:00  INFO 4180 --- [FinalProjectFE] [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2024-08-27T15:58:17.574+02:00  WARN 4180 --- [FinalProjectFE] [http-nio-9090-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [280] milliseconds.
+2024-08-27T15:58:17.574+02:00  WARN 4180 --- [FinalProjectFE] [http-nio-9090-exec-5] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [280] milliseconds.
+2024-08-27T16:08:07.440+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.11 with PID 17848 (C:\Users\raimo\OneDrive\Betacom\Git-hub\FinalProjectFE\target\classes started by raimo in C:\Users\raimo\OneDrive\Betacom\Git-hub\FinalProjectFE)
+2024-08-27T16:08:07.578+02:00 DEBUG 17848 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-27T16:08:07.643+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-27T16:08:08.237+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-27T16:08:08.321+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-27T16:08:17.609+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-27T16:08:17.714+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-27T16:08:17.720+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-27T16:08:18.631+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-27T16:08:18.636+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10299 ms
+2024-08-27T16:08:27.285+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-27T16:08:28.904+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5677a7c6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@138f9423, org.springframework.security.web.context.SecurityContextHolderFilter@6552b089, org.springframework.security.web.header.HeaderWriterFilter@30da8745, org.springframework.web.filter.CorsFilter@3260a086, org.springframework.security.web.csrf.CsrfFilter@6f309ac0, org.springframework.security.web.authentication.logout.LogoutFilter@6aa9b3ef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@24b55c60, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c0829cc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5fd88125, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17dd70eb, org.springframework.security.web.access.ExceptionTranslationFilter@5559d692, org.springframework.security.web.access.intercept.AuthorizationFilter@3c033052]
+2024-08-27T16:08:30.406+02:00  WARN 17848 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-27T16:08:30.729+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-27T16:08:30.940+02:00  INFO 17848 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 25.859 seconds (process running for 28.002)
+2024-08-27T16:08:53.447+02:00  INFO 17848 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-27T16:08:53.451+02:00  INFO 17848 --- [FinalProjectFE] [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-27T16:08:53.457+02:00  INFO 17848 --- [FinalProjectFE] [http-nio-9090-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-08-27T16:08:53.860+02:00  WARN 17848 --- [FinalProjectFE] [http-nio-9090-exec-7] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [169] milliseconds.
+2024-08-27T16:15:01.585+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.11 with PID 2200 (C:\Users\raimo\OneDrive\Betacom\Git-hub\FinalProjectFE\target\classes started by raimo in C:\Users\raimo\OneDrive\Betacom\Git-hub\FinalProjectFE)
+2024-08-27T16:15:01.592+02:00 DEBUG 2200 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-27T16:15:01.600+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-27T16:15:01.965+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-08-27T16:15:01.986+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-08-27T16:15:08.681+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-27T16:15:08.750+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-27T16:15:08.752+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-27T16:15:08.984+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-27T16:15:08.986+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6973 ms
+2024-08-27T16:15:11.759+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-27T16:15:12.805+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@61a1798d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1130f787, org.springframework.security.web.context.SecurityContextHolderFilter@708a83d7, org.springframework.security.web.header.HeaderWriterFilter@184c1b72, org.springframework.web.filter.CorsFilter@25e1dd90, org.springframework.security.web.csrf.CsrfFilter@592fd44f, org.springframework.security.web.authentication.logout.LogoutFilter@1ba04016, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@75654084, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5e6191b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@557f4258, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@60461439, org.springframework.security.web.access.ExceptionTranslationFilter@738cbae2, org.springframework.security.web.access.intercept.AuthorizationFilter@1bac08d7]
+2024-08-27T16:15:13.981+02:00  WARN 2200 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-27T16:15:14.208+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-27T16:15:14.259+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 15.42 seconds (process running for 18.507)
+2024-08-27T16:15:22.331+02:00  INFO 2200 --- [FinalProjectFE] [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-27T16:15:22.348+02:00  INFO 2200 --- [FinalProjectFE] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-27T16:15:22.370+02:00  INFO 2200 --- [FinalProjectFE] [http-nio-9090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2024-08-27T16:15:25.117+02:00  WARN 2200 --- [FinalProjectFE] [http-nio-9090-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [141] milliseconds.
+2024-08-27T16:17:47.382+02:00  INFO 2200 --- [FinalProjectFE] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2024-08-27T16:17:51.040+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Starting FinalProjectFeApplication using Java 17.0.11 with PID 2200 (C:\Users\raimo\OneDrive\Betacom\Git-hub\FinalProjectFE\target\classes started by raimo in C:\Users\raimo\OneDrive\Betacom\Git-hub\FinalProjectFE)
+2024-08-27T16:17:51.041+02:00 DEBUG 2200 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Running with Spring Boot v3.2.8, Spring v6.1.11
+2024-08-27T16:17:51.042+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : No active profile set, falling back to 1 default profile: "default"
+2024-08-27T16:17:52.947+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2024-08-27T16:17:52.958+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-08-27T16:17:52.962+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.26]
+2024-08-27T16:17:53.127+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-08-27T16:17:53.129+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2081 ms
+2024-08-27T16:17:53.970+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-08-27T16:17:54.335+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4287cb3b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@677f9477, org.springframework.security.web.context.SecurityContextHolderFilter@37751ae, org.springframework.security.web.header.HeaderWriterFilter@18c8557b, org.springframework.web.filter.CorsFilter@275a15da, org.springframework.security.web.csrf.CsrfFilter@38577fda, org.springframework.security.web.authentication.logout.LogoutFilter@2207b11c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5d970ec4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d57b5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@41fd9f32, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42dededb, org.springframework.security.web.access.ExceptionTranslationFilter@256c91b5, org.springframework.security.web.access.intercept.AuthorizationFilter@65a4a83a]
+2024-08-27T16:17:54.734+02:00  WARN 2200 --- [FinalProjectFE] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2024-08-27T16:17:54.935+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path ''
+2024-08-27T16:17:55.012+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] c.betacom.fe.FinalProjectFeApplication   : Started FinalProjectFeApplication in 4.092 seconds (process running for 179.26)
+2024-08-27T16:17:55.074+02:00  INFO 2200 --- [FinalProjectFE] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2024-08-27T16:18:06.760+02:00  INFO 2200 --- [FinalProjectFE] [http-nio-9090-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-08-27T16:18:06.761+02:00  INFO 2200 --- [FinalProjectFE] [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-08-27T16:18:06.766+02:00  INFO 2200 --- [FinalProjectFE] [http-nio-9090-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms

@@ -13,6 +13,8 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import jakarta.servlet.http.HttpSession;
+
 @Controller
 public class AmministrazioneController {
 	
@@ -36,7 +38,7 @@ public class AmministrazioneController {
 		ModelAndView mav = new ModelAndView("create-user");
 		
 		URI uri = UriComponentsBuilder
-				.fromHttpUrl(backend + "/createUser")
+				.fromHttpUrl(backend + "/createOrUpdate")
 				.buildAndExpand().toUri();
 		log.debug("URI: " + uri);
         return mav; 
@@ -72,5 +74,11 @@ public class AmministrazioneController {
 		ModelAndView mav = new ModelAndView("create-admin");
 		return mav;
 	}
+
+	@GetMapping("/logout")
+    public String logoutPage(HttpSession session) {
+        session.invalidate();
+        return "redirect:/login";
+    }
 
 }
