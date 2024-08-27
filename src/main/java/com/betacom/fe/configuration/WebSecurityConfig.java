@@ -50,7 +50,8 @@ public class WebSecurityConfig {
 	        return http.build();
 	    }
 	   
-	    @Bean
+	    @SuppressWarnings("unchecked")
+		@Bean
 	    public UserDetailsService userDetailsService() {
 
 	        List<UserDetails> userDetails = new ArrayList<UserDetails>();
