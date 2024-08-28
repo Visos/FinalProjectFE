@@ -19,8 +19,12 @@
 	<div align="center" style="padding-top: 50px">
 		<h1>Login</h1>
 		<div style="padding-top: 50px">
-			<div th:if="${param.error}"><h3>Credenziali sbagliate</h3></div>
-			<div th:if="${param.logout}"><h3>You have been logged out.</h3></div>
+			<div th:if="${param.error}">
+				<h3>Credenziali sbagliate</h3>
+			</div>
+			<div th:if="${param.logout}">
+				<h3>You have been logged out.</h3>
+			</div>
 		</div>
 		<div style="padding-top: 50px">
 			<form th:action="@{/login}" method="post">
@@ -40,13 +44,13 @@
 							for="exampleCheck1">Mostra password</label>
 					</div>
 				</div>
-	
-		<div>
-			<input type="submit" value="Sign In" />
+
+				<div>
+					<input type="submit" value="Sign In" />
+				</div>
+			</form>
 		</div>
-		</form>
-			</div>
-		
+
 	</div>
 </body>
 </html>
