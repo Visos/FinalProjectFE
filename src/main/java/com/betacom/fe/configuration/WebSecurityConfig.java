@@ -26,60 +26,59 @@ import org.springframework.web.util.UriComponentsBuilder;
 @EnableWebSecurity
 public class WebSecurityConfig {
 	
-	@Autowired
-	RestTemplate rest;
-	
-	
-	@Value("${jpa.backend}")
-	String backend;
-	
-	
-	   @Bean
-	    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-	        http.authorizeHttpRequests((requests) -> requests
-	                .requestMatchers("/amministratore", "/amministratore/**").hasRole("AMMINISTRATORE")
-	                .requestMatchers("/").permitAll()
-	                .anyRequest().authenticated()
-	                )
-	            .formLogin((form) -> form
-	                .loginPage("/login")
-	                .permitAll()
-	                )
-	            .logout((logout) -> logout.permitAll());
-	            
-	        return http.build();
-	    }
-	   
-	    @SuppressWarnings("unchecked")
-		@Bean
-	    public UserDetailsService userDetailsService() {
-
-	        List<UserDetails> userDetails = new ArrayList<UserDetails>();
-
-	        URI uri = UriComponentsBuilder
-	                .fromHttpUrl(backend + "utente/listAll")  
-	                .buildAndExpand().toUri();      
-
-	        List<HashMap<String, Object>> r = rest.getForObject(uri, ArrayList.class);
-
-	        for (HashMap<String,Object> hashMap : r) {
-	            
-	            userDetails.add(
-	                User.withUsername(hashMap.get("mail").toString())
-	                   .password(passwordEncoder().encode(hashMap.get("password").toString()))
-	                   .roles(hashMap.get("ruolo").toString())
-	                   .build()
-	            );
-	        }
-	        
-	        return new InMemoryUserDetailsManager(userDetails);
-	   }
-	   
-	   @Bean
-		public PasswordEncoder passwordEncoder() {
-			return new BCryptPasswordEncoder();
-		}
-	   
+//	@Autowired
+//	RestTemplate rest;
+//	
+//	
+//	@Value("${jpa.backend}")
+//	String backend;
+//	
+//	
+//	   @Bean
+//	    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+//	        http.authorizeHttpRequests((requests) -> requests
+//	                .requestMatchers("/amministratore", "/amministratore/**").hasRole("AMMINISTRATORE")
+//	                .requestMatchers("/").permitAll()
+//	                .anyRequest().authenticated()
+//	                )
+//	            .formLogin((form) -> form
+//	                .loginPage("/login")
+//	                .permitAll()
+//	                )
+//	            .logout((logout) -> logout.permitAll());
+//	            
+//	        return http.build();
+//	    }
+//	   
+//		@Bean
+//	    public UserDetailsService userDetailsService() {
+//
+//	        List<UserDetails> userDetails = new ArrayList<UserDetails>();
+//
+//	        URI uri = UriComponentsBuilder
+//	                .fromHttpUrl(backend + "utente/listAll")  
+//	                .buildAndExpand().toUri();      
+//
+//	        List<HashMap<String, Object>> r = rest.getForObject(uri, ArrayList.class);
+//
+//	        for (HashMap<String,Object> hashMap : r) {
+//	            
+//	            userDetails.add(
+//	                User.withUsername(hashMap.get("mail").toString())
+//	                   .password(passwordEncoder().encode(hashMap.get("password").toString()))
+//	                   .roles(hashMap.get("ruolo").toString())
+//	                   .build()
+//	            );
+//	        }
+//	        
+//	        return new InMemoryUserDetailsManager(userDetails);
+//	   }
+//	   
+//	   @Bean
+//		public PasswordEncoder passwordEncoder() {
+//			return new BCryptPasswordEncoder();
+//		}
+//	   
 
 //	@Bean
 //	public UserDetailsService userDetailService() {

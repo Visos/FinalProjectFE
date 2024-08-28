@@ -13,6 +13,8 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import com.betacom.fe.response.Response;
+
 import jakarta.servlet.http.HttpSession;
 
 @Controller
@@ -53,6 +55,13 @@ public class AmministrazioneController {
 	@GetMapping("/nuovoProdotto")
 	public ModelAndView nuovoProdotto() {
 		ModelAndView mav = new ModelAndView("nuovo-prodotto");
+		  URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/marca/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listMarca = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    mav.addObject("marca", listMarca);
 		return mav;
 	}
 	

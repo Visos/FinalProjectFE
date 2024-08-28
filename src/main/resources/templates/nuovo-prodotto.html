@@ -31,12 +31,12 @@
 						id="img" name="img" accept="image/*">
 				</div>
 				<div class="mb-3">
-					<label class="form-label">Marca</label> <select id="marca"
+					<label class="form-label">Marca</label> <select  id="marca"
 						name="marca">
 
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="...">...</option>
+						<option th:each="m : ${marca.dati}" th:value="${m.id}"
+						th:text="${m.descrizione}"/>
+
 					</select>
 				</div>
 				<div class="mb-3">
