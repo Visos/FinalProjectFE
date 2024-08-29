@@ -16,270 +16,6 @@
 <meta charset="UTF-8">
 <title>Progetto finale</title>
 </head>
-<body style="background-color: #F6F1F1;">
-	<nav th:insert="~{fragments/header}"></nav>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary"
-		th:insert="~{fragments/header-admin}"></nav>
-	<div class="create-container">
-		<div>
-			<h3>NUOVO PRODOTTO</h3>
-		</div>
-		<form action="#" class="create-box form-group">
-			<div>
-				<div class="mb-3">
-					<label for="img">Seleziona un'immagine:</label> <input type="file"
-						id="img" name="img" accept="image/*">
-				</div>
-				<div class="mb-3">
-					<label class="form-label">Marca</label> <select  id="marca"
-						name="marca">
-
-						<option th:each="m : ${marca.dati}" th:value="${m.id}"
-						th:text="${m.descrizione}"/>
-
-					</select>
-				</div>
-				<div class="mb-3">
-					<label class="form-label">Colore</label> <select id="colore"
-						name="colore">
-
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="...">...</option>
-					</select>
-				</div>
-				<div class="mb-3">
-					<label class="form-label">Fantasia</label> <select id="fantasia"
-						name="fantasia">
-
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="...">...</option>
-					</select>
-				</div>
-				<div class="mb-3">
-					<label class="form-label">Materiale</label> <select id="materiale"
-						name="materiale">
-
-						<option value="1">1</option>
-						<option value="2">2</option>
-						<option value="...">...</option>
-					</select>
-				</div>
-
-				<div class="mb-3">
-					<label class="form-label">Prezzo</label> <input type="text">
-				</div>
-
-				<div class="mb-3">
-					<label class="form-label">Quantità</label> <input type="number"
-						min=0>
-				</div>
-				<div class="mb-3">
-					<label class="form-label">Sesso</label> <select id="sesso"
-						name="sesso">
-						<option value=""></option>
-						<option value="M">M</option>
-						<option value="F">F</option>
-						<option value="Unisex">Unisex</option>
-					</select>
-				</div>
-				<div class="mb-3">
-					<label class="form-label">Tipo di prodotto</label> <select
-						id="selezione" name="selezione" onchange="mostraInput()">
-						<option value=""></option>
-						<option value="maglietta">Maglietta</option>
-						<option value="camicia">Camicia</option>
-						<option value="vestito">Vestito</option>
-						<option value="pantaloni">Pantaloni</option>
-						<option value="scarpe">Scarpe</option>
-					</select>
-					<div id="input-maglietta" class="hidden">
-						<div class="mb-3">
-							<label class="form-label">Lunghezza manica</label> <select
-								id="lunghezza_manica" name="lunghezza_manica">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Taglia</label> <select id="taglia"
-								name="taglia">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Tipo colletto</label> <select
-								id="tipo_colletto" name="tipo_colletto">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Vestibilità</label> <select
-								id="vestibilità" name="vestibilità">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-					</div>
-
-					<div id="input-camicia" class="hidden">
-						<div class="mb-3">
-							<label class="form-label">Lunghezza manica</label> <select
-								id="lunghezza_manica" name="lunghezza_manica">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Taglia</label> <select id="taglia"
-								name="taglia">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Tipo colletto</label> <select
-								id="tipo_colletto" name="tipo_colletto">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Vestibilità</label> <select
-								id="vestibilità" name="vestibilità">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-					</div>
-
-					<div id="input-vestito" class="hidden">
-						<div class="mb-3">
-							<label class="form-label">Lunghezza manica</label> <select
-								id="lunghezza_manica" name="lunghezza_manica">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Taglia</label> <select id="taglia"
-								name="taglia">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Lunghezza</label> <select
-								id="lunghezza" name="lunghezza">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Vestibilità</label> <select
-								id="vestibilità" name="vestibilità">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-					</div>
-
-					<div id="input-pantaloni" class="hidden">
-						<div class="mb-3">
-							<label class="form-label">Lunghezza</label> <select
-								id="lunghezza" name="lunghezza">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Taglia</label> <select id="taglia"
-								name="taglia">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Vestibilità</label> <select
-								id="vestibilità" name="vestibilità">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-					</div>
-
-					<div id="input-scarpe" class="hidden">
-						<div class="mb-3">
-							<label class="form-label">Chiusura</label> <select id="chiusura"
-								name="chiusura">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Tipo scarpe</label> <select
-								id="tipo_scarpe" name="tipo_scarpe">
-
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="...">...</option>
-							</select>
-						</div>
-						<div class="mb-3">
-							<label class="form-label">Taglia</label> <input type="number">
-						</div>
-
-					</div>
-
-
-				</div>
-
-			</div>
-
-
-
-
-
-			<div class="buttonLogin" align="center">
-				<button type="submit" class="login-button">conferma</button>
-			</div>
-		</form>
-
 		<script>
 			function mostraInput() {
 				document.getElementById('input-maglietta').style.display = 'none';
@@ -303,6 +39,266 @@
 				}
 			}
 		</script>
+<body style="background-color: #F6F1F1;">
+	<nav th:insert="~{fragments/header}"></nav>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		th:insert="~{fragments/header-admin}"></nav>
+	<div class="create-container">
+		<div>
+			<h3>NUOVO PRODOTTO</h3>
+		</div>
+		<form th:action="@{/saveProdotto}" th:object="${prodotto}" method="post"
+			class="create-box form-group">
+			<input type="hidden" th:field="*{id}" />
+			<div>
+				<div class="mb-3">
+					<label for="img">Seleziona un'immagine:</label> <input type="file"
+						id="img" name="img" accept="image/*">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Marca</label> <select id="marca"
+						name="marca" th:field="*{marca}">
+
+						<option th:each="m : ${marca.dati}" th:value="${m.id}"
+							th:text="${m.descrizione}" />
+
+					</select>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Colore</label> <select id="colore"
+						name="colore" th:field="*{colore}">
+
+						<option th:each="c : ${colore.dati}" th:value="${c.id}"
+							th:text="${c.descrizione}" />
+					</select>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Fantasia</label> <select id="fantasia"
+						name="fantasia" th:field="*{fantasia}">
+
+						<option th:each="f : ${fantasia.dati}" th:value="${f.id}"
+							th:text="${f.descrizione}" />
+					</select>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Materiale</label> <select id="materiale"
+						name="materiale" th:field="*{materiale}">
+
+						<option th:each="m : ${materiale.dati}" th:value="${m.id}"
+							th:text="${m.descrizione}" />
+					</select>
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label">Prezzo</label> <input type="text"
+						th:field="*{prezzo}">
+				</div>
+
+				<div class="mb-3">
+					<label class="form-label">Quantità</label> <input type="number"
+						min=0 th:field="*{qty}">
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Sesso</label> <select id="sesso"
+						name="sesso" th:field="*{sesso}">
+						<option value=""></option>
+						<option value="M">M</option>
+						<option value="F">F</option>
+						<option value="Unisex">Unisex</option>
+					</select>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Tipo di prodotto</label> <select
+						id="selezione" name="selezione" onchange="mostraInput()">
+						<option value=""></option>
+						<option value="maglietta">Maglietta</option>
+						<option value="camicia">Camicia</option>
+						<option value="vestito">Vestito</option>
+						<option value="pantaloni">Pantaloni</option>
+						<option value="scarpe">Scarpe</option>
+					</select>
+					<div id="input-maglietta" class="hidden">
+
+						<div class="mb-3">
+							<label class="form-label">Lunghezza manica</label> <select
+								id="lunghezza_manica" name="lunghezza_manica"
+								th:field="*{magliettaReq.lunghezzaManica}">
+
+								<option th:each="m : ${manica.dati}" th:value="${m.id}"
+									th:text="${m.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Taglia</label> <select id="taglia"
+								name="taglia" th:field="*{magliettaReq.taglia}">
+								<option th:each="t : ${taglia.dati}" th:value="${t.id}"
+									th:text="${t.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Tipo colletto</label> <select
+								id="tipo_colletto" name="tipo_colletto"
+								th:field="*{magliettaReq.tipoColletto}">
+
+								<option th:each="c : ${colletto.dati}" th:value="${c.id}"
+									th:text="${c.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Vestibilità</label> <select
+								id="vestibilita" name="vestibilita"
+								th:field="*{magliettaReq.vestibilita}">
+
+								<option th:each="v : ${vestibilita.dati}" th:value="${v.id}"
+									th:text="${v.descrizione}" />
+							</select>
+						</div>
+					</div>
+
+					<div id="input-camicia" class="hidden">
+						<div class="mb-3">
+							<label class="form-label">Lunghezza manica</label> <select
+								id="lunghezza_manica" name="lunghezza_manica"
+								th:field="*{camiciaReq.lunghezzaManica}">
+
+								<option th:each="m : ${manica.dati}" th:value="${m.id}"
+									th:text="${m.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Taglia</label> <select id="taglia"
+								name="taglia" th:field="*{camiciaReq.taglia}">
+								<option th:each="t : ${taglia.dati}" th:value="${t.id}"
+									th:text="${t.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Tipo colletto</label> <select
+								id="tipo_colletto" name="tipo_colletto"
+								th:field="*{camiciaReq.tipoColletto}">
+
+								<option th:each="c : ${colletto.dati}" th:value="${c.id}"
+									th:text="${c.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Vestibilità</label> <select
+								id="vestibilita" name="vestibilita"
+								th:field="*{camiciaReq.vestibilita}">
+
+								<option th:each="v : ${vestibilita.dati}" th:value="${v.id}"
+									th:text="${v.descrizione}" />
+							</select>
+						</div>
+					</div>
+
+					<div id="input-vestito" class="hidden">
+						<div class="mb-3">
+							<label class="form-label">Lunghezza manica</label> <select
+								id="lunghezza_manica" name="lunghezza_manica"
+								th:field="*{vestitoReq.lunghezzaManica}">
+
+								<option th:each="m : ${manica.dati}" th:value="${m.id}"
+									th:text="${m.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Taglia</label> <select id="taglia"
+								name="taglia" th:field="*{vestitoReq.taglia}">
+								<option th:each="t : ${taglia.dati}" th:value="${t.id}"
+									th:text="${t.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Lunghezza</label> <select
+								id="lunghezza" name="lunghezza"
+								th:field="*{vestitoReq.lunghezza}">
+
+								<option th:each="l : ${lunghezza.dati}" th:value="${l.id}"
+									th:text="${l.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Vestibilità</label> <select
+								id="vestibilita" name="vestibilita"
+								th:field="*{vestitoReq.vestibilita}">
+
+								<option th:each="v : ${vestibilita.dati}" th:value="${v.id}"
+									th:text="${v.descrizione}" />
+							</select>
+						</div>
+					</div>
+
+					<div id="input-pantaloni" class="hidden">
+						<div class="mb-3">
+							<label class="form-label">Taglia</label> <select id="taglia"
+								name="taglia" th:field="*{pantaloneReq.taglia}">
+								<option th:each="t : ${taglia.dati}" th:value="${t.id}"
+									th:text="${t.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Lunghezza</label> <select
+								id="lunghezza" name="lunghezza"
+								th:field="*{pantaloneReq.lunghezza}">
+
+								<option th:each="l : ${lunghezza.dati}" th:value="${l.id}"
+									th:text="${l.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Vestibilità</label> <select
+								id="vestibilita" name="vestibilita"
+								th:field="*{pantaloneReq.vestibilita}">
+
+								<option th:each="v : ${vestibilita.dati}" th:value="${v.id}"
+									th:text="${v.descrizione}" />
+							</select>
+						</div>
+					</div>
+
+					<div id="input-scarpe" class="hidden">
+						<div class="mb-3">
+							<label class="form-label">Chiusura</label> <select id="chiusura"
+								name="chiusura" th:field="*{scarpaReq.chiusura}">
+
+
+								<option th:each="c : ${chiusura.dati}" th:value="${c.id}"
+									th:text="${c.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Tipo scarpe</label> <select
+								id="tipo_scarpe" name="tipo_scarpe"
+								th:field="*{scarpaReq.tipoScarpa}">
+
+
+								<option th:each="t : ${tipoScarpa.dati}" th:value="${t.id}"
+									th:text="${t.descrizione}" />
+							</select>
+						</div>
+						<div class="mb-3">
+							<label class="form-label">Taglia</label> <input type="number"
+								th:field="*{scarpaReq.tagliaScarpe}">
+						</div>
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+
+
+
+
+			<div class="buttonLogin" align="center">
+				<button type="submit" class="login-button">conferma</button>
+			</div>
+		</form>
+
+
 	</div>
 </body>
 </html>

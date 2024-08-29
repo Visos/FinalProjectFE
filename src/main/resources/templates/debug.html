@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Prodotto</title>
+</head>
+<body>
+    <h2>Dati del Prodotto Ricevuti</h2>
+    <p><strong>ID:</strong> <span th:text="${prodotto.id}"></span></p>
+    <p><strong>Marca:</strong> <span th:text="${prodotto.marca}"></span></p>
+    <p><strong>Colore:</strong> <span th:text="${prodotto.colore}"></span></p>
+    <p><strong>Fantasia:</strong> <span th:text="${prodotto.fantasia}"></span></p>
+    <p><strong>Materiale:</strong> <span th:text="${prodotto.materiale}"></span></p>
+    <p><strong>Prezzo:</strong> <span th:text="${prodotto.prezzo}"></span></p>
+    <p><strong>Quantità:</strong> <span th:text="${prodotto.qty}"></span></p>
+    <p><strong>Sesso:</strong> <span th:text="${prodotto.sesso}"></span></p>
+
+  <!-- Aggiungi qui i campi specifici per ogni tipo di prodotto -->
+
+<!-- Dettagli Maglietta -->
+<div th:if="${prodotto.magliettaReq != null}">
+    <h3>Dettagli Maglietta</h3>
+    <p><strong>Lunghezza Manica:</strong> <span th:text="${prodotto.magliettaReq.lunghezzaManica}"></span></p>
+    <p><strong>Taglia:</strong> <span th:text="${prodotto.magliettaReq.taglia}"></span></p>
+    <p><strong>Tipo Colletto:</strong> <span th:text="${prodotto.magliettaReq.tipoColletto}"></span></p>
+    <p><strong>Vestibilità:</strong> <span th:text="${prodotto.magliettaReq.vestibilita}"></span></p>
+</div>
+
+<!-- Dettagli Camicia -->
+<div th:if="${prodotto.camiciaReq != null}">
+    <h3>Dettagli Camicia</h3>
+    <p><strong>Lunghezza Manica:</strong> <span th:text="${prodotto.camiciaReq.lunghezzaManica}"></span></p>
+    <p><strong>Taglia:</strong> <span th:text="${prodotto.camiciaReq.taglia}"></span></p>
+    <p><strong>Tipo Colletto:</strong> <span th:text="${prodotto.camiciaReq.tipoColletto}"></span></p>
+    <p><strong>Vestibilità:</strong> <span th:text="${prodotto.camiciaReq.vestibilita}"></span></p>
+</div>
+
+<!-- Dettagli Vestito -->
+<div th:if="${prodotto.vestitoReq != null}">
+    <h3>Dettagli Vestito</h3>
+    <p><strong>Lunghezza Manica:</strong> <span th:text="${prodotto.vestitoReq.lunghezzaManica}"></span></p>
+    <p><strong>Taglia:</strong> <span th:text="${prodotto.vestitoReq.taglia}"></span></p>
+    <p><strong>Lunghezza:</strong> <span th:text="${prodotto.vestitoReq.lunghezza}"></span></p>
+    <p><strong>Vestibilità:</strong> <span th:text="${prodotto.vestitoReq.vestibilita}"></span></p>
+</div>
+
+<!-- Dettagli Pantaloni -->
+<div th:if="${prodotto.pantaloneReq != null}">
+    <h3>Dettagli Pantaloni</h3>
+    <p><strong>Taglia:</strong> <span th:text="${prodotto.pantaloneReq.taglia}"></span></p>
+    <p><strong>Lunghezza:</strong> <span th:text="${prodotto.pantaloneReq.lunghezza}"></span></p>
+    <p><strong>Vestibilità:</strong> <span th:text="${prodotto.pantaloneReq.vestibilita}"></span></p>
+</div>
+
+<!-- Dettagli Scarpe -->
+<div th:if="${prodotto.scarpaReq != null}">
+    <h3>Dettagli Scarpe</h3>
+    <p><strong>Chiusura:</strong> <span th:text="${prodotto.scarpaReq.chiusura}"></span></p>
+    <p><strong>Tipo Scarpe:</strong> <span th:text="${prodotto.scarpaReq.tipoScarpa}"></span></p>
+    <p><strong>Taglia:</strong> <span th:text="${prodotto.scarpaReq.tagliaScarpe}"></span></p>
+</div>
+
+</body>
+</html>
