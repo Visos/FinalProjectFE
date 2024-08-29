@@ -26,15 +26,71 @@ public class MaglietteController {
 	
 	@GetMapping(value = {"/listMagliette"})
 	public ModelAndView listMagliette() {
-		ModelAndView mav = new ModelAndView("list-magliette");		
+		ModelAndView mav = new ModelAndView("list-magliette");
 		
-		URI uri = UriComponentsBuilder
+		 URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/marca/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listMarca = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder.fromHttpUrl(backend + "/colore/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listColore = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder.fromHttpUrl(backend + "/fantasia/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listFantasia = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder.fromHttpUrl(backend + "/materiale/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listMateriale = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder.fromHttpUrl(backend + "/lunghezzaManica/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listLunghezzaManica = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder.fromHttpUrl(backend + "/taglia/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listTaglia = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder.fromHttpUrl(backend + "/tipoColletto/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listTipoColletto = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder.fromHttpUrl(backend + "/vestibilita/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listVestibilita = rest.getForEntity(uri, Response.class).getBody();
+		
+		    uri = UriComponentsBuilder
 				.fromHttpUrl(backend + "/prodotto/listAll")
 				.buildAndExpand().toUri();
 		
-		Response<?> resp = rest.getForEntity(uri, Response.class).getBody();
+		    Response<?> resp = rest.getForEntity(uri, Response.class).getBody();
 		
 		mav.addObject("listMagliette", resp);
+		mav.addObject("marca", listMarca);
+	    mav.addObject("colore", listColore);
+	    mav.addObject("fantasia", listFantasia);
+	    mav.addObject("materiale", listMateriale);
+	    mav.addObject("manica", listLunghezzaManica);
+	    mav.addObject("taglia", listTaglia);
+	    mav.addObject("colletto", listTipoColletto);
+	    mav.addObject("vestibilita", listVestibilita);
 		
 		return mav;
 	}
