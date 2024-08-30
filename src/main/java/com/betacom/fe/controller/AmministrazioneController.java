@@ -39,10 +39,10 @@ public class AmministrazioneController {
 	
 	
 	@GetMapping("/login")
-	public ModelAndView login() {
-		ModelAndView mav = new ModelAndView("login");
-		return mav;
-	}
+    public ModelAndView loginPage() {
+        ModelAndView mav = new ModelAndView("login");
+        return mav;
+    }
 	
 	@GetMapping("/createUser")
 	public ModelAndView createUser() { 

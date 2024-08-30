@@ -8,6 +8,11 @@
 <body style="background-color: #F6F1F1">
 	<nav th:insert="~{fragments/header}"></nav>
 	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		sec:authorize="hasRole('AMMINISTRATORE')"
+		th:insert="~{fragments/header-admin}"></nav>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		sec:authorize="hasRole('CLIENTE')"
 		th:insert="~{fragments/header-utente}"></nav>
 
 	<div class="container">

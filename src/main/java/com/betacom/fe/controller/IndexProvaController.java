@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class IndexProvaController {
 	
-	@GetMapping("/index")
+	@GetMapping(value = {"/jpa", "/index"})
 	public ModelAndView login() {
 		ModelAndView mav = new ModelAndView("index");
 		return mav;
