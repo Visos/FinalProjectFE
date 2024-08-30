@@ -16,29 +16,33 @@
 <meta charset="UTF-8">
 <title>Progetto finale</title>
 </head>
-		<script>
-			function mostraInput() {
-				document.getElementById('input-maglietta').style.display = 'none';
-				document.getElementById('input-camicia').style.display = 'none';
-				document.getElementById('input-vestito').style.display = 'none';
-				document.getElementById('input-pantaloni').style.display = 'none';
-				document.getElementById('input-scarpe').style.display = 'none';
+<script>
+	function mostraInput() {
+	    function mostraInput() {
+	        const sections = ['input-maglietta', 'input-camicia', 'input-vestito', 'input-pantaloni', 'input-scarpe'];
+	        sections.forEach(section => {
+	            document.getElementById(section).style.display = 'none';
+	            document.querySelectorAll(`#${section} input, #${section} select`).forEach(input => input.value = '');
+	        });
 
-				var selezione = document.getElementById('selezione').value;
+	        var selezione = document.getElementById('selezione').value;
+	        
+	        if (selezione) {
+	            document.getElementById('input-' + selezione).style.display = 'block';
+	        }
 
-				if (selezione === 'maglietta') {
-					document.getElementById('input-maglietta').style.display = 'block';
-				} else if (selezione === 'camicia') {
-					document.getElementById('input-camicia').style.display = 'block';
-				} else if (selezione === 'vestito') {
-					document.getElementById('input-vestito').style.display = 'block';
-				} else if (selezione === 'pantaloni') {
-					document.getElementById('input-pantaloni').style.display = 'block';
-				} else if (selezione === 'scarpe') {
-					document.getElementById('input-scarpe').style.display = 'block';
-				}
-			}
-		</script>
+	        document.getElementById('imgFile').addEventListener('change', function() {
+	            var fileName = this.files[0].name;
+	            document.getElementById('img').value = fileName;
+	        });
+	    }
+		
+		document.getElementById('imgFile').addEventListener('change', function() {
+			var fileName = this.files[0].name;
+			document.getElementById('img').value = fileName;
+		});
+	}
+</script>
 <body style="background-color: #F6F1F1;">
 	<nav th:insert="~{fragments/header}"></nav>
 	<nav class="navbar navbar-expand-lg bg-body-tertiary"
@@ -47,13 +51,14 @@
 		<div>
 			<h3>NUOVO PRODOTTO</h3>
 		</div>
-		<form th:action="@{/saveProdotto}" th:object="${prodotto}" method="post"
-			class="create-box form-group">
+		<form th:action="@{/saveProdotto}" th:object="${prodotto}"
+			method="post" class="create-box form-group">
 			<input type="hidden" th:field="*{id}" />
 			<div>
 				<div class="mb-3">
 					<label for="img">Seleziona un'immagine:</label> <input type="file"
-						id="img" name="img" accept="image/*">
+						id="imgFile" accept="image/*"> <input type="text" id="img"
+						name="img" th:field="*{img}" style="display: none;">
 				</div>
 				<div class="mb-3">
 					<label class="form-label">Marca</label> <select id="marca"
@@ -123,7 +128,7 @@
 							<label class="form-label">Lunghezza manica</label> <select
 								id="lunghezza_manica" name="lunghezza_manica"
 								th:field="*{magliettaReq.lunghezzaManica}">
-
+								<option value=""></option>
 								<option th:each="m : ${manica.dati}" th:value="${m.id}"
 									th:text="${m.descrizione}" />
 							</select>
@@ -131,6 +136,7 @@
 						<div class="mb-3">
 							<label class="form-label">Taglia</label> <select id="taglia"
 								name="taglia" th:field="*{magliettaReq.taglia}">
+								<option value=""></option>
 								<option th:each="t : ${taglia.dati}" th:value="${t.id}"
 									th:text="${t.descrizione}" />
 							</select>
@@ -139,7 +145,7 @@
 							<label class="form-label">Tipo colletto</label> <select
 								id="tipo_colletto" name="tipo_colletto"
 								th:field="*{magliettaReq.tipoColletto}">
-
+								<option value=""></option>
 								<option th:each="c : ${colletto.dati}" th:value="${c.id}"
 									th:text="${c.descrizione}" />
 							</select>
@@ -148,7 +154,7 @@
 							<label class="form-label">Vestibilità</label> <select
 								id="vestibilita" name="vestibilita"
 								th:field="*{magliettaReq.vestibilita}">
-
+								<option value=""></option>
 								<option th:each="v : ${vestibilita.dati}" th:value="${v.id}"
 									th:text="${v.descrizione}" />
 							</select>
@@ -160,7 +166,7 @@
 							<label class="form-label">Lunghezza manica</label> <select
 								id="lunghezza_manica" name="lunghezza_manica"
 								th:field="*{camiciaReq.lunghezzaManica}">
-
+								<option value=""></option>
 								<option th:each="m : ${manica.dati}" th:value="${m.id}"
 									th:text="${m.descrizione}" />
 							</select>
@@ -168,6 +174,7 @@
 						<div class="mb-3">
 							<label class="form-label">Taglia</label> <select id="taglia"
 								name="taglia" th:field="*{camiciaReq.taglia}">
+								<option value=""></option>
 								<option th:each="t : ${taglia.dati}" th:value="${t.id}"
 									th:text="${t.descrizione}" />
 							</select>
@@ -176,7 +183,7 @@
 							<label class="form-label">Tipo colletto</label> <select
 								id="tipo_colletto" name="tipo_colletto"
 								th:field="*{camiciaReq.tipoColletto}">
-
+								<option value=""></option>
 								<option th:each="c : ${colletto.dati}" th:value="${c.id}"
 									th:text="${c.descrizione}" />
 							</select>
@@ -185,7 +192,7 @@
 							<label class="form-label">Vestibilità</label> <select
 								id="vestibilita" name="vestibilita"
 								th:field="*{camiciaReq.vestibilita}">
-
+								<option value=""></option>
 								<option th:each="v : ${vestibilita.dati}" th:value="${v.id}"
 									th:text="${v.descrizione}" />
 							</select>
@@ -197,7 +204,7 @@
 							<label class="form-label">Lunghezza manica</label> <select
 								id="lunghezza_manica" name="lunghezza_manica"
 								th:field="*{vestitoReq.lunghezzaManica}">
-
+								<option value=""></option>
 								<option th:each="m : ${manica.dati}" th:value="${m.id}"
 									th:text="${m.descrizione}" />
 							</select>
@@ -205,6 +212,7 @@
 						<div class="mb-3">
 							<label class="form-label">Taglia</label> <select id="taglia"
 								name="taglia" th:field="*{vestitoReq.taglia}">
+								<option value=""></option>
 								<option th:each="t : ${taglia.dati}" th:value="${t.id}"
 									th:text="${t.descrizione}" />
 							</select>
@@ -213,7 +221,7 @@
 							<label class="form-label">Lunghezza</label> <select
 								id="lunghezza" name="lunghezza"
 								th:field="*{vestitoReq.lunghezza}">
-
+								<option value=""></option>
 								<option th:each="l : ${lunghezza.dati}" th:value="${l.id}"
 									th:text="${l.descrizione}" />
 							</select>
@@ -222,7 +230,7 @@
 							<label class="form-label">Vestibilità</label> <select
 								id="vestibilita" name="vestibilita"
 								th:field="*{vestitoReq.vestibilita}">
-
+								<option value=""></option>
 								<option th:each="v : ${vestibilita.dati}" th:value="${v.id}"
 									th:text="${v.descrizione}" />
 							</select>
@@ -233,6 +241,7 @@
 						<div class="mb-3">
 							<label class="form-label">Taglia</label> <select id="taglia"
 								name="taglia" th:field="*{pantaloneReq.taglia}">
+								<option value=""></option>
 								<option th:each="t : ${taglia.dati}" th:value="${t.id}"
 									th:text="${t.descrizione}" />
 							</select>
@@ -241,7 +250,7 @@
 							<label class="form-label">Lunghezza</label> <select
 								id="lunghezza" name="lunghezza"
 								th:field="*{pantaloneReq.lunghezza}">
-
+								<option value=""></option>
 								<option th:each="l : ${lunghezza.dati}" th:value="${l.id}"
 									th:text="${l.descrizione}" />
 							</select>
@@ -250,7 +259,7 @@
 							<label class="form-label">Vestibilità</label> <select
 								id="vestibilita" name="vestibilita"
 								th:field="*{pantaloneReq.vestibilita}">
-
+								<option value=""></option>
 								<option th:each="v : ${vestibilita.dati}" th:value="${v.id}"
 									th:text="${v.descrizione}" />
 							</select>
@@ -262,7 +271,7 @@
 							<label class="form-label">Chiusura</label> <select id="chiusura"
 								name="chiusura" th:field="*{scarpaReq.chiusura}">
 
-
+								<option value=""></option>
 								<option th:each="c : ${chiusura.dati}" th:value="${c.id}"
 									th:text="${c.descrizione}" />
 							</select>
@@ -272,7 +281,7 @@
 								id="tipo_scarpe" name="tipo_scarpe"
 								th:field="*{scarpaReq.tipoScarpa}">
 
-
+								<option value=""></option>
 								<option th:each="t : ${tipoScarpa.dati}" th:value="${t.id}"
 									th:text="${t.descrizione}" />
 							</select>
@@ -301,4 +310,5 @@
 
 	</div>
 </body>
+
 </html>

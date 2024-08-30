@@ -1,23 +1,25 @@
-package com.betacom.fe.request;
+package com.betacom.fe.dto;
 
-public class CamiciaReq {
+
+public class MagliettaDTO {
+	
     private Integer id;
     private String taglia;
     private String vestibilita;
     private String lunghezzaManica;
     private String tipoColletto;
 
-    public CamiciaReq() {
+    public MagliettaDTO() {
     }
     
-	public CamiciaReq(Integer id, String taglia, String vestibilita, String lunghezzaManica, String tipoColletto) {
-		super();
-		this.id = id;
-		this.taglia = taglia;
-		this.vestibilita = vestibilita;
-		this.lunghezzaManica = lunghezzaManica;
-		this.tipoColletto = tipoColletto;
-	}
+    public MagliettaDTO(Integer id, String taglia, String vestibilita, String lunghezzaManica,
+    		String tipoColletto) {
+        this.id = id;
+        this.taglia = taglia;
+        this.vestibilita = vestibilita;
+        this.lunghezzaManica = lunghezzaManica;
+        this.tipoColletto = tipoColletto;
+    }
 
 	public Integer getId() {
 		return id;
@@ -58,4 +60,6 @@ public class CamiciaReq {
 	public void setTipoColletto(String tipoColletto) {
 		this.tipoColletto = tipoColletto;
 	}
+    
+    
 }
