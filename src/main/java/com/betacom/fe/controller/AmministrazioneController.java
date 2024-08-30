@@ -154,10 +154,12 @@ public class AmministrazioneController {
 		p.setQty(req.getQty());
 		p.setSesso(req.getSesso());
 		p.setImg("../img/" + req.getImg());
+		log.debug(req.getColore());
 		p.setColore(req.getColore());
 		p.setMarca(req.getMarca());
 		p.setMateriale(req.getMateriale());
 		p.setFantasia(req.getFantasia());
+		p.setPrezzo(req.getPrezzo());
 
 
 		if (req.getMagliettaReq().getLunghezzaManica() != "" && req.getMagliettaReq().getTaglia() != ""
@@ -211,16 +213,17 @@ public class AmministrazioneController {
 
 		}
 		
-		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/CreateUpdate").buildAndExpand().toUri();
+		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/createOrUpdate").buildAndExpand().toUri();
 		log.debug("Uri: " + uri);
 		
 		ResponseBase resp = rest.postForEntity(uri, p, Response.class).getBody();
 		
 		log.debug("return code: " + resp.getRc());
+		log.debug("Message: " + resp.getMsg());
 		
 		if (!resp.getRc()) {
-			ModelAndView mav = new ModelAndView("nuovoProdotto");
-			mav.addObject("socio", req);
+			ModelAndView mav = new ModelAndView("nuovo-prodotto");
+			mav.addObject("prodotto",p);
 			return mav;
 		}
 		

@@ -64,7 +64,7 @@
 					<label class="form-label">Marca</label> <select id="marca"
 						name="marca" th:field="*{marca}">
 
-						<option th:each="m : ${marca.dati}" th:value="${m.id}"
+						<option th:each="m : ${marca.dati}" th:value="${m.descrizione}"
 							th:text="${m.descrizione}" />
 
 					</select>
@@ -73,7 +73,7 @@
 					<label class="form-label">Colore</label> <select id="colore"
 						name="colore" th:field="*{colore}">
 
-						<option th:each="c : ${colore.dati}" th:value="${c.id}"
+						<option th:each="c : ${colore.dati}" th:value="${c.descrizione}"
 							th:text="${c.descrizione}" />
 					</select>
 				</div>
@@ -81,7 +81,7 @@
 					<label class="form-label">Fantasia</label> <select id="fantasia"
 						name="fantasia" th:field="*{fantasia}">
 
-						<option th:each="f : ${fantasia.dati}" th:value="${f.id}"
+						<option th:each="f : ${fantasia.dati}" th:value="${f.descrizione}"
 							th:text="${f.descrizione}" />
 					</select>
 				</div>
@@ -89,13 +89,13 @@
 					<label class="form-label">Materiale</label> <select id="materiale"
 						name="materiale" th:field="*{materiale}">
 
-						<option th:each="m : ${materiale.dati}" th:value="${m.id}"
+						<option th:each="m : ${materiale.dati}" th:value="${m.descrizione}"
 							th:text="${m.descrizione}" />
 					</select>
 				</div>
 
 				<div class="mb-3">
-					<label class="form-label">Prezzo</label> <input type="text"
+					<label class="form-label">Prezzo</label> <input type="number"
 						th:field="*{prezzo}">
 				</div>
 
@@ -107,9 +107,9 @@
 					<label class="form-label">Sesso</label> <select id="sesso"
 						name="sesso" th:field="*{sesso}">
 						<option value=""></option>
-						<option value="M">M</option>
-						<option value="F">F</option>
-						<option value="Unisex">Unisex</option>
+						<option value="UOMO">M</option>
+						<option value="DONNA">F</option>
+						<option value="UNISEX">Unisex</option>
 					</select>
 				</div>
 				<div class="mb-3">
