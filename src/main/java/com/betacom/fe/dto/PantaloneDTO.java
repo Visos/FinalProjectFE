@@ -1,15 +1,16 @@
-package com.betacom.fe.request;
+package com.betacom.fe.dto;
 
-public class PantaloneReq {
+public class PantaloneDTO {
+
 	private Integer id;
     private String taglia;
     private String vestibilita;
     private String lunghezza;
 
-    public PantaloneReq() {
+    public PantaloneDTO() {
     }
 
-    public PantaloneReq(Integer id, String taglia, String vestibilita, String lunghezza) {
+    public PantaloneDTO(Integer id, String taglia, String vestibilita, String lunghezza) {
         this.id = id;
         this.taglia = taglia;
         this.vestibilita = vestibilita;
@@ -47,4 +48,6 @@ public class PantaloneReq {
 	public void setLunghezza(String lunghezza) {
 		this.lunghezza = lunghezza;
 	}
+    
+    
 }

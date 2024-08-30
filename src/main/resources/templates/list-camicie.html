@@ -20,90 +20,74 @@
 					<div style="flex: 1 1 31%; min-width: 200px;">
 						<label class="form-label">Colore</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="id_blu">Blu</option>
-							<option value="id_nero">Nero</option>
-							<option value="id_bianco">Bianco</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="col : ${colore.dati}" th:value="${col.id}"
+								th:text="${col.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 31%; min-width: 200px;">
 						<label class="form-label">Fantasia</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="id_blu">Blu</option>
-							<option value="id_nero">Nero</option>
-							<option value="id_bianco">Bianco</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="f : ${fantasia.dati}" th:value="${f.id}"
+								th:text="${f.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 31%; min-width: 200px;">
 						<label class="form-label">Marca</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="id_blu">Blu</option>
-							<option value="id_nero">Nero</option>
-							<option value="id_bianco">Bianco</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="m : ${marca.dati}" th:value="${m.id}"
+								th:text="${m.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 31%; min-width: 200px;">
 						<label class="form-label">Materiale</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="id_blu">Blu</option>
-							<option value="id_nero">Nero</option>
-							<option value="id_bianco">Bianco</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="mat : ${materiale.dati}" th:value="${mat.id}"
+								th:text="${mat.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 31%; min-width: 200px;">
 						<label class="form-label">Colletto</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="id_blu">Blu</option>
-							<option value="id_nero">Nero</option>
-							<option value="id_bianco">Bianco</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="c : ${colletto.dati}" th:value="${c.id}"
+								th:text="${c.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 31%;">
 						<label class="form-label">Taglia</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="id_blu">Blu</option>
-							<option value="id_nero">Nero</option>
-							<option value="id_bianco">Bianco</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="t : ${taglia.dati}" th:value="${t.id}"
+								th:text="${t.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 31%;">
 						<label class="form-label">Manica</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="id_blu">Blu</option>
-							<option value="id_nero">Nero</option>
-							<option value="id_bianco">Bianco</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="man : ${manica.dati}" th:value="${man.id}"
+								th:text="${man.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 31%; min-width: 200px;">
-						<label class="form-label">Vestibilità</label> <select
+						<label class="form-label">Vestibilità </label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="id_blu">Blu</option>
-							<option value="id_nero">Nero</option>
-							<option value="id_bianco">Bianco</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="v : ${vestibilita.dati}" th:value="${v.id}"
+								th:text="${v.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 31%; min-width: 200px;">
 						<label class="form-label">Sesso</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="id_blu">M</option>
-							<option value="id_nero">F</option>
-							<option value="id_bianco">Unisex</option>
+							<option selected value="null">Qualsiasi</option>
+							<option value="M">M</option>
+							<option value="F">F</option>
+							<option value="Unisex">Unisex</option>
 						</select>
 					</div>
 					<button type="submit" class="login-button">Conferma</button>
@@ -120,16 +104,19 @@
 					le camicie</h2>
 			</div>
 
-
-			<div class="card-container"
+			<div th:if="${listCamicie.dati.empty}">
+				<p>No products available</p>
+			</div>
+			<div class="card-container" th:if="${not listCamicie.dati.empty}"
 				style="display: flex; justify-content: space-around; flex-wrap: wrap;">
-				<div class="card" style="width: 18rem; margin-bottom: 20px;">
-					<img src="../img/camicia1.jpg" class="card-img-top" alt="Scarpe">
+				<div class="card" th:each="prod: ${listCamicie.dati}"
+					style="width: 18rem; margin-bottom: 20px;">
+					<img th:src="@{${prod.img}}" class="card-img-top" alt="Scarpe">
 					<div class="card-body">
-						<h5 class="card-title">Nome prodotto</h5>
-						<p class="card-text">Altri parametri......</p>
-						<p class="card-text">Prezzo</p>
-						<a th:href="@{prodotto}" class="see-button"
+						<h5 class="card-title" th:text="${prod.id}"></h5>
+						<p class="card-text"></p>
+						<p class="card-text" th:text="${prod.prezzo}"></p>
+						<a th:href="@{/prodotto(prodottoID=${prod.id})}"
 							style="font-size: 18px;">Visualizza</a>
 
 					</div>
