@@ -9,55 +9,84 @@
 </head>
 <body style="background-color: #F6F1F1;">
 	<nav th:insert = "~{fragments/header}"></nav>
-	<div class="create-container" >
-		<form action="@{cliente/home}" class="create-box form-group">
-			<div>
-			<div class="mb-3">
-                    <label class="form-label">Nome</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Cognome</label>
-                    <input type="text">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">E-mail</label>
-                    <input type="text">
-                </div>
-                 <div class="mb-3">
-                    <label class="form-label">Password</label>
-                    <input type="password" id="inputPassword">
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="showPassword()">
-                    <label class="form-check-label" for="exampleCheck1">Mostra
-                        password</label>
-                </div>
-                               <div class="inner-box">
-                   <div class="mb-3">
-                    <label class="form-label">Paese</label>
-                    <input type="text">
-                </div>
-                 <div class="mb-3">
-                    <label class="form-label">Strada</label>
-                    <input type="text">
-                </div>
-                 <div class="mb-3">
-                    <label class="form-label">Civico</label>
-                    <input type="text">
-                </div>
-                 <div class="mb-3">
-                    <label class="form-label">CAP</label>
-                    <input type="number" min="10000" max="99999">
-                </div>
-               </div>
-			</div>
+	<div class="create-container">
+    <form th:action="@{/saveUser}" th:object="${utente}" method="post" class="create-box form-group">
+        <!-- Hidden Fields -->
+        <input type="hidden" th:field="*{id}" />
 
-				 
-                 <div class="buttonLogin" align="center">
-                    <button type="submit" class="login-button">Conferma</button>
-                </div>
-            </form>		
-	</div>
+        <!-- Nome -->
+        <div class="mb-3">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" th:field="*{nome}" required>
+        </div>
+
+        <!-- Cognome -->
+        <div class="mb-3">
+            <label for="cognome" class="form-label">Cognome</label>
+            <input type="text" class="form-control" id="cognome" th:field="*{cognome}" required>
+        </div>
+
+        <!-- E-mail -->
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" th:field="*{mail}" required>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword" th:field="*{password}" required>
+        </div>
+
+        <!-- Show Password Checkbox -->
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="showPassword" onclick="togglePasswordVisibility()">
+            <label class="form-check-label" for="showPassword">Mostra password</label>
+        </div>
+       
+
+        <!-- Address Details -->
+        <div class="inner-box">
+            <!-- Paese -->
+            <div class="mb-3">
+                <label for="paese" class="form-label">Paese</label>
+                <input type="text" class="form-control" id="paese" th:field="*{paese}" required>
+            </div>
+
+            <!-- Strada -->
+            <div class="mb-3">
+                <label for="strada" class="form-label">Strada</label>
+                <input type="text" class="form-control" id="strada" th:field="*{strada}" required>
+            </div>
+
+            <!-- Civico -->
+            <div class="mb-3">
+                <label for="civico" class="form-label">Civico</label>
+                <input type="text" class="form-control" id="civico" th:field="*{civico}" required>
+            </div>
+
+            <!-- CAP -->
+            <div class="mb-3">
+                <label for="cap" class="form-label">CAP</label>
+                <input type="number" class="form-control" id="cap" th:field="*{cap}" min="10000" max="99999" required>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="buttonLogin text-center">
+            <button type="submit" class="btn btn-primary">Conferma</button>
+        </div>
+    </form>
+</div>
+
+<!-- JavaScript for Show Password -->
+<script>
+    function togglePasswordVisibility() {
+        const passwordField = document.getElementById('inputPassword');
+        const showPasswordCheckbox = document.getElementById('showPassword');
+        passwordField.type = showPasswordCheckbox.checked ? 'text' : 'password';
+    }
+</script>
+
 </body>
 </html>

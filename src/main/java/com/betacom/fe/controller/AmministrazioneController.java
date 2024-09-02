@@ -28,6 +28,7 @@ import com.betacom.fe.request.MagliettaReq;
 import com.betacom.fe.request.PantaloneReq;
 import com.betacom.fe.request.ProdottoReq;
 import com.betacom.fe.request.ScarpaReq;
+import com.betacom.fe.request.UtenteReq;
 import com.betacom.fe.request.VestitoReq;
 import com.betacom.fe.response.Response;
 import com.betacom.fe.response.ResponseBase;
@@ -54,16 +55,41 @@ public class AmministrazioneController {
 	@GetMapping("/createUser")
 	public ModelAndView createUser() {
 		ModelAndView mav = new ModelAndView("create-user");
-
-		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/createOrUpdate").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
+		UtenteReq utente = new UtenteReq();
+		mav.addObject("utente", utente);
 		return mav;
 	}
 
 	@PostMapping("/saveUser")
-	public Object saveUser() {
-
-		return null;
+	public Object saveUser(@ModelAttribute("utente") UtenteReq req) {
+		log.debug("Nome utente: " + req.getNome());
+		log.debug("Ruolo: " + req.getRuolo());
+		
+		req.setRuolo("CLIENTE");
+		UtenteReq utente = req;
+		
+		log.debug("Ruolo: " + utente.getRuolo());
+		
+		URI uri = UriComponentsBuilder
+				.fromHttpUrl(backend + "/utente/createOrUpdate")
+				.buildAndExpand().toUri();
+		
+		
+		ResponseBase resp = rest.postForEntity(uri, utente, ResponseBase.class).getBody();
+		log.debug("Nome: " + utente.getNome());
+		log.debug("rc: " + resp.getRc());
+		log.debug("rc: " + resp.getMsg());
+		
+		
+		if (!resp.getRc()) {
+			ModelAndView mav = new ModelAndView("create-user");
+			mav.addObject("utente", req);
+			mav.addObject("error", resp.getMsg());
+			return mav;
+		}
+		
+		//in questo modo voglio dico che voglio aggiornare la pagina e tornare in listSocio
+		return "redirect:/index";
 	}
 
 	@GetMapping("/nuovoProdotto")
@@ -250,7 +276,41 @@ public class AmministrazioneController {
 	@GetMapping("/createAdmin")
 	public ModelAndView createAdmin() {
 		ModelAndView mav = new ModelAndView("create-admin");
+		UtenteReq admin = new UtenteReq();
+		mav.addObject("admin", admin);
 		return mav;
+	}
+	
+	@PostMapping("/saveAdmin")
+	public Object saveAdmin(@ModelAttribute("admin") UtenteReq req) {
+		log.debug("Nome utente: " + req.getNome());
+		log.debug("Ruolo: " + req.getRuolo());
+		
+		req.setRuolo("AMMINISTRATORE");
+		UtenteReq admin = req;
+		
+		log.debug("Ruolo: " + admin.getRuolo());
+		
+		URI uri = UriComponentsBuilder
+				.fromHttpUrl(backend + "/utente/createOrUpdate")
+				.buildAndExpand().toUri();
+		
+		
+		ResponseBase resp = rest.postForEntity(uri, admin, ResponseBase.class).getBody();
+		log.debug("Nome: " + admin.getNome());
+		log.debug("rc: " + resp.getRc());
+		log.debug("rc: " + resp.getMsg());
+		
+		
+		if (!resp.getRc()) {
+			ModelAndView mav = new ModelAndView("create-admin");
+			mav.addObject("admin", admin);
+			mav.addObject("error", resp.getMsg());
+			return mav;
+		}
+		
+		//in questo modo voglio dico che voglio aggiornare la pagina e tornare in listSocio
+		return "redirect:/index";
 	}
 
 	@GetMapping("/logout")

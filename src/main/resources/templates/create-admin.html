@@ -12,24 +12,31 @@
 		<nav class="navbar navbar-expand-lg bg-body-tertiary"
 		th:insert="~{fragments/header-admin}"></nav>
 	<div class="create-container" >
-		<form action="#" class="create-box form-group">
+		<form th:action="@{/saveAdmin}" th:object="${admin}" method="post" class="create-box form-group">
 			<div>
+			 <input type="hidden" th:field="*{id}" />
 			<div class="mb-3">
-                    <label class="form-label">Nome</label>
-                    <input type="text" class="form-control">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Cognome</label>
-                    <input type="text">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">E-mail</label>
-                    <input type="text">
-                </div>
-                 <div class="mb-3">
-                    <label class="form-label">Password</label>
-                    <input type="password" id="inputPassword">
-                </div>
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control" id="nome" th:field="*{nome}" required>
+        </div>
+
+        <!-- Cognome -->
+        <div class="mb-3">
+            <label for="cognome" class="form-label">Cognome</label>
+            <input type="text" class="form-control" id="cognome" th:field="*{cognome}" required>
+        </div>
+
+        <!-- E-mail -->
+        <div class="mb-3">
+            <label for="email" class="form-label">E-mail</label>
+            <input type="email" class="form-control" id="email" th:field="*{mail}" required>
+        </div>
+
+        <!-- Password -->
+        <div class="mb-3">
+            <label for="inputPassword" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword" th:field="*{password}" required>
+        </div>
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="exampleCheck1" onclick="showPassword()">
                     <label class="form-check-label" for="exampleCheck1">Mostra
@@ -40,9 +47,18 @@
             
 				 
                  <div class="buttonLogin" align="center">
-                    <button type="submit" class="login-button">Conferma </button>
-                </div>
-            </form>		
-	</div>
+         <button type="submit" class="btn btn-primary">Conferma</button>
+        </div>
+    </form>
+</div>
+
+<!-- JavaScript for Show Password -->
+<script>
+    function togglePasswordVisibility() {
+        const passwordField = document.getElementById('inputPassword');
+        const showPasswordCheckbox = document.getElementById('showPassword');
+        passwordField.type = showPasswordCheckbox.checked ? 'text' : 'password';
+    }
+</script>
 </body>
 </html>
