@@ -103,33 +103,13 @@
 				style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 				<div class="card" th:each="prod: ${listPantaloni.dati}"
 					style="width: 18rem; margin-bottom: 20px;">
-					<img th:src="@{${prod.img}}" class="card-img-top" alt="Scarpe">
+					<img th:src="@{${prod.img}}" class="card-img-top">
 					<div class="card-body">
 						<h5 class="card-title" th:text="${prod.id}"></h5>
 						<p class="card-text"></p>
 						<p class="card-text" th:text="${prod.prezzo}"></p>
 						<a th:href="@{/prodotto(prodottoID=${prod.id})}"
 							class="see-button" style="font-size: 18px;">Visualizza</a>
-					</div>
-				</div>
-
-				<div class="card" style="width: 18rem; margin-bottom: 20px;">
-					<img src="../img/pantaloni1.jpg" class="card-img-top" alt="Scarpe">
-					<div class="card-body">
-						<h5 class="card-title">Nome prodotto</h5>
-						<p class="card-text">Altri parametri......</p>
-						<p class="card-text">Prezzo</p>
-				<a th:href="@{prodotto}" class="see-button" style="font-size: 18px;">Visualizza</a>
-					</div>
-				</div>
-
-				<div class="card" style="width: 18rem; margin-bottom: 20px;">
-					<img src="../img/camicia1.jpg" class="card-img-top" alt="Scarpe">
-					<div class="card-body">
-						<h5 class="card-title">Nome prodotto</h5>
-						<p class="card-text">Altri parametri......</p>
-						<p class="card-text">Prezzo</p>
-				<a th:href="@{prodotto}" class="see-button" style="font-size: 18px;">Visualizza</a>
 					</div>
 				</div>
 			</div>

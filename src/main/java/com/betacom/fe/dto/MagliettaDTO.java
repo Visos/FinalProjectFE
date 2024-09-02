@@ -60,6 +60,15 @@ public class MagliettaDTO {
 	public void setTipoColletto(String tipoColletto) {
 		this.tipoColletto = tipoColletto;
 	}
+
+	@Override
+	public String toString() {
+		return "MagliettaDTO [id=" + id + ", taglia=" + taglia + ", vestibilita=" + vestibilita + ", lunghezzaManica="
+				+ lunghezzaManica + ", tipoColletto=" + tipoColletto + ", getId()=" + getId() + ", getTaglia()="
+				+ getTaglia() + ", getVestibilita()=" + getVestibilita() + ", getLunghezzaManica()="
+				+ getLunghezzaManica() + ", getTipoColletto()=" + getTipoColletto() + ", getClass()=" + getClass()
+				+ ", hashCode()=" + hashCode() + ", toString()=" + super.toString() + "]";
+	}
     
     
 }

@@ -70,52 +70,40 @@ public class AmministrazioneController {
 	public ModelAndView nuovoProdotto() {
 		ModelAndView mav = new ModelAndView("nuovo-prodotto");
 		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/marca/listAll").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
 
 		Response<?> listMarca = rest.getForEntity(uri, Response.class).getBody();
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/colore/listAll").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
 
 		Response<?> listColore = rest.getForEntity(uri, Response.class).getBody();
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/fantasia/listAll").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
-
 		Response<?> listFantasia = rest.getForEntity(uri, Response.class).getBody();
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/materiale/listAll").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
 
 		Response<?> listMateriale = rest.getForEntity(uri, Response.class).getBody();
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/lunghezzaManica/listAll").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
 
 		Response<?> listLunghezzaManica = rest.getForEntity(uri, Response.class).getBody();
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/taglia/listAll").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
 
 		Response<?> listTaglia = rest.getForEntity(uri, Response.class).getBody();
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/tipoColletto/listAll").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
 
 		Response<?> listTipoColletto = rest.getForEntity(uri, Response.class).getBody();
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/vestibilita/listAll").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
-
 		Response<?> listVestibilita = rest.getForEntity(uri, Response.class).getBody();
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/lunghezza/listAll").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
 
 		Response<?> listLunghezza = rest.getForEntity(uri, Response.class).getBody();
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/chiusura/listAll").buildAndExpand().toUri();
-		log.debug("URI: " + uri);
 
 		Response<?> listChiusura = rest.getForEntity(uri, Response.class).getBody();
 
@@ -149,74 +137,91 @@ public class AmministrazioneController {
 
 	@PostMapping("/saveProdotto")
 	public Object saveProdotto(@ModelAttribute("prodotto") ProdottoReq req, Model model) {
-		ProdottoDTO p = new ProdottoDTO();
+		ProdottoReq p = new ProdottoReq();
 		p.setId((req.getId() == null) ? null : req.getId());
 		p.setQty(req.getQty());
 		p.setSesso(req.getSesso());
+		
 		p.setImg("../img/" + req.getImg());
-		log.debug(req.getColore());
+//		log.debug(req.getMarca());
+//		log.debug(req.getMateriale());
+//		log.debug(req.getColore());
 		p.setColore(req.getColore());
 		p.setMarca(req.getMarca());
 		p.setMateriale(req.getMateriale());
 		p.setFantasia(req.getFantasia());
 		p.setPrezzo(req.getPrezzo());
+		
+
 
 
 		if (req.getMagliettaReq().getLunghezzaManica() != "" && req.getMagliettaReq().getTaglia() != ""
 				&& req.getMagliettaReq().getTipoColletto() != "" && req.getMagliettaReq().getVestibilita() != "") {
-			MagliettaDTO m = new MagliettaDTO();
+			MagliettaReq m = new MagliettaReq();
+	
 
 			m.setLunghezzaManica(req.getMagliettaReq().getLunghezzaManica());
 			m.setTaglia(req.getMagliettaReq().getTaglia());
 			m.setTipoColletto(req.getMagliettaReq().getTipoColletto());
 			m.setVestibilita(req.getMagliettaReq().getVestibilita());
-			p.setMagliettaDto(m);
+			p.setMagliettaReq(m);
+
 		}
 		
 		if (req.getCamiciaReq().getLunghezzaManica() != "" && req.getCamiciaReq().getTaglia() != ""
 				&& req.getCamiciaReq().getTipoColletto() != "" && req.getCamiciaReq().getVestibilita() != "") {
-			CamiciaDTO c = new CamiciaDTO();
+			CamiciaReq c = new CamiciaReq();
 			c.setLunghezzaManica(req.getCamiciaReq().getLunghezzaManica());
 			c.setTaglia(req.getCamiciaReq().getTaglia());
 			c.setTipoColletto(req.getCamiciaReq().getTipoColletto());
 			c.setVestibilita(req.getCamiciaReq().getVestibilita());
-			p.setCamiciaDto(c);
+			p.setCamiciaReq(c);
 		}
 		
 		if (req.getVestitoReq().getLunghezzaManica() != "" && req.getVestitoReq().getTaglia() != ""
 				&& req.getVestitoReq().getLunghezza() != "" && req.getVestitoReq().getVestibilita() != "") {
 			
-			VestitoDTO v = new VestitoDTO();
+			VestitoReq v = new VestitoReq();
 			v.setLunghezzaManica(req.getVestitoReq().getLunghezzaManica());
 			v.setTaglia(req.getVestitoReq().getTaglia());
 			v.setLunghezza(req.getVestitoReq().getLunghezza());
 			v.setVestibilita(req.getVestitoReq().getVestibilita());
-			p.setVestitoDto(v);
+			p.setVestitoReq(v);
 		}
 		
 		if (req.getPantaloneReq().getTaglia() != ""
 				&& req.getPantaloneReq().getLunghezza() != "" && req.getPantaloneReq().getVestibilita() != "") {
-			PantaloneDTO pant = new PantaloneDTO();
+			PantaloneReq pant = new PantaloneReq();
 			pant.setTaglia(req.getPantaloneReq().getTaglia());
 			pant.setLunghezza(req.getPantaloneReq().getLunghezza());
 			pant.setVestibilita(req.getPantaloneReq().getVestibilita());
-			p.setPantaloneDto(pant);
+			p.setPantaloneReq(pant);
 		}
+		
+//		log.debug(req.getScarpaReq().getChiusura() + "Chiusura");
+//		log.debug(req.getScarpaReq().getTipoScarpa() + "Tipooo");
+//		log.debug(req.getScarpaReq().getTagliaScarpe().toString());
+		
+		
 		
 		if (req.getScarpaReq().getChiusura() != "" && req.getScarpaReq().getTipoScarpa() != ""
 				&& req.getScarpaReq().getTagliaScarpe() > 0) {
-			ScarpaDTO s = new ScarpaDTO();
+			
+			log.debug("HERE");
+			ScarpaReq s = new ScarpaReq();
 			s.setChiusura(req.getScarpaReq().getChiusura());
 			s.setTagliaScarpe(req.getScarpaReq().getTagliaScarpe());
 			s.setTipoScarpa(req.getScarpaReq().getTipoScarpa());
-			p.setScarpaDto(s);
+			p.setScarpaReq(s);
 
 		}
 		
+		
 		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/createOrUpdate").buildAndExpand().toUri();
-		log.debug("Uri: " + uri);
+		//log.debug("Uri: " + uri);
 		
 		ResponseBase resp = rest.postForEntity(uri, p, Response.class).getBody();
+
 		
 		log.debug("return code: " + resp.getRc());
 		log.debug("Message: " + resp.getMsg());

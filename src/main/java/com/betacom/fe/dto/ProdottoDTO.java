@@ -133,6 +133,14 @@ public class ProdottoDTO {
 	public void setListProdOrdiniDto(List<ProdottiOrdiniDTO> listProdOrdiniDto) {
 		this.listProdOrdiniDto = listProdOrdiniDto;
 	}
+	@Override
+	public String toString() {
+		return "ProdottoDTO [id=" + id + ", qty=" + qty + ", sesso=" + sesso + ", img=" + img + ", colore=" + colore
+				+ ", marca=" + marca + ", materiale=" + materiale + ", fantasia=" + fantasia + ", magliettaDto="
+				+ magliettaDto + ", pantaloneDto=" + pantaloneDto + ", vestitoDto=" + vestitoDto + ", scarpaDto="
+				+ scarpaDto + ", camiciaDto=" + camiciaDto + ", prezzo=" + prezzo + ", listProdOrdiniDto="
+				+ listProdOrdiniDto + "]";
+	}
 	  
 	  
 }
