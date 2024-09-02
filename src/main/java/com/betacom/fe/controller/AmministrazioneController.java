@@ -7,6 +7,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -32,6 +35,7 @@ import com.betacom.fe.request.UtenteReq;
 import com.betacom.fe.request.VestitoReq;
 import com.betacom.fe.response.Response;
 import com.betacom.fe.response.ResponseBase;
+import com.betacom.fe.response.ResponseObject;
 
 import jakarta.servlet.http.HttpSession;
 
@@ -233,7 +237,6 @@ public class AmministrazioneController {
 		if (req.getScarpaReq().getChiusura() != "" && req.getScarpaReq().getTipoScarpa() != ""
 				&& req.getScarpaReq().getTagliaScarpe() > 0) {
 			
-			log.debug("HERE");
 			ScarpaReq s = new ScarpaReq();
 			s.setChiusura(req.getScarpaReq().getChiusura());
 			s.setTagliaScarpe(req.getScarpaReq().getTagliaScarpe());
@@ -263,13 +266,25 @@ public class AmministrazioneController {
 
 	@GetMapping("/profilo")
 	public ModelAndView profilo() {
+Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+		
+        String email = null;
+        if (authentication != null && authentication.getPrincipal() instanceof UserDetails) {
+            UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+            email = userDetails.getUsername(); 
+        }
+		
+		
 		ModelAndView mav = new ModelAndView("profilo");
-		return mav;
-	}
-
-	@GetMapping("/profiloAdmin")
-	public ModelAndView profiloAdmin() {
-		ModelAndView mav = new ModelAndView("profilo-admin");
+		
+		URI uri = UriComponentsBuilder
+				.fromHttpUrl(backend + "/utente/searchByMail")
+				.queryParam("mail", email)
+				.buildAndExpand().toUri();
+		
+		 ResponseObject<?> respObj = rest.getForEntity(uri, ResponseObject.class).getBody();
+		 
+		 mav.addObject("utente", respObj);
 		return mav;
 	}
 

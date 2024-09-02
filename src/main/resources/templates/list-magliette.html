@@ -8,6 +8,11 @@
 <body style="background-color: #F6F1F1">
 	<nav th:insert="~{fragments/header}"></nav>
 	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		sec:authorize="hasRole('AMMINISTRATORE')"
+		th:insert="~{fragments/header-admin}"></nav>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		sec:authorize="hasRole('CLIENTE')"
 		th:insert="~{fragments/header-utente}"></nav>
 
 	<div class="container" style="flex-direction: column;">
@@ -109,16 +114,23 @@
 			<div class="card-container" th:if="${not listMagliette.dati.empty}"
 				style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 				<div class="card" th:each="prod: ${listMagliette.dati}"
-					style="width: 18rem; margin-bottom: 20px;">
+					style="width: 18rem; margin-bottom: 20px;" div
+					th:if="${prod.magliettaDto != null}">
+
 					<img th:src="@{${prod.img}}" class="card-img-top" alt="Scarpe">
 					<div class="card-body">
-						<h5 class="card-title" th:text="${prod.id}"></h5>
+						<h5 class="card-title" th:text="${prod.marca}"></h5>
 						<p class="card-text"></p>
-						<p class="card-text" th:text="${prod.prezzo}"></p>
+						<p class="card-text" th:text="${prod.materiale}"></p>
+						<p class="card-text" th:text="${prod.magliettaDto.taglia}"></p>
+						<p class="card-text" th:text="${prod.prezzo}">EURO</p>
+
 						<a th:href="@{/prodotto(prodottoID=${prod.id})}"
 							class="see-button" style="font-size: 18px;">Visualizza</a>
 					</div>
 				</div>
+
+
 			</div>
 		</div>
 	</div>

@@ -8,25 +8,30 @@
 <body style="background-color: #F6F1F1">
 	<nav th:insert="~{fragments/header}"></nav>
 	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		sec:authorize="hasRole('AMMINISTRATORE')"
+		th:insert="~{fragments/header-admin}"></nav>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		sec:authorize="hasRole('CLIENTE')"
 		th:insert="~{fragments/header-utente}"></nav>
 	<div class="create-container">
-		<form action="#" class="create-box form-group">
+		    <form th:action="@{/saveUser}" th:object="${utente}" method="post" class="create-box form-group">
 			<div>
 				<div class="mb-3">
 					<label class="form-label">Nome</label> <input type="text"
-						class="form-control" value="prova" disabled>
+						class="form-control" th:value="${utente.dati.nome}" disabled>
 				</div>
 				<div class="mb-3">
 					<label class="form-label">Cognome</label> <input type="text"
-						value="prova" disabled>
+						th:value="${utente.dati.cognome}" disabled>
 				</div>
 				<div class="mb-3">
 					<label class="form-label">E-mail</label> <input type="text"
-						value="prova"disabled>
+						th:value="${utente.dati.mail}" disabled>
 				</div>
 				<div class="mb-3">
 					<label class="form-label">Password</label> <input type="password"
-						value="prova"id="inputPassword" disabled>
+						th:value="${utente.dati.password}" id="inputPassword" disabled>
 				</div>
 				<div class="mb-3 form-check">
 					<input type="checkbox" class="form-check-input" id="exampleCheck1"
@@ -36,20 +41,20 @@
 				</div>
 			</div>
 
-			<div class="inner-box">
+			<div class="inner-box" sec:authorize="hasRole('CLIENTE')">
 				<div class="mb-3">
-					<label class="form-label">Paese</label> <input type="text" value="prova"disabled>
+					<label class="form-label">Paese</label> <input type="text" th:value="${utente.dati.paese}" disabled>
 				</div>
 				<div class="mb-3">
-					<label class="form-label">Strada</label> <input type="text"value="prova"
+					<label class="form-label">Strada</label> <input type="text"th:value="${utente.dati.strada}"
 						disabled>
 				</div>
 				<div class="mb-3">
-					<label class="form-label">Civico</label> <input type="text"value="prova"
+					<label class="form-label">Civico</label> <input type="text"th:value="${utente.dati.civico}"
 						disabled>
 				</div>
 				<div class="mb-3">
-					<label class="form-label">CAP</label> <input type="number"value=12345
+					<label class="form-label">CAP</label> <input type="number"th:value="${utente.dati.cap}"
 						min="10000" max="99999" disabled>
 				</div>
 			</div>

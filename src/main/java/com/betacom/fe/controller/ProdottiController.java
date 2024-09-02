@@ -28,7 +28,43 @@ public class ProdottiController {
 	
 	@GetMapping("/listAll")
 	public ModelAndView listProdotti() {
-		ModelAndView mav = new ModelAndView("list-prodotti");		
+		ModelAndView mav = new ModelAndView("list-prodotti");
+		
+		 URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/marca/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listMarca = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder.fromHttpUrl(backend + "/colore/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listColore = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder.fromHttpUrl(backend + "/fantasia/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listFantasia = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder.fromHttpUrl(backend + "/materiale/listAll")
+		            .buildAndExpand().toUri();
+		    log.debug("URI: " + uri);
+		    
+		    Response<?> listMateriale = rest.getForEntity(uri, Response.class).getBody();
+		    
+		    uri = UriComponentsBuilder
+					.fromHttpUrl(backend + "/prodotto/listAll")
+					.buildAndExpand().toUri();
+			
+			    Response<?> resp = rest.getForEntity(uri, Response.class).getBody();
+			
+			mav.addObject("listProd", resp);
+			mav.addObject("marca", listMarca);
+		    mav.addObject("colore", listColore);
+		    mav.addObject("fantasia", listFantasia);
+		    mav.addObject("materiale", listMateriale);
 		
 		return mav;
 	}
