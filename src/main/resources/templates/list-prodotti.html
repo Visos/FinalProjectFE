@@ -109,8 +109,8 @@
 						<p class="card-text" th:utext="'Prezzo: ' + ${prod.prezzo} + ' €'"></p>
 
 
-						<a th:href="@{prodotto}" class="see-button"
-							style="font-size: 18px;">Visualizza</a>
+							<a th:href="@{/prodotto(prodottoID=${prod.id})}"
+							class="see-button" style="font-size: 18px;">Visualizza</a>
 					</div>
 				</div>
 			</div>
