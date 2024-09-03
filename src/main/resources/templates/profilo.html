@@ -16,26 +16,27 @@
 		th:insert="~{fragments/header-utente}"></nav>
 	<div class="create-container">
 		    <form th:action="@{/saveUser}" th:object="${utente}" method="post" class="create-box form-group">
+		    			<input type="hidden" name="id" th:value="${utente.dati.id}" /> 
 			<div>
 				<div class="mb-3">
 					<label class="form-label">Nome</label> <input type="text"
-						class="form-control" th:value="${utente.dati.nome}" disabled>
+						class="form-control" name="nome" th:value="${utente.dati.nome}" readonly>
 				</div>
 				<div class="mb-3">
-					<label class="form-label">Cognome</label> <input type="text"
-						th:value="${utente.dati.cognome}" disabled>
+					<label class="form-label">Cognome</label> <input type="text" name="cognome"
+						th:value="${utente.dati.cognome}" readonly>
 				</div>
 				<div class="mb-3">
-					<label class="form-label">E-mail</label> <input type="text"
-						th:value="${utente.dati.mail}" disabled>
+					<label class="form-label">E-mail</label> <input type="text" name="mail"
+						th:value="${utente.dati.mail}" readonly>
 				</div>
 				<div class="mb-3">
-					<label class="form-label">Password</label> <input type="password"
-						th:value="${utente.dati.password}" id="inputPassword" disabled>
+					<label class="form-label">Password</label> <input type="password" name="password"
+						th:value="${utente.dati.password}" id="inputPassword" readonly>
 				</div>
 				<div class="mb-3 form-check">
 					<input type="checkbox" class="form-check-input" id="exampleCheck1"
-						onclick="showPassword()" disabled> <label
+						onclick="showPassword()" readonly> <label
 						class="form-check-label" for="exampleCheck1">Mostra
 						password</label>
 				</div>
@@ -43,19 +44,19 @@
 
 			<div class="inner-box" sec:authorize="hasRole('CLIENTE')">
 				<div class="mb-3">
-					<label class="form-label">Paese</label> <input type="text" th:value="${utente.dati.paese}" disabled>
+					<label class="form-label">Paese</label> <input type="text" name="paese" th:value="${utente.dati.paese}" readonly>
 				</div>
 				<div class="mb-3">
-					<label class="form-label">Strada</label> <input type="text"th:value="${utente.dati.strada}"
-						disabled>
+					<label class="form-label">Strada</label> <input type="text" name="strada" th:value="${utente.dati.strada}"
+						readonly>
 				</div>
 				<div class="mb-3">
-					<label class="form-label">Civico</label> <input type="text"th:value="${utente.dati.civico}"
-						disabled>
+					<label class="form-label">Civico</label> <input type="text" name="civico" th:value="${utente.dati.civico}"
+						readonly>
 				</div>
 				<div class="mb-3">
-					<label class="form-label">CAP</label> <input type="number"th:value="${utente.dati.cap}"
-						min="10000" max="99999" disabled>
+					<label class="form-label">CAP</label> <input type="number" name="CAP" th:value="${utente.dati.cap}"
+						min="10000" max="99999" readonly>
 				</div>
 			</div>
 
@@ -67,17 +68,18 @@
 	</div>
 
 	<script>
-function enableEditing(button) {
-    const form = button.closest('form');
-    const inputs = form.querySelectorAll('input');
-    inputs.forEach(input => input.disabled = false);
+	function enableEditing(button) {
+	    const form = button.closest('form');
+	    const inputs = form.querySelectorAll('input');
+	    inputs.forEach(input => input.readOnly = false);
 
-    button.textContent = 'Salva';
+	    button.textContent = 'Salva';
 
-    button.onclick = function() {
-        form.submit();
-    };
-}
+	    button.onclick = function() {
+	        form.submit();
+	    };
+	}
+
 </script>
 
 </body>

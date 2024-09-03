@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriComponentsBuilder;
 
@@ -49,7 +50,6 @@ public class AmministrazioneController {
 	RestTemplate rest;
 
 	public static Logger log = LoggerFactory.getLogger(AmministrazioneController.class);
-
 	@GetMapping("/login")
 	public ModelAndView login() {
 		ModelAndView mav = new ModelAndView("login");
@@ -167,12 +167,16 @@ public class AmministrazioneController {
 
 	@PostMapping("/saveProdotto")
 	public Object saveProdotto(@ModelAttribute("prodotto") ProdottoReq req, Model model) {
+		
 		ProdottoReq p = new ProdottoReq();
 		p.setId((req.getId() == null) ? null : req.getId());
 		p.setQty(req.getQty());
 		p.setSesso(req.getSesso());
 		
-		p.setImg("../img/" + req.getImg());
+		
+		 String fileName = req.getImg();
+		
+		p.setImg("../img/" + fileName);
 //		log.debug(req.getMarca());
 //		log.debug(req.getMateriale());
 //		log.debug(req.getColore());

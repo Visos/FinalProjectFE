@@ -35,6 +35,17 @@
 			var fileName = this.files[0].name;
 			document.getElementById('imgHidden').value = fileName;
 		});
+		
+
+		document.getElementById('imgFile').addEventListener('change', function() {
+
+		    var fileName = this.files[0].name;
+		    var fileFormat = fileName.substring(fileName.lastIndexOf(".") + 1);
+
+		
+		    document.getElementById('imgHidden').value = fileName;
+		    document.getElementById('formatoHidden').value = fileFormat;
+		});
 </script>
 <body style="background-color: #F6F1F1;">
 	<nav th:insert="~{fragments/header}"></nav>
@@ -46,12 +57,11 @@
 		</div>
 		<form th:action="@{/saveProdotto}" th:object="${prodotto}"
 			method="post" class="create-box form-group">
-			<input type="hidden" th:field="*{id}" />
-			<input type="hidden" id="imgHidden" name="img">
+			<input type="hidden" th:field="*{id}" /> 
 			<div>
 				<div class="mb-3">
 					<label for="img">Seleziona un'immagine:</label> <input type="file"
-						id="imgFile" accept="image/*">
+						id="imgFile" th:field="*{img}" accept="image/*">
 				</div>
 				<div class="mb-3">
 					<label class="form-label">Marca</label> <select id="marca"
@@ -82,14 +92,14 @@
 					<label class="form-label">Materiale</label> <select id="materiale"
 						name="materiale" th:field="*{materiale}">
 
-						<option th:each="m : ${materiale.dati}" th:value="${m.descrizione}"
-							th:text="${m.descrizione}" />
+						<option th:each="m : ${materiale.dati}"
+							th:value="${m.descrizione}" th:text="${m.descrizione}" />
 					</select>
 				</div>
 
 				<div class="mb-3">
-					<label class="form-label">Prezzo</label> <input type="number" step="0.01"
-						th:field="*{prezzo}">
+					<label class="form-label">Prezzo</label> <input type="number"
+						step="0.01" th:field="*{prezzo}">
 				</div>
 
 				<div class="mb-3">
@@ -139,8 +149,8 @@
 								id="tipo_colletto" name="tipo_colletto"
 								th:field="*{magliettaReq.tipoColletto}">
 								<option value=""></option>
-								<option th:each="c : ${colletto.dati}" th:value="${c.descrizione}"
-									th:text="${c.descrizione}" />
+								<option th:each="c : ${colletto.dati}"
+									th:value="${c.descrizione}" th:text="${c.descrizione}" />
 							</select>
 						</div>
 						<div class="mb-3">
@@ -148,8 +158,8 @@
 								id="vestibilita" name="vestibilita"
 								th:field="*{magliettaReq.vestibilita}">
 								<option value=""></option>
-								<option th:each="v : ${vestibilita.dati}" th:value="${v.descrizione}"
-									th:text="${v.descrizione}" />
+								<option th:each="v : ${vestibilita.dati}"
+									th:value="${v.descrizione}" th:text="${v.descrizione}" />
 							</select>
 						</div>
 					</div>
@@ -177,8 +187,8 @@
 								id="tipo_colletto" name="tipo_colletto"
 								th:field="*{camiciaReq.tipoColletto}">
 								<option value=""></option>
-								<option th:each="c : ${colletto.dati}" th:value="${c.descrizione}"
-									th:text="${c.descrizione}" />
+								<option th:each="c : ${colletto.dati}"
+									th:value="${c.descrizione}" th:text="${c.descrizione}" />
 							</select>
 						</div>
 						<div class="mb-3">
@@ -186,8 +196,8 @@
 								id="vestibilita" name="vestibilita"
 								th:field="*{camiciaReq.vestibilita}">
 								<option value=""></option>
-								<option th:each="v : ${vestibilita.dati}" th:value="${v.descrizione}"
-									th:text="${v.descrizione}" />
+								<option th:each="v : ${vestibilita.dati}"
+									th:value="${v.descrizione}" th:text="${v.descrizione}" />
 							</select>
 						</div>
 					</div>
@@ -215,8 +225,8 @@
 								id="lunghezza" name="lunghezza"
 								th:field="*{vestitoReq.lunghezza}">
 								<option value=""></option>
-								<option th:each="l : ${lunghezza.dati}" th:value="${l.descrizione}"
-									th:text="${l.descrizione}" />
+								<option th:each="l : ${lunghezza.dati}"
+									th:value="${l.descrizione}" th:text="${l.descrizione}" />
 							</select>
 						</div>
 						<div class="mb-3">
@@ -224,8 +234,8 @@
 								id="vestibilita" name="vestibilita"
 								th:field="*{vestitoReq.vestibilita}">
 								<option value=""></option>
-								<option th:each="v : ${vestibilita.dati}" th:value="${v.descrizione}"
-									th:text="${v.descrizione}" />
+								<option th:each="v : ${vestibilita.dati}"
+									th:value="${v.descrizione}" th:text="${v.descrizione}" />
 							</select>
 						</div>
 					</div>
@@ -244,8 +254,8 @@
 								id="lunghezza" name="lunghezza"
 								th:field="*{pantaloneReq.lunghezza}">
 								<option value=""></option>
-								<option th:each="l : ${lunghezza.dati}" th:value="${l.descrizione}"
-									th:text="${l.descrizione}" />
+								<option th:each="l : ${lunghezza.dati}"
+									th:value="${l.descrizione}" th:text="${l.descrizione}" />
 							</select>
 						</div>
 						<div class="mb-3">
@@ -253,8 +263,8 @@
 								id="vestibilita" name="vestibilita"
 								th:field="*{pantaloneReq.vestibilita}">
 								<option value=""></option>
-								<option th:each="v : ${vestibilita.dati}" th:value="${v.descrizione}"
-									th:text="${v.descrizione}" />
+								<option th:each="v : ${vestibilita.dati}"
+									th:value="${v.descrizione}" th:text="${v.descrizione}" />
 							</select>
 						</div>
 					</div>
@@ -265,8 +275,8 @@
 								name="chiusura" th:field="*{scarpaReq.chiusura}">
 
 								<option value=""></option>
-								<option th:each="c : ${chiusura.dati}" th:value="${c.descrizione}"
-									th:text="${c.descrizione}" />
+								<option th:each="c : ${chiusura.dati}"
+									th:value="${c.descrizione}" th:text="${c.descrizione}" />
 							</select>
 						</div>
 						<div class="mb-3">
@@ -275,8 +285,8 @@
 								th:field="*{scarpaReq.tipoScarpa}">
 
 								<option value=""></option>
-								<option th:each="t : ${tipoScarpa.dati}" th:value="${t.descrizione}"
-									th:text="${t.descrizione}" />
+								<option th:each="t : ${tipoScarpa.dati}"
+									th:value="${t.descrizione}" th:text="${t.descrizione}" />
 							</select>
 						</div>
 						<div class="mb-3">
