@@ -8,6 +8,11 @@
 <body style="background-color: #F6F1F1">
 	<nav th:insert="~{fragments/header}"></nav>
 	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		sec:authorize="hasRole('AMMINISTRATORE')"
+		th:insert="~{fragments/header-admin}"></nav>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary"
+		sec:authorize="hasRole('CLIENTE')"
 		th:insert="~{fragments/header-utente}"></nav>
 
 	<div class="container" style="flex-direction: column;">
@@ -65,7 +70,7 @@
 								th:text="${tS.descrizione}"></option>
 						</select>
 					</div>
-					<div style="flex: 0 1 32%; min-width: 200px;">
+					<div style="flex: 1 1 31%; min-width: 200px;">
 						<label class="form-label">Sesso</label> <select 
 							class="form-select" multiple aria-label="Multiple select example">
 							<option selected value="null">Qualsiasi</option>
@@ -74,7 +79,7 @@
 							<option value="Unisex">Unisex</option>
 						</select>
 					</div>
-					<div style="flex: 1 0 31%; min-width: 200px;">
+					<div style="flex: 1 1 31%; min-width: 200px;">
 						<label class="form-label">Taglia Scarpe</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
 							<option selected value="null">Qualsiasi</option>
@@ -104,38 +109,20 @@
 			<div class="card-container" th:if="${not listScarpe.dati.empty}"
 				style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 				<div class="card" th:each="prod: ${listScarpe.dati}"
-					style="width: 18rem; margin-bottom: 20px;">
+					style="width: 18rem; margin-bottom: 20px;" th:if="${prod.scarpaDto != null}">
 					<img th:src="@{${prod.img}}" class="card-img-top" alt="Scarpe">
 					<div class="card-body">
-						<h5 class="card-title" th:text="${prod.id}"></h5>
+						<h5 class="card-title" th:text="${prod.marca}"></h5>
 						<p class="card-text"></p>
-						<p class="card-text" th:text="${prod.prezzo}"></p>
+						<p class="card-text" th:text="${prod.materiale}"></p>
+						<p class="card-text" th:text="${prod.scarpaDto.tagliaScarpe}"></p>
+						<p class="card-text" th:text="${prod.prezzo}">EURO</p>
+
 						<a th:href="@{/prodotto(prodottoID=${prod.id})}"
 							class="see-button" style="font-size: 18px;">Visualizza</a>
 					</div>
 				</div>
 
-				<div class="card" style="width: 18rem; margin-bottom: 20px;">
-					<img src="../img/pantaloni1.jpg" class="card-img-top" alt="Scarpe">
-					<div class="card-body">
-						<h5 class="card-title">Nome prodotto</h5>
-						<p class="card-text">Altri parametri......</p>
-						<p class="card-text">Prezzo</p>
-						<a th:href="@{prodotto}" class="see-button"
-							style="font-size: 18px;">Visualizza</a>
-					</div>
-				</div>
-
-				<div class="card" style="width: 18rem; margin-bottom: 20px;">
-					<img src="../img/camicia1.jpg" class="card-img-top" alt="Scarpe">
-					<div class="card-body">
-						<h5 class="card-title">Nome prodotto</h5>
-						<p class="card-text">Altri parametri......</p>
-						<p class="card-text">Prezzo</p>
-							<a th:href="@{prodotto}" class="see-button"
-							style="font-size: 18px;">Visualizza</a>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
