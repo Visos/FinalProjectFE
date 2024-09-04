@@ -97,15 +97,15 @@
 						<h5 class="card-title" th:text="${prod.marca}"></h5>
 						<p class="card-text" th:utext="'Materiale: ' + ${prod.materiale}"></p>
 						<p class="card-text" th:if="${prod.scarpaDto != null}"
-							th:utext="'Taglia Scarpe: ' + ${prod.scarpaDto.tagliaScarpe}"></p>
+							th:utext="'Taglia scarpe: ' + ${prod.scarpaDto.tagliaScarpe}"></p>
 						<p class="card-text" th:if="${prod.pantaloneDto != null}"
-							th:utext="'Taglia Pantaloni: ' + ${prod.pantaloneDto.taglia}"></p>
+							th:utext="'Taglia pantaloni: ' + ${prod.pantaloneDto.taglia}"></p>
 						<p class="card-text" th:if="${prod.magliettaDto != null}"
-							th:utext="'Taglia Maglietta: ' + ${prod.magliettaDto.taglia}"></p>
+							th:utext="'Taglia maglietta: ' + ${prod.magliettaDto.taglia}"></p>
 						<p class="card-text" th:if="${prod.vestitoDto != null}"
-							th:utext="'Taglia Vestito: ' + ${prod.vestitoDto.taglia}"></p>
+							th:utext="'Taglia vestito: ' + ${prod.vestitoDto.taglia}"></p>
 						<p class="card-text" th:if="${prod.camiciaDto != null}"
-							th:utext="'Taglia Camicia: ' + ${prod.camiciaDto.taglia}"></p>
+							th:utext="'Taglia camicia: ' + ${prod.camiciaDto.taglia}"></p>
 						<p class="card-text" th:utext="'Prezzo: ' + ${prod.prezzo} + ' €'"></p>
 
 

@@ -82,4 +82,10 @@ public class OrdineDTO {
     public void setProdOrdini(List<ProdottiOrdiniDTO> prodOrdini) {
         this.prodOrdini = prodOrdini;
     }
+
+	@Override
+	public String toString() {
+		return "OrdineDTO [id=" + id + ", data=" + data + ", stato=" + stato + ", prezzoTotale=" + prezzoTotale
+				+ ", qty=" + qty + ", idUtente=" + idUtente + ", prodOrdini=" + prodOrdini + "]";
+	}
 }
