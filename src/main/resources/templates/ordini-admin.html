@@ -17,28 +17,34 @@
 			<a th:href="@{/ordiniAdminAll}" class="a">Tutti gli ordini</a>
 		</button>
 	</div>
-	<div class="ordine">
+	<div class="ordine" th:each="o: ${ordini.dati}">
 		<div class="ordine-top">
-			<div>
-				Ordine effettuato il: <span>DATA</span>
-			</div>
-			<div>
-				Totale: <span>Totale</span>
-			</div>
+			<div th:utext="'Ordine effettuato il: ' + ${o.data}"></div>
+			<div th:utext="'Prezzo totale: ' + ${o.prezzoTotale} + ' €'"></div>
 		</div>
-		<div align="center" style="padding:20px;">
-						<button class="see-button ordine-btn" style="font-size: 18px;">
-					<a th:href="@{/ordiniAdmin}" class="a">Segna come spedito</a>
-				</button>
+		<div align="center" style="padding: 20px;">
+			<button class="see-button ordine-btn" style="font-size: 18px;">
+				<a th:href="@{/ordiniAdmin}" class="a">Segna come spedito</a>
+			</button>
 		</div>
-		<div class="ordine-bottom">
+		<div class="ordine-bottom" th:each="p: ${o.prodOrdini}">
 
-			<div class="ordine-bottom-top">
-				<img alt="" src="../img/camicia1.jpg" class="order-img">
+			<div class="ordine-bottom-top" th:each="prod: ${prodotti.dati}"  th:if="${p.idProdotto == prod.id}">
+				<img alt="" th:src="${prod.img}" class="order-img">
 				<div class="order-bottom-top-inner">
-					<h5 class="order-name">Nome prodotto</h5>
-					<span class="">Altri parametri......</span> <span class="">Altri
-						parametri......</span> <span class="">Altri parametri......</span>
+					<h5 class="order-name" th:text="${prod.marca}"></h5>
+					<span th:if="${prod.scarpaDto != null}"
+												th:utext="'Taglia scarpe: ' + ${prod.scarpaDto.tagliaScarpe}">
+											</span> <span  th:if="${prod.magliettaDto != null}"
+												th:utext="'Taglia maglietta: ' + ${prod.magliettaDto.taglia}">
+											</span> <span  th:if="${prod.vestitoDto != null}"
+												th:utext="'Taglia vestito: ' + ${prod.vestitoDto.taglia}">
+											</span> <span  th:if="${prod.camiciaDto != null}"
+												th:utext="'Taglia camicia: ' + ${prod.camiciaDto.taglia}">
+											</span> <span  th:if="${prod.pantaloneDto != null}"
+												th:utext="'Taglia pantaloni: ' + ${prod.pantaloneDto.taglia}">
+											</span> <br /> <span 
+												th:utext="'Materiale: ' + ${prod.materiale}"> </span>
 				</div>
 			</div>
 			<div class="ordine-bottom-inner">
@@ -48,35 +54,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="ordine">
-		<div class="ordine-top">
-			<div>
-				Ordine effettuato il: <span>DATA</span>
-			</div>
-			<div>
-				Totale: <span>Totale</span>
-			</div>
-		</div>
-		<div align="center" style="padding:20px;">
-						<button class="see-button ordine-btn" style="font-size: 18px;">
-					<a th:href="@{/ordiniAdmin}" class="a">Segna come spedito</a>
-				</button>
-		</div>
-		<div class="ordine-bottom">
-			<div class="ordine-bottom-top">
-				<img alt="" src="../img/camicia1.jpg" class="order-img">
-				<div class="order-bottom-top-inner">
-					<h5 class="order-name">Nome prodotto</h5>
-					<span class="">Altri parametri......</span> <span class="">Altri
-						parametri......</span> <span class="">Altri parametri......</span>
-				</div>
-			</div>
-			<div class="ordine-bottom-inner">
-				<button class="see-button ordine-btn" style="font-size: 18px;">
-					<a th:href="@{/prodotto}" class="a">Visualizza</a>
-				</button>
-			</div>
-		</div>
-	</div>
+	
 </body>
 </html>

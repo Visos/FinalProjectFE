@@ -120,7 +120,7 @@ public class OrdiniCarrelloController {
 		mav.addObject("ordini", obj);
 		mav.addObject("prodotti", resp);
 		
-		log.debug(obj.getDati().toString());
+	
 
 		return mav;
 	}
@@ -129,6 +129,21 @@ public class OrdiniCarrelloController {
 	public ModelAndView ordiniAdmin() {
 		ModelAndView mav = new ModelAndView("/ordini-admin");
 
+		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/ordine/list")
+				.queryParam("stato",Stato.ELABORAZIONE).buildAndExpand().toUri();
+
+		Response<OrdineDTO> obj = rest.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<Response<OrdineDTO>>() {
+		}).getBody();
+		
+		uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/listAll").buildAndExpand().toUri();
+
+		Response<?> resp = rest.getForEntity(uri, Response.class).getBody();
+		
+		mav.addObject("ordini", obj);
+		mav.addObject("prodotti", resp);
+		
+	
+
 		return mav;
 	}
 
@@ -136,6 +151,18 @@ public class OrdiniCarrelloController {
 	public ModelAndView ordiniAdminAll() {
 		ModelAndView mav = new ModelAndView("/ordini-admin-all");
 
+		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/ordine/list").buildAndExpand().toUri();
+
+		Response<OrdineDTO> obj = rest.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<Response<OrdineDTO>>() {
+		}).getBody();
+		
+		uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/listAll").buildAndExpand().toUri();
+
+		Response<?> resp = rest.getForEntity(uri, Response.class).getBody();
+		
+		mav.addObject("ordini", obj);
+		mav.addObject("prodotti", resp);
+		
 		return mav;
 	}
 
