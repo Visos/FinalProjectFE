@@ -63,7 +63,7 @@ public class WebSecurityConfig {
 	        URI uri = UriComponentsBuilder
 	                .fromHttpUrl(backend + "utente/listAll")  
 	                .buildAndExpand().toUri();      
-			log.info("URI" + uri);
+			log.info("URI: " + uri);
 
 	        List<HashMap<String, Object>> r = rest.getForObject(uri, ArrayList.class);
 

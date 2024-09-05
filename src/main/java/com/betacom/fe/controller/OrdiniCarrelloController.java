@@ -13,13 +13,18 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriComponentsBuilder;
 
 import com.betacom.fe.dto.OrdineDTO;
+import com.betacom.fe.request.ProdottiOrdiniReq;
 import com.betacom.fe.request.UtenteReq;
 import com.betacom.fe.response.Response;
+import com.betacom.fe.response.ResponseBase;
 import com.betacom.fe.response.ResponseObject;
 import com.betacom.fe.util.Stato;
 
@@ -165,5 +170,66 @@ public class OrdiniCarrelloController {
 		
 		return mav;
 	}
+	
+	@GetMapping("/createModelProdOrd")
+	public ModelAndView createModelProdOrd (@RequestParam Integer idProdotto, @RequestParam Integer qty) {
+		
+		log.debug("prodottoId: " + idProdotto);
+		log.debug("qty: " + qty);
+		
+		ModelAndView mav = new ModelAndView("prodotto");
+		
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+        String email = null;
+        if (authentication != null && authentication.getPrincipal() instanceof UserDetails) {
+            UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+            email = userDetails.getUsername();
+        }
+        
+        URI uri = UriComponentsBuilder
+        		.fromHttpUrl(backend + "/utente/searchByMail")
+        		.queryParam("mail", email)
+                .buildAndExpand().toUri();
+        
+        ResponseObject<UtenteReq> respObj = rest.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<ResponseObject<UtenteReq>>() {
+                }).getBody();
+
+        Integer utenteId = respObj.getDati().getId();
+        
+        uri = UriComponentsBuilder
+        		.fromHttpUrl(backend + "/ordine/list")
+        		.queryParam("id", utenteId)
+				.queryParam("stato", Stato.CARRELLO).buildAndExpand().toUri();
+        
+        Response<OrdineDTO> objCarrello = rest.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<Response<OrdineDTO>>() {
+		}).getBody();
+        
+        Integer ordineId = objCarrello.getDati().get(0).getId();
+
+		ProdottiOrdiniReq req = new ProdottiOrdiniReq();
+		req.setIdOrdine(ordineId);
+		req.setIdProdotto(idProdotto);
+		req.setQty(qty);
+		mav.addObject("prodottoOrdineReq", req);
+		return mav;
+		}
+	
+	@PostMapping("/addProdOrd")
+    public Object addProd(@ModelAttribute("prodOrdReq") ProdottiOrdiniReq req) {
+        log.debug("idOrdine: " + req.getIdOrdine()+ " IdProdotto: " + req.getIdProdotto());
+
+        URI uri = UriComponentsBuilder
+                .fromHttpUrl(backend + "ordine/addProd")
+                .buildAndExpand().toUri();
+        log.debug("URI: " + uri);
+
+        ResponseBase att = rest.postForEntity(uri, req, ResponseBase.class).getBody();
+
+        log.debug("rc " + att.getRc());
+
+        //in questo modo voglio dico che voglio aggiornare la pagina e tornare in listSocio
+        return "redirect:/carrello";
+}
 
 }

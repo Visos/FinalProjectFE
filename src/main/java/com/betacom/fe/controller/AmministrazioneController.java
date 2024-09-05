@@ -1,6 +1,5 @@
 package com.betacom.fe.controller;
 
-import java.io.Console;
 import java.net.URI;
 
 import org.slf4j.Logger;
@@ -15,18 +14,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.betacom.fe.dto.CamiciaDTO;
-import com.betacom.fe.dto.MagliettaDTO;
-import com.betacom.fe.dto.PantaloneDTO;
-import com.betacom.fe.dto.ProdottoDTO;
-import com.betacom.fe.dto.ScarpaDTO;
-import com.betacom.fe.dto.VestitoDTO;
 import com.betacom.fe.request.CamiciaReq;
 import com.betacom.fe.request.MagliettaReq;
 import com.betacom.fe.request.PantaloneReq;
