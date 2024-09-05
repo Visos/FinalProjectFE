@@ -129,12 +129,16 @@
 								th:text="${prodotto.dati.camiciaDto.tipoColletto}"></span>
 						</div>
 					</div>
+										<div class="filtri" sec:authorize="hasRole('AMMINISTRATORE')">
+						Quantità: <span class="descrizione"
+							th:text="${prodotto.dati.qty}"></span>
+					</div>
 
 
 
 				</div>
 				<div class="col-md-18 col-lg-18 col-xl-5 d-flex"
-					sec:authorize="hasRole('CLIENTE')">
+					sec:authorize="hasRole('CLIENTE')" th:if="${prodotto.dati.qty > 0}">
 					<button data-mdb-button-init data-mdb-ripple-init
 						class="btn btn-link px-2"
 						onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
@@ -150,7 +154,7 @@
 						<i class="fas fa-plus"></i>
 					</button>
 				</div>
-				<button class="login-button" sec:authorize="hasRole('CLIENTE')">
+				<button class="login-button" sec:authorize="hasRole('CLIENTE')" th:if="${prodotto.dati.qty > 0}">
 					Aggiungi al carrello
 					<svg fill="white" width="40px" height="40px"
 						viewBox="-51.2 -51.2 614.40 614.40" version="1.1"
@@ -168,6 +172,9 @@
 								</g> <g id="Layer_1" />
 							</g>
 						</svg>
+				</button>
+				<button class ="login-button" disabled="disabled" sec:authorize="hasRole('CLIENTE')" th:if="${prodotto.dati.qty == 0}">
+				Prodotto non disponibile
 				</button>
 
 				<a th:href="@{nuovoProdotto}" class="see-button"
