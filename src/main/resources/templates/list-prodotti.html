@@ -25,41 +25,33 @@
 					<div style="flex: 1 1 48%;">
 						<label class="form-label">Colore</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="col : ${colore.dati}" th:value="${col.id}"
+								th:text="${col.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 48%;">
 						<label class="form-label">Fantasia</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="f : ${fantasia.dati}" th:value="${f.id}"
+								th:text="${f.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 48%;">
 						<label class="form-label">Marca</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="m : ${marca.dati}" th:value="${m.id}"
+								th:text="${m.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 48%;">
 						<label class="form-label">Materiale</label> <select
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-							<option value="...">......</option>
+							<option selected value="null">Qualsiasi</option>
+							<option th:each="mat : ${materiale.dati}" th:value="${mat.id}"
+								th:text="${mat.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 0 1 48%; min-width: 200px;">
