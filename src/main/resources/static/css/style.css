@@ -413,6 +413,16 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	gap: 60px;
 }
 
+.ordine-top-admin {
+	border-bottom: 1px solid #146C94;
+	background-color: #146C94;
+	color: white;
+	font-size: 20px;
+	display: flex;
+	padding: 20px;
+	gap: 60px;
+}
+
 .ordine-bottom {
 	display: flex;
 	justify-content: space-between;

@@ -14,23 +14,65 @@
 <meta charset="UTF-8">
 <title>Progetto finale</title>
 </head>
-<nav th:insert="~{fragments/header}"></nav>
-<body>
-    <div align="center">
-        <h1>Login</h1>
-        </br>
-         </br>
-       <div th:if="${param.error}">Invalid username and password</div>
-        <div th:if="${param.logout}">
-            You have been logged out.
-        </div>
-            </br></br>
-         <form th:action="@{/login}" method="post">
-            <div><label> Email : <input type="text" name="username"/> </label></div>
-            <div><label> &nbsp;&nbsp;&nbsp;&nbsp;Password: <input type="password" name="password"/> </label></div>
-              </br></br>
-            <div><input type="submit" value="Sign In"/></div>
-        </form>
-    </div>
+
+<body style="background-color: #F6F1F1;">
+	<nav th:insert="~{fragments/header}"></nav>
+
+	<div
+		class="container d-flex justify-content-center align-items-center min-vh-100">
+		<div class="card p-4 shadow-sm" style="width: 25rem;">
+			<h1 class="text-center mb-4">Login</h1>
+
+
+			<div th:if="${param.error}" class="alert alert-danger text-center">
+				Username o password errati.</div>
+			<div th:if="${param.logout}" class="alert alert-success text-center">
+				Sei stato disconnesso con successo.</div>
+
+
+			<form th:action="@{/login}" method="post" class="form-group">
+
+				<div class="mb-3">
+					<label for="username" class="form-label">Email</label> <input
+						type="text" class="form-control" id="username" name="username"
+						required>
+				</div>
+
+
+				<div class="mb-3">
+					<label for="password" class="form-label">Password</label> <input
+						type="password" class="form-control" id="password" name="password"
+						required>
+				</div>
+
+
+				<div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" id="showPassword"
+						onclick="togglePasswordVisibility()"> <label
+						class="form-check-label" for="showPassword">Mostra
+						password</label>
+				</div>
+
+
+				<div class="d-grid gap-2" style="margin-bottom: 30px;">
+					<button type="submit" class="btn btn-primary">Accedi</button>
+				</div>
+				<div class="mb-3" >
+					<h5><a th:href="@{/createUser}">Non hai un account? Registrati!</a></h5>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!-- JavaScript per mostrare la password -->
+	<script>
+		function togglePasswordVisibility() {
+			const passwordField = document.getElementById('password');
+			const showPasswordCheckbox = document
+					.getElementById('showPassword');
+			passwordField.type = showPasswordCheckbox.checked ? 'text'
+					: 'password';
+		}
+	</script>
 </body>
 </html>
