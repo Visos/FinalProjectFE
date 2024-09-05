@@ -20,10 +20,10 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriComponentsBuilder;
 
-
 import com.betacom.fe.dto.OrdineDTO;
 import com.betacom.fe.request.OrdineReq;
 import com.betacom.fe.request.ProdottiOrdiniReq;
+import com.betacom.fe.request.ProdottoReq;
 import com.betacom.fe.request.UtenteReq;
 import com.betacom.fe.response.Response;
 import com.betacom.fe.response.ResponseBase;
@@ -42,7 +42,7 @@ public class OrdiniCarrelloController {
 	public static Logger log = LoggerFactory.getLogger(OrdiniCarrelloController.class);
 
 	@GetMapping("/carrello")
-	public ModelAndView carrello() {
+	public ModelAndView carrello(@ModelAttribute("prodotto") ProdottoReq req) {
 		ModelAndView mav = new ModelAndView("carrello");
 
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -76,7 +76,7 @@ public class OrdiniCarrelloController {
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/listAll").buildAndExpand().toUri();
 
-		Response<?> resp = rest.getForEntity(uri, Response.class).getBody();
+		Response<?> resp = rest.postForEntity(uri, req, Response.class).getBody();
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/ordine/findById").queryParam("id", ordineId).buildAndExpand()
 				.toUri();
@@ -94,7 +94,7 @@ public class OrdiniCarrelloController {
 	}
 
 	@GetMapping("/ordini")
-	public ModelAndView ordini() {
+	public ModelAndView ordini(@ModelAttribute("prodotto") ProdottoReq req) {
 		ModelAndView mav = new ModelAndView("ordini");
 
 		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -121,7 +121,7 @@ public class OrdiniCarrelloController {
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/listAll").buildAndExpand().toUri();
 
-		Response<?> resp = rest.getForEntity(uri, Response.class).getBody();
+		Response<?> resp = rest.postForEntity(uri, req, Response.class).getBody();
 
 		mav.addObject("ordini", obj);
 		mav.addObject("prodotti", resp);
@@ -130,7 +130,7 @@ public class OrdiniCarrelloController {
 	}
 
 	@GetMapping("/ordiniAdmin")
-	public ModelAndView ordiniAdmin() {
+	public ModelAndView ordiniAdmin(@ModelAttribute("prodotto") ProdottoReq req) {
 		ModelAndView mav = new ModelAndView("/ordini-admin");
 
 		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/ordine/list").queryParam("stato", Stato.ELABORAZIONE)
@@ -142,7 +142,7 @@ public class OrdiniCarrelloController {
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/listAll").buildAndExpand().toUri();
 
-		Response<?> resp = rest.getForEntity(uri, Response.class).getBody();
+		Response<?> resp = rest.postForEntity(uri, req, Response.class).getBody();
 
 		mav.addObject("ordini", obj);
 		mav.addObject("prodotti", resp);
@@ -151,7 +151,7 @@ public class OrdiniCarrelloController {
 	}
 
 	@GetMapping("/ordiniAdminAll")
-	public ModelAndView ordiniAdminAll() {
+	public ModelAndView ordiniAdminAll(@ModelAttribute("prodotto") ProdottoReq req) {
 		ModelAndView mav = new ModelAndView("/ordini-admin-all");
 
 		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/ordine/list").buildAndExpand().toUri();
@@ -162,7 +162,7 @@ public class OrdiniCarrelloController {
 
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/listAll").buildAndExpand().toUri();
 
-		Response<?> resp = rest.getForEntity(uri, Response.class).getBody();
+		Response<?> resp = rest.postForEntity(uri, req, Response.class).getBody();
 
 		mav.addObject("ordini", obj);
 		mav.addObject("prodotti", resp);
@@ -203,7 +203,7 @@ public class OrdiniCarrelloController {
 				}).getBody();
 
 		OrdineReq reqOrd = new OrdineReq();
-		
+
 		Integer ordineId = null;
 
 		if (!objCarrello.getDati().isEmpty()) {
@@ -216,7 +216,7 @@ public class OrdiniCarrelloController {
 			uri = UriComponentsBuilder.fromHttpUrl(backend + "/ordine/create").buildAndExpand().toUri();
 
 			ResponseBase respCarrello = rest.postForEntity(uri, reqOrd, ResponseBase.class).getBody();
-			
+
 			uri = UriComponentsBuilder.fromHttpUrl(backend + "/ordine/list").queryParam("id", utenteId)
 					.queryParam("stato", Stato.CARRELLO).buildAndExpand().toUri();
 
@@ -224,7 +224,6 @@ public class OrdiniCarrelloController {
 					.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<Response<OrdineDTO>>() {
 					}).getBody();
 			ordineId = objCarrello2.getDati().get(0).getId();
-			
 
 			log.debug(respCarrello.toString());
 
@@ -247,13 +246,11 @@ public class OrdiniCarrelloController {
 		log.debug("URI: " + uri);
 
 		ResponseBase att = rest.postForEntity(uri, req, ResponseBase.class).getBody();
-		
+
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "ordine/update").buildAndExpand().toUri();
 		log.debug("URI: " + uri);
 
 		ResponseBase up = rest.postForEntity(uri, reqOrd, ResponseBase.class).getBody();
-		
-		
 
 		log.debug("rc " + att.getRc());
 //		mav.addObject("prodottoOrdineReq", req);
@@ -275,5 +272,11 @@ public class OrdiniCarrelloController {
 //		// listSocio
 //		return "redirect:/carrello";
 //	}
+
+	@GetMapping("/acquistaOrdine")
+	public Object acquistaOrdine(@RequestParam Integer idOrdine) {
+		log.debug("ID ORDINE: " + idOrdine);
+		return "redirect:/carrello";
+	}
 
 }

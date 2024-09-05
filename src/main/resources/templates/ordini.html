@@ -11,7 +11,7 @@
 		th:insert="~{fragments/header-utente}"></nav>
 		
 	<h3 align="center" style="margin-top: 30px; margin-bottom: 20px">I miei ordini</h3>
-	<div align="center" style="margin: 20px; font-size: 20px">*numero* ordini effettuati</div>
+	<!--  <div align="center" style="margin: 20px; font-size: 20px">*numero* ordini effettuati</div> -->
 	<div class="ordine" th:each="o: ${ordini.dati}" th:if="${o.stato != 'CARRELLO'}">
 		<div class="ordine-top">
 			<div th:utext="'Ordine effettuato il: ' + ${o.data}"></div>

@@ -87,7 +87,7 @@
 							<h4 th:utext="${ordine.dati.prezzoTotale} + ' €'"></h4>
 						</div>
 
-						<button class="login-button" style="margin-top: 15px;">Conferma
+						<button th:href="@{/acquistaOrdine(idOrdine=${ordine.dati.id})}" class="login-button" style="margin-top: 15px;">Conferma
 							l'acquisto</button>
 
 					</div>
