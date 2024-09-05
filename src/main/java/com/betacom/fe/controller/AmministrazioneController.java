@@ -1,23 +1,47 @@
 package com.betacom.fe.controller;
 
+import java.io.Console;
 import java.net.URI;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+import com.betacom.fe.dto.CamiciaDTO;
+import com.betacom.fe.dto.MagliettaDTO;
+import com.betacom.fe.dto.PantaloneDTO;
+import com.betacom.fe.dto.ProdottoDTO;
+import com.betacom.fe.dto.ScarpaDTO;
+import com.betacom.fe.dto.VestitoDTO;
 import com.betacom.fe.request.CamiciaReq;
 import com.betacom.fe.request.MagliettaReq;
 import com.betacom.fe.request.PantaloneReq;
@@ -29,10 +53,20 @@ import com.betacom.fe.response.Response;
 import com.betacom.fe.response.ResponseBase;
 import com.betacom.fe.response.ResponseObject;
 
+import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 
 @Controller
 public class AmministrazioneController {
+	
+	@Autowired
+	private AuthenticationManager authenticationManager;
+	
+	@Autowired
+	private UserDetailsService userDetailsService;
+	
+	@Autowired
+    private PasswordEncoder passwordEncoder; 
 
 	@Value("${jpa.backend}")
 	String backend;
@@ -56,7 +90,7 @@ public class AmministrazioneController {
 	}
 
 	@PostMapping("/saveUser")
-	public Object saveUser(@ModelAttribute("utente") UtenteReq req) {
+	public Object saveUser(@ModelAttribute("utente") UtenteReq req, HttpServletRequest request) {
 		log.debug("Nome utente: " + req.getNome());
 		log.debug("Ruolo: " + req.getRuolo());
 		
@@ -82,6 +116,35 @@ public class AmministrazioneController {
 			mav.addObject("error", resp.getMsg());
 			return mav;
 		}
+		
+		 // Aggiungi l'utente appena registrato all'InMemoryUserDetailsManager
+	    UserDetails newUser = User.withUsername(req.getMail())
+	    		.password(passwordEncoder.encode(req.getPassword())) 
+	            .roles(req.getRuolo())
+	            .build();
+	    ((InMemoryUserDetailsManager) userDetailsService).createUser(newUser);
+		
+		 // Login automatico dopo la registrazione
+	    try {
+	        // Recupera i dettagli utente dal servizio UserDetailsService
+	        UserDetails userDetails = userDetailsService.loadUserByUsername(req.getMail());
+
+
+	        UsernamePasswordAuthenticationToken authenticationToken =
+	                new UsernamePasswordAuthenticationToken(userDetails, req.getPassword(), userDetails.getAuthorities());
+
+
+	        Authentication authentication = authenticationManager.authenticate(authenticationToken);
+	        SecurityContextHolder.getContext().setAuthentication(authentication);
+
+	
+	        WebAuthenticationDetailsSource source = new WebAuthenticationDetailsSource();
+	        authenticationToken.setDetails(source.buildDetails(request));
+
+	        log.debug("Login automatico avvenuto per l'utente: " + req.getMail());
+	    } catch (Exception e) {
+	        log.error("Errore durante l'autenticazione automatica: ", e);
+	    }
 		
 		//in questo modo voglio dico che voglio aggiornare la pagina e tornare in listSocio
 		return "redirect:/index";

@@ -11,6 +11,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.userdetails.User;
@@ -28,6 +30,8 @@ import org.springframework.web.util.UriComponentsBuilder;
 @EnableWebSecurity
 public class WebSecurityConfig {
 	
+	
+	
 	@Autowired
 	RestTemplate rest;
 	
@@ -37,10 +41,17 @@ public class WebSecurityConfig {
 	
 	public static Logger log = LoggerFactory.getLogger(WebSecurityConfig.class);
 	
+	@Bean
+	public AuthenticationManager authenticationManager(AuthenticationConfiguration authenticationConfiguration) throws Exception {
+	    return authenticationConfiguration.getAuthenticationManager();
+	}
+	
 	   @Bean
 	    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
 	        http.authorizeHttpRequests((requests) -> requests
 	                .requestMatchers("/amministratore", "/amministratore/**").hasRole("AMMINISTRATORE")
+	                .requestMatchers("/", "/createUser", "/createUser/**", "/saveUser").permitAll()
+	                .requestMatchers("/css/**", "/js/**", "/images/**").permitAll() 
 	                .requestMatchers("/").permitAll()
 	                .anyRequest().authenticated()
 	                )
@@ -63,7 +74,7 @@ public class WebSecurityConfig {
 	        URI uri = UriComponentsBuilder
 	                .fromHttpUrl(backend + "utente/listAll")  
 	                .buildAndExpand().toUri();      
-			log.info("URI: " + uri);
+			log.info("URI" + uri);
 
 	        List<HashMap<String, Object>> r = rest.getForObject(uri, ArrayList.class);
 
