@@ -8,10 +8,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import com.betacom.fe.request.ProdottoReq;
 import com.betacom.fe.response.Response;
 
 @Controller
@@ -25,7 +27,14 @@ public class MaglietteController {
 	public static Logger log = LoggerFactory.getLogger(MaglietteController.class);
 	
 	@GetMapping(value = {"/listMagliette"})
-	public ModelAndView listMagliette() {
+	public ModelAndView listMagliette(@ModelAttribute ("prodotto") ProdottoReq req) {
+		
+
+		
+		if(req != null) {
+			System.out.println(req);
+		}
+		
 		ModelAndView mav = new ModelAndView("list-magliette");
 		
 		 URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/marca/listAll")
@@ -77,10 +86,11 @@ public class MaglietteController {
 		    Response<?> listVestibilita = rest.getForEntity(uri, Response.class).getBody();
 		
 		    uri = UriComponentsBuilder
-				.fromHttpUrl(backend + "/prodotto/listAll")
+				.fromHttpUrl(backend + "/maglietta/listAll")
 				.buildAndExpand().toUri();
+		    
 		
-		    Response<?> resp = rest.getForEntity(uri, Response.class).getBody();
+		    Response<?> resp = rest.postForEntity(uri, req, Response.class).getBody();
 		
 		mav.addObject("listMagliette", resp);
 		mav.addObject("marca", listMarca);

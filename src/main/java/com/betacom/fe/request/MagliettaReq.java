@@ -58,4 +58,12 @@ public class MagliettaReq {
 	public void setTipoColletto(String tipoColletto) {
 		this.tipoColletto = tipoColletto;
 	}
+
+	@Override
+	public String toString() {
+		return "MagliettaReq [id=" + id + ", taglia=" + taglia + ", vestibilita=" + vestibilita + ", lunghezzaManica="
+				+ lunghezzaManica + ", tipoColletto=" + tipoColletto + "]";
+	}
+	
+	
 }
