@@ -1,6 +1,7 @@
 package com.betacom.fe.controller;
 
 import java.net.URI;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,8 +20,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import com.betacom.backend.pojo.Utente;
 import com.betacom.fe.dto.OrdineDTO;
 import com.betacom.fe.request.OrdineReq;
 import com.betacom.fe.request.ProdottiOrdiniReq;
@@ -143,9 +147,23 @@ public class OrdiniCarrelloController {
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/listAll").buildAndExpand().toUri();
 
 		Response<?> resp = rest.postForEntity(uri, req, Response.class).getBody();
+		
+		uri = UriComponentsBuilder.fromHttpUrl(backend + "/utente/listAll").buildAndExpand().toUri();
+
+		
+		ResponseEntity<List<Utente>> responseEntity = rest.exchange(
+			    uri.toString(),
+			    HttpMethod.GET,
+			    null,  
+			    new ParameterizedTypeReference<List<Utente>>() {}
+			);
+
+			List<Utente> utenti = responseEntity.getBody();
+			log.debug(utenti.toString());
 
 		mav.addObject("ordini", obj);
 		mav.addObject("prodotti", resp);
+		mav.addObject("utenti", responseEntity);
 
 		return mav;
 	}
@@ -163,9 +181,23 @@ public class OrdiniCarrelloController {
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/listAll").buildAndExpand().toUri();
 
 		Response<?> resp = rest.postForEntity(uri, req, Response.class).getBody();
+		
+		uri = UriComponentsBuilder.fromHttpUrl(backend + "/utente/listAll").buildAndExpand().toUri();
+		
+		ResponseEntity<List<Utente>> responseEntity = rest.exchange(
+			    uri.toString(),
+			    HttpMethod.GET,
+			    null,  
+			    new ParameterizedTypeReference<List<Utente>>() {}
+			);
+
+			List<Utente> utenti = responseEntity.getBody();
+			log.debug(utenti.toString());
 
 		mav.addObject("ordini", obj);
 		mav.addObject("prodotti", resp);
+		
+		mav.addObject("utenti", responseEntity);
 
 		return mav;
 	}

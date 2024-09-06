@@ -21,6 +21,11 @@
 	<div th:utext="'Ordine effettuato il: ' + ${o.data}"></div>
 			<div th:utext="'Prezzo totale: ' + ${o.prezzoTotale} + ' €'"></div>
 		</div>
+						<div class="ordine-top-admin" th:each="u: ${utenti.body}" th:if="${u.id == o.idUtente}" >
+
+			<div th:utext="${u.nome} + ' ' + ${u.cognome}"></div>
+			<div th:utext="${u.strada} + ' ' + ${u.civico} + ' ' +${u.cap} + ' ' + ${u.paese}">STRADA CIVICO CAP PAESE</div>
+		</div>
 		<div align="center" style="padding:20px;">
 					
 
@@ -47,7 +52,7 @@
 			</div>
 			<div class="ordine-bottom-inner">
 				<button class="see-button ordine-btn" style="font-size: 18px;">
-					<a th:href="@{/prodotto}" class="a">Visualizza</a>
+						<a th:href="@{/prodotto(prodottoID=${p.idProdotto})}" class="a">Visualizza</a>
 				</button>
 			</div>
 		</div>
