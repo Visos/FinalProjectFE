@@ -21,7 +21,7 @@
 	<div th:utext="'Ordine effettuato il: ' + ${o.data}"></div>
 			<div th:utext="'Prezzo totale: ' + ${o.prezzoTotale} + ' €'"></div>
 		</div>
-						<div class="ordine-top-admin" th:each="u: ${utenti.body}" th:if="${u.id == o.idUtente}" >
+						<div class="ordine-top-admin" th:each="u: ${utenti}" th:if="${u.id == o.idUtente}" >
 
 			<div th:utext="${u.nome} + ' ' + ${u.cognome}"></div>
 			<div th:utext="${u.strada} + ' ' + ${u.civico} + ' ' +${u.cap} + ' ' + ${u.paese}">STRADA CIVICO CAP PAESE</div>

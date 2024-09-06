@@ -23,8 +23,8 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.util.UriComponents;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import com.betacom.backend.pojo.Utente;
 import com.betacom.fe.dto.OrdineDTO;
+import com.betacom.fe.dto.UtenteDTO;
 import com.betacom.fe.request.OrdineReq;
 import com.betacom.fe.request.ProdottiOrdiniReq;
 import com.betacom.fe.request.ProdottoReq;
@@ -147,23 +147,16 @@ public class OrdiniCarrelloController {
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/listAll").buildAndExpand().toUri();
 
 		Response<?> resp = rest.postForEntity(uri, req, Response.class).getBody();
-		
+
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/utente/listAll").buildAndExpand().toUri();
 
-		
-		ResponseEntity<List<Utente>> responseEntity = rest.exchange(
-			    uri.toString(),
-			    HttpMethod.GET,
-			    null,  
-			    new ParameterizedTypeReference<List<Utente>>() {}
-			);
-
-			List<Utente> utenti = responseEntity.getBody();
-			log.debug(utenti.toString());
+		List<UtenteDTO> respUtente = rest
+				.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<List<UtenteDTO>>() {
+				}).getBody();
 
 		mav.addObject("ordini", obj);
 		mav.addObject("prodotti", resp);
-		mav.addObject("utenti", responseEntity);
+		mav.addObject("utenti", respUtente);
 
 		return mav;
 	}
@@ -181,25 +174,64 @@ public class OrdiniCarrelloController {
 		uri = UriComponentsBuilder.fromHttpUrl(backend + "/prodotto/listAll").buildAndExpand().toUri();
 
 		Response<?> resp = rest.postForEntity(uri, req, Response.class).getBody();
-		
-		uri = UriComponentsBuilder.fromHttpUrl(backend + "/utente/listAll").buildAndExpand().toUri();
-		
-		ResponseEntity<List<Utente>> responseEntity = rest.exchange(
-			    uri.toString(),
-			    HttpMethod.GET,
-			    null,  
-			    new ParameterizedTypeReference<List<Utente>>() {}
-			);
 
-			List<Utente> utenti = responseEntity.getBody();
-			log.debug(utenti.toString());
+		uri = UriComponentsBuilder.fromHttpUrl(backend + "/utente/listAll").buildAndExpand().toUri();
+
+		List<UtenteDTO> respUtente = rest
+				.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<List<UtenteDTO>>() {
+				}).getBody();
 
 		mav.addObject("ordini", obj);
 		mav.addObject("prodotti", resp);
-		
-		mav.addObject("utenti", responseEntity);
+		mav.addObject("utenti", respUtente);
 
 		return mav;
+	}
+
+	@GetMapping("/removeProdOrd")
+	public Object removeProdOrd(@RequestParam Integer prodOrdID) {
+		log.debug("Id: " + prodOrdID);
+
+		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "ordine/removeProd").queryParam("id", prodOrdID)
+				.buildAndExpand().toUri();
+		log.debug("URI: " + uri);
+
+		ResponseBase att = rest.postForEntity(uri, prodOrdID, ResponseBase.class).getBody();
+
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+
+		String email = null;
+		if (authentication != null && authentication.getPrincipal() instanceof UserDetails) {
+			UserDetails userDetails = (UserDetails) authentication.getPrincipal();
+			email = userDetails.getUsername();
+		}
+
+		uri = UriComponentsBuilder.fromHttpUrl(backend + "/utente/searchByMail").queryParam("mail", email)
+				.buildAndExpand().toUri();
+
+		ResponseObject<UtenteReq> respObj = rest
+				.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<ResponseObject<UtenteReq>>() {
+				}).getBody();
+
+		Integer utenteId = respObj.getDati().getId();
+
+		uri = UriComponentsBuilder.fromHttpUrl(backend + "/ordine/list").queryParam("id", utenteId)
+				.queryParam("stato", Stato.CARRELLO).buildAndExpand().toUri();
+
+		Response<OrdineDTO> objCarrello = rest
+				.exchange(uri, HttpMethod.GET, null, new ParameterizedTypeReference<Response<OrdineDTO>>() {
+				}).getBody();
+
+		OrdineReq reqOrd = new OrdineReq();
+		reqOrd.setIdUtente(utenteId);
+		reqOrd.setStato("CARRELLO");
+
+		uri = UriComponentsBuilder.fromHttpUrl(backend + "ordine/update").buildAndExpand().toUri();
+		log.debug("URI: " + uri);
+
+		ResponseBase up = rest.postForEntity(uri, reqOrd, ResponseBase.class).getBody();
+
+		return "redirect:/carrello";
 	}
 
 	@GetMapping("/createModelProdOrd")
