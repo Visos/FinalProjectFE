@@ -73,7 +73,7 @@ public class PantaloniController {
 		    Response<?> listVestibilita = rest.getForEntity(uri, Response.class).getBody();
 		
 		    uri = UriComponentsBuilder
-				.fromHttpUrl(backend + "/prodotto/listAll")
+				.fromHttpUrl(backend + "/pantalone/listAll")
 				.buildAndExpand().toUri();
 		
 		    Response<?> resp = rest.postForEntity(uri, req, Response.class).getBody();

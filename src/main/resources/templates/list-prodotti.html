@@ -20,47 +20,47 @@
 			<nav th:insert="~{fragments/sidebar}"></nav>
 			<div class="filters"
 				style="width: 100%; display: flex; flex-wrap: wrap; gap: 20px;">
-				<form
+				<form th:action="@{/listAll}" th:object="${prodotto}"
 					style="display: flex; flex-wrap: wrap; gap: 20px; width: 100%;">
 					<div style="flex: 1 1 48%;">
-						<label class="form-label">Colore</label> <select
+						<label class="form-label">Colore</label> <select th:field="*{colore}"
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected value="null">Qualsiasi</option>
-							<option th:each="col : ${colore.dati}" th:value="${col.id}"
+							<option selected value="nullo">Qualsiasi</option>
+							<option th:each="col : ${colore.dati}" th:value="${col.descrizione}"
 								th:text="${col.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 48%;">
-						<label class="form-label">Fantasia</label> <select
+						<label class="form-label">Fantasia</label> <select th:field="*{fantasia}"
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected value="null">Qualsiasi</option>
-							<option th:each="f : ${fantasia.dati}" th:value="${f.id}"
+							<option selected value="nullo">Qualsiasi</option>
+							<option th:each="f : ${fantasia.dati}" th:value="${f.descrizione}"
 								th:text="${f.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 48%;">
-						<label class="form-label">Marca</label> <select
+						<label class="form-label">Marca</label> <select th:field="*{marca}"
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected value="null">Qualsiasi</option>
-							<option th:each="m : ${marca.dati}" th:value="${m.id}"
+							<option selected value="nullo">Qualsiasi</option>
+							<option th:each="m : ${marca.dati}" th:value="${m.descrizione}"
 								th:text="${m.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 1 1 48%;">
-						<label class="form-label">Materiale</label> <select
+						<label class="form-label">Materiale</label> <select th:field="*{materiale}"
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected value="null">Qualsiasi</option>
-							<option th:each="mat : ${materiale.dati}" th:value="${mat.id}"
+							<option selected value="nullo">Qualsiasi</option>
+							<option th:each="mat : ${materiale.dati}" th:value="${mat.descrizione}"
 								th:text="${mat.descrizione}"></option>
 						</select>
 					</div>
 					<div style="flex: 0 1 48%; min-width: 200px;">
-						<label class="form-label">Sesso</label> <select
+						<label class="form-label">Sesso</label> <select th:field="*{sesso}"
 							class="form-select" multiple aria-label="Multiple select example">
-							<option selected>Qualsiasi</option>
-							<option value="id_blu">M</option>
-							<option value="id_nero">F</option>
-							<option value="id_bianco">Unisex</option>
+							<option selected value="nullo">Qualsiasi</option>
+							<option value="M">M</option>
+							<option value="F">F</option>
+							<option value="Unisex">Unisex</option>
 						</select>
 					</div>
 					<button type="submit" class="login-button">Conferma</button>
