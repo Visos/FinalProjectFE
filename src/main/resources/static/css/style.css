@@ -459,3 +459,40 @@ input[type="text"], input[type="password"], input[type="number"], input[type="em
 	display: flex;
 	flex-direction: column;
 }
+
+  /* Hide default number input controls */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+  }
+
+  input[type="number"] {
+      -moz-appearance: textfield;
+  }
+
+  
+  /* Flexbox to align buttons with input */
+  .quantity-container {
+      display: flex;
+      align-items: center;
+  }
+
+  .quantity-container input {
+      text-align: center;
+      width: 300px;
+  }
+
+  .quantity-container button {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: #007bff;
+      padding: 0 30px;
+      cursor: pointer;
+      transition: color 0.2s;
+  }
+
+  .quantity-container button:hover {
+      color: #0056b3;
+  }
