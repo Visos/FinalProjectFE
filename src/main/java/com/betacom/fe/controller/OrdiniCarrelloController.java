@@ -321,6 +321,32 @@ public class OrdiniCarrelloController {
 //		mav.addObject("prodottoOrdineReq", req);
 		return "redirect:/carrello";
 	}
+	
+	@GetMapping("/acquistaOrdine")
+	public Object acquistaOrdine(@RequestParam Integer idOrdine) {
+		log.debug("ID ORDINE: " + idOrdine);
+
+		URI uriProd = UriComponentsBuilder.fromHttpUrl(backend + "/ordine/acquista").queryParam("id", idOrdine)
+				.buildAndExpand().toUri();
+
+		ResponseObject<?> respObjOrdine = rest.getForEntity(uriProd, ResponseObject.class).getBody();
+		
+		
+		return "redirect:/ordini";
+	}
+	
+	@GetMapping("/spedisciOrdine")
+	public Object spedisciOrdine(@RequestParam Integer idOrdine) {
+		log.debug("ID ORDINE: " + idOrdine);
+
+		URI uriProd = UriComponentsBuilder.fromHttpUrl(backend + "/ordine/spedizione").queryParam("id", idOrdine)
+				.buildAndExpand().toUri();
+
+		ResponseObject<?> respObjOrdine = rest.getForEntity(uriProd, ResponseObject.class).getBody();
+		
+		
+		return "redirect:/ordiniAdmin";
+	}
 
 //	@PostMapping("/addProdOrd")
 //	public Object addProd(@ModelAttribute("prodOrdReq") ProdottiOrdiniReq req) {
@@ -339,10 +365,6 @@ public class OrdiniCarrelloController {
 //	}
 	
 
-	@GetMapping("/acquistaOrdine")
-	public Object acquistaOrdine(@RequestParam Integer idOrdine) {
-		log.debug("ID ORDINE: " + idOrdine);
-		return "redirect:/carrello";
-	}
+	
 
 }

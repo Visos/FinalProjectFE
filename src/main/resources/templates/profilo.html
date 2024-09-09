@@ -14,8 +14,8 @@
 	<nav class="navbar navbar-expand-lg bg-body-tertiary"
 		sec:authorize="hasRole('CLIENTE')"
 		th:insert="~{fragments/header-utente}"></nav>
-	<div class="create-container">
-		    <form th:action="@{/saveUser}" th:object="${utente}" method="post" class="create-box form-group">
+	<div class="create-container" 	sec:authorize="hasRole('CLIENTE')">
+		    <form th:action="@{/saveUser}" th:object="${utente}" method="post" class="create-box form-group" >
 		    			<input type="hidden" name="id" th:value="${utente.dati.id}" /> 
 			<div>
 				<div class="mb-3">
@@ -55,10 +55,46 @@
 						readonly>
 				</div>
 				<div class="mb-3">
-					<label class="form-label">CAP</label> <input type="number" name="CAP" th:value="${utente.dati.cap}"
+					<label class="form-label">CAP</label> <input type="number" name="cap" th:value="${utente.dati.cap}"
 						min="10000" max="99999" readonly>
 				</div>
 			</div>
+
+			<div class="buttonLogin" align="center">
+				<button type="button" class="login-button"
+					onclick="enableEditing(this)">Modifica</button>
+			</div>
+		</form>
+	</div>
+	
+		<div class="create-container" 	sec:authorize="hasRole('AMMINISTRATORE')">
+		    <form th:action="@{/saveAdmin}" th:object="${utente}" method="post" class="create-box form-group" >
+		    			<input type="hidden" name="id" th:value="${utente.dati.id}" /> 
+			<div>
+				<div class="mb-3">
+					<label class="form-label">Nome</label> <input type="text"
+						class="form-control" name="nome" th:value="${utente.dati.nome}" readonly>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Cognome</label> <input type="text" name="cognome"
+						th:value="${utente.dati.cognome}" readonly>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">E-mail</label> <input type="text" name="mail"
+						th:value="${utente.dati.mail}" readonly>
+				</div>
+				<div class="mb-3">
+					<label class="form-label">Password</label> <input type="password" name="password"
+						th:value="${utente.dati.password}" id="inputPassword" readonly>
+				</div>
+				<div class="mb-3 form-check">
+					<input type="checkbox" class="form-check-input" id="exampleCheck1"
+						onclick="showPassword()" readonly> <label
+						class="form-check-label" for="exampleCheck1">Mostra
+						password</label>
+				</div>
+			</div>
+
 
 			<div class="buttonLogin" align="center">
 				<button type="button" class="login-button"

@@ -16,6 +16,8 @@
 		<div class="ordine-top">
 			<div th:utext="'Ordine effettuato il: ' + ${o.data}"></div>
 			<div th:utext="'Prezzo totale: ' + ${o.prezzoTotale} + ' €'"></div>
+			<div th:text="'Stato dell\'ordine: ' + ${o.stato}"></div>
+
 		</div>
 		<div class="ordine-bottom" th:each="p: ${o.prodOrdini}">
 			<div class="ordine-bottom-top" th:each="prod: ${prodotti.dati}"  th:if="${p.idProdotto == prod.id}">

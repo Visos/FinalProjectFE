@@ -21,6 +21,7 @@
 		<div class="ordine-top">
 			<div th:utext="'Ordine effettuato il: ' + ${o.data}"></div>
 			<div th:utext="'Prezzo totale: ' + ${o.prezzoTotale} + ' €'"></div>
+					<div th:text="'Stato dell\'ordine: ' + ${o.stato}"></div>
 
 		</div>
 				<div class="ordine-top-admin" th:each="u: ${utenti}" th:if="${u.id == o.idUtente}" >
@@ -30,7 +31,7 @@
 		</div>
 		<div align="center" style="padding: 20px;">
 			<button class="see-button ordine-btn" style="font-size: 18px;">
-				<a th:href="@{/ordiniAdmin}" class="a">Segna come spedito</a>
+				<a th:href="@{/spedisciOrdine(idOrdine=${o.id})}" class="a">Segna come spedito</a>
 			</button>
 		</div>
 		<div class="ordine-bottom" th:each="p: ${o.prodOrdini}">

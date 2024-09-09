@@ -108,7 +108,7 @@ public class AmministrazioneController {
 		log.debug("Nome: " + utente.getNome());
 		log.debug("rc: " + resp.getRc());
 		log.debug("rc: " + resp.getMsg());
-		
+		log.debug("CAP: " + utente.getCap());		
 		
 		if (!resp.getRc()) {
 			ModelAndView mav = new ModelAndView("create-user");
@@ -117,12 +117,19 @@ public class AmministrazioneController {
 			return mav;
 		}
 		
-		 // Aggiungi l'utente appena registrato all'InMemoryUserDetailsManager
-	    UserDetails newUser = User.withUsername(req.getMail())
-	    		.password(passwordEncoder.encode(req.getPassword())) 
-	            .roles(req.getRuolo())
-	            .build();
-	    ((InMemoryUserDetailsManager) userDetailsService).createUser(newUser);
+
+		UserDetails newUser = User.withUsername(req.getMail())
+		    .password(passwordEncoder.encode(req.getPassword()))
+		    .roles(req.getRuolo())
+		    .build();
+
+		if (!((InMemoryUserDetailsManager) userDetailsService).userExists(req.getMail())) {
+		    ((InMemoryUserDetailsManager) userDetailsService).createUser(newUser);
+		} else {
+		    log.debug("Utente già esistente: " + req.getMail());
+		    ((InMemoryUserDetailsManager) userDetailsService).updateUser(newUser); // Puoi aggiornare l'utente, se necessario
+		}
+
 		
 		 // Login automatico dopo la registrazione
 	    try {
@@ -373,6 +380,19 @@ Authentication authentication = SecurityContextHolder.getContext().getAuthentica
 		log.debug("Nome: " + admin.getNome());
 		log.debug("rc: " + resp.getRc());
 		log.debug("rc: " + resp.getMsg());
+		
+
+		UserDetails newUser = User.withUsername(req.getMail())
+		    .password(passwordEncoder.encode(req.getPassword()))
+		    .roles(req.getRuolo())
+		    .build();
+
+		if (!((InMemoryUserDetailsManager) userDetailsService).userExists(req.getMail())) {
+		    ((InMemoryUserDetailsManager) userDetailsService).createUser(newUser);
+		} else {
+		    log.debug("Utente già esistente: " + req.getMail());
+		    ((InMemoryUserDetailsManager) userDetailsService).updateUser(newUser); // Puoi aggiornare l'utente, se necessario
+		}
 		
 		
 		if (!resp.getRc()) {
