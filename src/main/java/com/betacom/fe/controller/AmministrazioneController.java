@@ -7,6 +7,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -158,7 +161,7 @@ public class AmministrazioneController {
 	}
 
 	@GetMapping("/nuovoProdotto")
-	public ModelAndView nuovoProdotto() {
+	public ModelAndView nuovoProdotto(@RequestParam (required = false) Integer prodottoID ) {
 		ModelAndView mav = new ModelAndView("nuovo-prodotto");
 		URI uri = UriComponentsBuilder.fromHttpUrl(backend + "/marca/listAll").buildAndExpand().toUri();
 
@@ -209,6 +212,25 @@ public class AmministrazioneController {
 		p.setPantaloneReq(new PantaloneReq());
 		p.setVestitoReq(new VestitoReq());
 		p.setScarpaReq(new ScarpaReq());
+		
+
+		if (prodottoID != null) {
+		    uri = UriComponentsBuilder
+		            .fromHttpUrl(backend + "/prodotto/searchById")
+		            .queryParam("id", prodottoID)
+		            .buildAndExpand().toUri();
+
+		    
+		    ResponseEntity<ResponseObject<ProdottoReq>> responseEntity = rest.exchange(
+		            uri, HttpMethod.GET, null, new ParameterizedTypeReference<ResponseObject<ProdottoReq>>() {});
+		    
+		    ResponseObject<ProdottoReq> respObj = responseEntity.getBody();
+		    
+		    if (respObj != null && respObj.getDati() != null) {
+		        p = respObj.getDati(); 
+		        log.debug("Immagine del prodotto: " + p.getImg());
+		    }
+		}
 
 		mav.addObject("marca", listMarca);
 		mav.addObject("colore", listColore);

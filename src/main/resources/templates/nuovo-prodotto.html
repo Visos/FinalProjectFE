@@ -60,7 +60,7 @@
 			<input type="hidden" th:field="*{id}" /> 
 			<div>
 				<div class="mb-3">
-					<label for="img">Seleziona un'immagine:</label> <input type="file"
+					<label for="img">Seleziona un'immagine:</label> <input type="file" 
 						id="imgFile" th:field="*{img}" accept="image/*">
 				</div>
 				<div class="mb-3">
@@ -133,7 +133,7 @@
 								th:field="*{magliettaReq.lunghezzaManica}">
 								<option value=""></option>
 								<option th:each="m : ${manica.dati}" th:value="${m.descrizione}"
-									th:text="${m.descrizione}" />
+									th:text="${m.descrizione}"  />
 							</select>
 						</div>
 						<div class="mb-3">

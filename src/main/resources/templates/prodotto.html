@@ -154,6 +154,9 @@
 							
 						<input type="hidden"
 							name="idProdotto" th:value="${prodotto.dati.id}" />
+							
+							<input type="hidden"
+							name="action" value="null" />
 						
 <!-- 						plus button -->
 						<button type="button" data-mdb-button-init data-mdb-ripple-init
@@ -192,7 +195,7 @@
 					th:if="${prodotto.dati.qty == 0}">Prodotto non disponibile
 				</button>
 
-				<a th:href="@{nuovoProdotto}" class="see-button"
+				<a th:href="@{/nuovoProdotto(prodottoID=${prodotto.dati.id})}" class="see-button"
 					style="font-size: 18px;" sec:authorize="hasRole('AMMINISTRATORE')">Modifica
 					<svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
 						width="30px" height="30px" viewBox="0 0 24 24">
